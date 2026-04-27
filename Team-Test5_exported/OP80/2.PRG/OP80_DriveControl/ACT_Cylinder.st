@@ -208,7 +208,7 @@ FB_Cylinder_instance[11](
 	iSafeDoor:= DB8000_Control.Machine.EmgSafetyRelay,
 	iLightCurtain:= DB8000_Control.Machine.LightCurtainRelay,
 	iClock_100ms:= CPU_Clock.Clock_100ms_R,
-	iSensor_Work:= IX8304_0_测试2_产品侧边定位气缸CY11_伸出位,
+	iSensor_Work:= IX8304_0_测试2_产品侧边定位气缸CY11_伸出位1,
 	iSensor_Home:= IX8304_1_测试2_产品侧边定位气缸CY11_缩回位,
 	iIC_Home:= TRUE,
 	iIC_Work:= TRUE,

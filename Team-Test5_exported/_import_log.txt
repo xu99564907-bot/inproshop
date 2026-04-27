@@ -1,6 +1,6 @@
 ============================================================
 InProShop Project Import Script
-Start Time: 2026-04-27T16:17:03.222000
+Start Time: 2026-04-27T16:53:11.654000
 ============================================================
 [INFO] No project open. Opening project: C:\Users\Administrator\Desktop\2026-04-07\PlcOpcUaHmi\PLC\Team-Test5\Team-Test5.project
 [INFO] Import from: C:\Users\Administrator\Desktop\2026-04-07\PlcOpcUaHmi\PLC\Team-Test5\Team-Test5_exported
@@ -719,5 +719,5 @@ Errors: 1
 [OK] Project saved.
 
 ============================================================
-End Time: 2026-04-27T16:18:43.533000
+End Time: 2026-04-27T16:55:20.884000
 ============================================================
