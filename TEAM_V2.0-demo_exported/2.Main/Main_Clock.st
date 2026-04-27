@@ -1,0 +1,3 @@
+VAR_GLOBAL
+	CPU_Clock:Str_Clock;
+END_VAR

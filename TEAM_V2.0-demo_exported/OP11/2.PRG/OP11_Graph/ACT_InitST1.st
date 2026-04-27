@@ -1,0 +1,139 @@
+
+//延时时间
+IntitalTimeDelay[1,0](IN:=Init[1].Step=5,PT:=T#500MS);
+IntitalTimeDelay[1,1]();
+IntitalTimeDelay[1,2]();
+IntitalTimeDelay[1,3]();
+IntitalTimeDelay[1,4]();
+IntitalTimeDelay[1,5]();
+
+//初始化完成状态清除
+IF DB1170_Fault.EstopTotal OR DB1170_Fault.StopTotal OR DB1100_Control.Mode.Status.ManualMode OR DB1100_Control.Mode.Out.Stop THEN
+	Init[1].Step:=0;
+	Init[1].Running:=FALSE;
+END_IF
+
+//启动回原
+IF DB1100_Control.Mode.Out.HomeStart_R AND NOT Init[1].Running THEN
+	Init[1].Running:=TRUE;
+	Init[1].Complete:=FALSE;
+	Init[1].Step:=5;
+	Init[1].Comment:="初始化开始";
+END_IF
+
+IF Init[1].Running THEN
+	
+	CASE Init[1].Step OF
+		5 :
+			Init[1].Comment:="初始化开始判定";
+			IF IntitalTimeDelay[1,0].Q THEN
+				IF Auto[1].Disable THEN
+					Init[1].Step:=1000;
+				ELSE
+					Init[1].Step:=10;
+				END_IF				
+			END_IF
+
+			
+		10:
+			Init[1].Comment:="等待码垛机械手在安全区域";
+			IF NOT DB1150_DriveControl.Kuka[2].Status.InterFace_B[57] THEN
+				Init[1].Step:=100;
+			END_IF
+						
+		100:
+			Init[1].Comment:="拔管解扣气缸上升";
+			DB1150_DriveControl.CylCtrl[Enum_OP11_Cyl.气缸1].Cmd.AutoToWork:=TRUE;
+			IF DB1150_DriveControl.CylCtrl[Enum_OP11_Cyl.气缸1].Status.InWork THEN
+				Init[1].Step:=110;
+			END_IF
+			
+		110:			
+			Init[1].Comment:="插管测试气缸下降";
+			DB1150_DriveControl.CylCtrl[Enum_OP11_Cyl.气缸1].Cmd.AutoToHome:=TRUE;
+			IF DB1150_DriveControl.CylCtrl[Enum_OP11_Cyl.气缸1].Status.InHome THEN
+				Init[1].Step:=120;
+			END_IF	
+			
+		120:
+			Init[1].Comment:="拔管解扣气缸下降";
+			DB1150_DriveControl.CylCtrl[Enum_OP11_Cyl.气缸1].Cmd.AutoToHome:=TRUE;
+			IF DB1150_DriveControl.CylCtrl[Enum_OP11_Cyl.气缸1].Status.InHome THEN
+				Init[1].Step:=130;
+			END_IF	
+
+		130:
+			Init[1].Comment:="夹爪夹料松开";
+			DB1150_DriveControl.CylCtrl[Enum_OP11_Cyl.气缸1].Cmd.AutoToHome:=TRUE;
+			IF DB1150_DriveControl.CylCtrl[Enum_OP11_Cyl.气缸1].Status.InHome THEN
+				Init[1].Step:=140;
+			END_IF			
+
+		140:
+			Init[1].Comment:="Z1轴下降";
+			DB1150_DriveControl.AxisCtrl[Enum_OP11_Axis.Z1].Cmd.AutoABS:=1;
+			IF DB1150_DriveControl.AxisCtrl[Enum_OP11_Axis.Z1].Status.InPoint[1] THEN
+				Init[1].Step:=180;
+			END_IF
+
+
+
+		180:
+			Init[1].Comment:="驱动齿轮气缸_缩回";
+			DB1150_DriveControl.CylCtrl[Enum_OP11_Cyl.气缸1].Cmd.AutoToHome:=TRUE;
+			IF DB1150_DriveControl.CylCtrl[Enum_OP11_Cyl.气缸1].Status.InHome THEN
+				Init[1].Step:=200;
+			END_IF
+			
+		200:
+			Init[1].Comment:="产品封堵B上下气缸_下降";
+			DB1150_DriveControl.CylCtrl[Enum_OP11_Cyl.气缸1].Cmd.AutoToHome:=TRUE;
+			IF DB1150_DriveControl.CylCtrl[Enum_OP11_Cyl.气缸1].Status.InHome THEN
+				Init[1].Step:=300;
+			END_IF	
+			
+		300:
+			Init[1].Comment:="产品固定气缸旋转松开";
+			DB1150_DriveControl.CylCtrl[Enum_OP11_Cyl.气缸1].Cmd.AutoToHome:=TRUE;
+		 
+			IF DB1150_DriveControl.CylCtrl[Enum_OP11_Cyl.气缸1].Status.InHome  THEN
+				Init[1].Step:=400;
+			END_IF
+
+		400:
+			Init[1].Comment:="定位气缸松开";
+			DB1150_DriveControl.CylCtrl[Enum_OP11_Cyl.气缸1].Cmd.AutoToHome:=TRUE;
+			IF DB1150_DriveControl.CylCtrl[Enum_OP11_Cyl.气缸1].Status.InHome THEN
+				Init[1].Step:=1000;
+			END_IF
+		
+		1000:
+			Init[1].Comment:="工位初始化完成，等待下工位完成";	
+			Init[1].Complete:=TRUE;
+			IF Init[1].Complete AND Init[2].Complete AND Init[3].Complete  AND Init[4].Complete  AND Init[5].Complete  AND Init[6].Complete THEN	
+				DB1100_Control.Mode.Status.HomeOK:=TRUE;				
+				Init[1].Running:=FALSE;
+				Init[1].Step:=0;
+			END_IF			
+	ELSE
+		;
+	END_CASE
+	
+END_IF
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

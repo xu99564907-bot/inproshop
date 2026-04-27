@@ -1,0 +1,7 @@
+TYPE Str_CycleTime :
+STRUCT
+	Start:BOOL;
+	Now:DINT;
+	Befor:DINT;
+END_STRUCT
+END_TYPE

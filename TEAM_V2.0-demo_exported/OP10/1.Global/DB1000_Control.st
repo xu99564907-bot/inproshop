@@ -1,0 +1,8 @@
+VAR_GLOBAL
+	Mode:Str_Mode;
+	HMI:Str_HMI;
+END_VAR
+VAR_GLOBAL RETAIN PERSISTENT
+	Machine AT %MB132196 : Str_Machine;
+END_VAR
+

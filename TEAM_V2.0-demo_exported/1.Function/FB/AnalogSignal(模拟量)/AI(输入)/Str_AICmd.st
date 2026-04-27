@@ -1,0 +1,5 @@
+TYPE Str_AICmd :
+STRUCT
+	Teach:BOOL;//教零
+END_STRUCT
+END_TYPE

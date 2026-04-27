@@ -1,0 +1,88 @@
+
+
+outputAddres[0].0:=ioKuka.Cmd.AppID0;
+outputAddres[0].1:=ioKuka.Cmd.AppID1;
+outputAddres[0].2:=ioKuka.Cmd.AppID2;
+outputAddres[0].3:=ioKuka.Cmd.AppID3;	
+outputAddres[0].4:=ioKuka.Cmd.AppID4;	
+outputAddres[0].5:=ioKuka.Cmd.AppID5;
+outputAddres[0].6:=ioKuka.Cmd.AppID6;	
+outputAddres[0].7:=ioKuka.Cmd.AppID7;		
+outputAddres[1].0:=ioKuka.Cmd.PGNO_VALID;	
+outputAddres[1].1:=ioKuka.Cmd.EXT_START;			
+outputAddres[1].2:=ioKuka.Cmd.MOVE_ENABLE;			
+outputAddres[1].3:=ioKuka.Cmd.CONF_MESS;				
+outputAddres[1].4:=ioKuka.Cmd.DRIVES_OFF;				
+outputAddres[1].5:=ioKuka.Cmd.DRIVES_ON;		
+outputAddres[1].6:=ioKuka.Cmd.EXT_Stop	;	
+outputAddres[1].7:=ioKuka.Cmd.MachineIntial;	
+outputAddres[2].0:=ioKuka.Cmd.MachineAutoRun;			
+outputAddres[2].1:=ioKuka.Cmd.MachineStepRun;			
+outputAddres[2].2:=ioKuka.Cmd.SpaceBoo19;			
+outputAddres[2].3:=ioKuka.Cmd.SpaceBoo20;			
+outputAddres[2].4:=ioKuka.Cmd.SpaceBoo21;			
+outputAddres[2].5:=ioKuka.Cmd.SpaceBoo22;		
+outputAddres[2].6:=ioKuka.Cmd.SpaceBoo23;		
+outputAddres[2].7:=ioKuka.Cmd.SpaceBoo24;		
+outputAddres[3].0:=ioKuka.Cmd.SpaceBoo25;		
+outputAddres[3].1:=ioKuka.Cmd.SpaceBoo26;		
+outputAddres[3].2:=ioKuka.Cmd.SpaceBoo27;		
+outputAddres[3].3:=ioKuka.Cmd.SpaceBoo28;		
+outputAddres[3].4:=ioKuka.Cmd.SpaceBoo29;		
+outputAddres[3].5:=ioKuka.Cmd.SpaceBoo30;		
+outputAddres[3].6:=ioKuka.Cmd.SpaceBoo31;		
+outputAddres[3].7:=ioKuka.Cmd.SpaceBoo32;		
+
+outputAddres[4].0:=ioKuka.Cmd.INTerFace_B[33];
+outputAddres[4].1:=ioKuka.Cmd.INTerFace_B[34];
+outputAddres[4].2:=ioKuka.Cmd.INTerFace_B[35];
+outputAddres[4].3:=ioKuka.Cmd.INTerFace_B[36];
+outputAddres[4].4:=ioKuka.Cmd.INTerFace_B[37];
+outputAddres[4].5:=ioKuka.Cmd.INTerFace_B[38];
+outputAddres[4].6:=ioKuka.Cmd.INTerFace_B[39];
+outputAddres[4].7:=ioKuka.Cmd.INTerFace_B[40];
+outputAddres[5].0:=ioKuka.Cmd.INTerFace_B[41];
+outputAddres[5].1:=ioKuka.Cmd.INTerFace_B[42];
+outputAddres[5].2:=ioKuka.Cmd.INTerFace_B[43];
+outputAddres[5].3:=ioKuka.Cmd.INTerFace_B[44];
+outputAddres[5].4:=ioKuka.Cmd.INTerFace_B[45];
+outputAddres[5].5:=ioKuka.Cmd.INTerFace_B[46];
+outputAddres[5].6:=ioKuka.Cmd.INTerFace_B[47];
+outputAddres[5].7:=ioKuka.Cmd.INTerFace_B[48];
+outputAddres[6].0:=ioKuka.Cmd.INTerFace_B[49];
+outputAddres[6].1:=ioKuka.Cmd.INTerFace_B[50];
+outputAddres[6].2:=ioKuka.Cmd.INTerFace_B[51];
+outputAddres[6].3:=ioKuka.Cmd.INTerFace_B[52];
+outputAddres[6].4:=ioKuka.Cmd.INTerFace_B[53];
+outputAddres[6].5:=ioKuka.Cmd.INTerFace_B[54];
+outputAddres[6].6:=ioKuka.Cmd.INTerFace_B[55];
+outputAddres[6].7:=ioKuka.Cmd.INTerFace_B[56];
+outputAddres[7].0:=ioKuka.Cmd.INTerFace_B[57];
+outputAddres[7].1:=ioKuka.Cmd.INTerFace_B[58];
+outputAddres[7].2:=ioKuka.Cmd.INTerFace_B[59];
+outputAddres[7].3:=ioKuka.Cmd.INTerFace_B[60];
+outputAddres[7].4:=ioKuka.Cmd.INTerFace_B[61];
+outputAddres[7].5:=ioKuka.Cmd.INTerFace_B[62];
+outputAddres[7].6:=ioKuka.Cmd.INTerFace_B[63];
+outputAddres[7].7:=ioKuka.Cmd.INTerFace_B[64];
+
+ToAryByte(In:=ioKuka.Cmd.Speed,Order:=HC_OmronUtils._eBYTE_ORDER._LOW_HIGH,AryOut:=outputAddres[8]);
+ToAryByte(In:=ioKuka.Cmd.ProductType ,Order:=HC_OmronUtils._eBYTE_ORDER._LOW_HIGH,AryOut:=outputAddres[10]);	
+ToAryByte(In:=ioKuka.Cmd.StepNum ,Order:=HC_OmronUtils._eBYTE_ORDER._LOW_HIGH,AryOut:=outputAddres[12]);	
+ToAryByte(In:=ioKuka.Cmd.InterFace_Register4 ,Order:=HC_OmronUtils._eBYTE_ORDER._LOW_HIGH,AryOut:=outputAddres[14]);	
+ToAryByte(In:=ioKuka.Cmd.InterFace_Register5 ,Order:=HC_OmronUtils._eBYTE_ORDER._LOW_HIGH,AryOut:=outputAddres[16]);	
+ToAryByte(In:=ioKuka.Cmd.InterFace_Register6 ,Order:=HC_OmronUtils._eBYTE_ORDER._LOW_HIGH,AryOut:=outputAddres[18]);	
+ToAryByte(In:=ioKuka.Cmd.InterFace_Register7 ,Order:=HC_OmronUtils._eBYTE_ORDER._LOW_HIGH,AryOut:=outputAddres[20]);	
+ToAryByte(In:=ioKuka.Cmd.InterFace_Register8 ,Order:=HC_OmronUtils._eBYTE_ORDER._LOW_HIGH,AryOut:=outputAddres[22]);	
+ToAryByte(In:=ioKuka.Cmd.InterFace_Register9 ,Order:=HC_OmronUtils._eBYTE_ORDER._LOW_HIGH,AryOut:=outputAddres[24]);	
+ToAryByte(In:=ioKuka.Cmd.InterFace_Register10,Order:=HC_OmronUtils._eBYTE_ORDER._LOW_HIGH,AryOut:=outputAddres[26]);	
+ToAryByte(In:=ioKuka.Cmd.InterFace_Register11,Order:=HC_OmronUtils._eBYTE_ORDER._LOW_HIGH,AryOut:=outputAddres[28]);	
+ToAryByte(In:=ioKuka.Cmd.InterFace_Register12,Order:=HC_OmronUtils._eBYTE_ORDER._LOW_HIGH,AryOut:=outputAddres[30]);	
+ToAryByte(In:=ioKuka.Cmd.InterFace_Register13,Order:=HC_OmronUtils._eBYTE_ORDER._LOW_HIGH,AryOut:=outputAddres[32]);	
+ToAryByte(In:=ioKuka.Cmd.InterFace_Register14,Order:=HC_OmronUtils._eBYTE_ORDER._LOW_HIGH,AryOut:=outputAddres[34]);	
+ToAryByte(In:=ioKuka.Cmd.InterFace_Register15,Order:=HC_OmronUtils._eBYTE_ORDER._LOW_HIGH,AryOut:=outputAddres[36]);	
+ToAryByte(In:=ioKuka.Cmd.InterFace_Register16,Order:=HC_OmronUtils._eBYTE_ORDER._LOW_HIGH,AryOut:=outputAddres[38]);	
+
+
+
+outputAddres:=outputAddres;

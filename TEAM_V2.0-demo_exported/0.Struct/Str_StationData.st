@@ -1,0 +1,5 @@
+TYPE Str_StationData :
+STRUCT
+	
+END_STRUCT
+END_TYPE

@@ -1,0 +1,935 @@
+Export Time: 2026-04-27T15:57:59.638000
+Project Path: C:\Users\Administrator\Desktop\20260427\TEAM_V1.5\TEAM_V2.0-demo.project
+
+=== Object List ===
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Project Settings
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/InoSV605N_6/Axis_气密测试Z3轴
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/Plc Logic
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/Plc Logic/Application
+unknown: 库管理器
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/SoftMotion General Axis Pool
+program: 2.Main/PLC_PRG
+unknown: Task Configuration
+unknown: Task Configuration/MainTask
+unknown: DifferentialMonitor
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ConfigStorage
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/Network Configuration/EtherCAT Config
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/Network Configuration
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/LocalHSIO
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/MODBUS_TCP
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/HwConfiguratioinDevice
+program: OP80/2.PRG/OP80_Recipe
+unknown: OP80
+unknown: 0.Struct
+unknown: 1.Function
+unknown: 2.Main
+dut: 1.Function/FB/Cylinder_Vacuum(气缸-真空)/Str_Cylinder
+unknown: OP80/1.Global
+unknown: OP80/2.PRG
+program: 2.Main/Clock
+unknown: Symbols
+dut: 0.Struct/Str_Clock
+dut: 1.Function/FB/Mode(模式)/Str_Machine
+dut: 0.Struct/Str_SafeDoor
+dut: 1.Function/FB/Mode(模式)/Str_Mode
+dut: 1.Function/FB/Mode(模式)/Str_ModeCmd
+dut: 1.Function/FB/Mode(模式)/Str_ModeStatus
+dut: 1.Function/FB/Mode(模式)/Str_ModeOut
+program: OP80/2.PRG/OP80_Control
+unknown: 1.Function/FB
+unknown: 1.Function/FC
+function_block: 1.Function/FB/Mode(模式)/FB_ModeControl_V1
+dut: OP80/0.Struct/Str_OP80_FaultEstop
+gvl: OP80/1.Global/DB8070_Fault
+program: OP80/2.PRG/OP80_DriveControl
+dut: 1.Function/FB/Cylinder_Vacuum(气缸-真空)/Str_CylinderCmd
+dut: 1.Function/FB/Cylinder_Vacuum(气缸-真空)/Str_CylinderStatus
+dut: 1.Function/FB/Cylinder_Vacuum(气缸-真空)/Str_CylinderParm
+function_block: 1.Function/FB/Cylinder_Vacuum(气缸-真空)/FB_Cylinder_V1
+gvl: OP80/1.Global/DB8050_DriveControl
+gvl: OP80/1.Global/DB8000_Control
+unknown: OP80/0.Struct
+dut: OP80/0.Struct/Str_OP80_Recipe
+gvl: OP80/1.Global/DB8002_Recipe
+gvl: 2.Main/Main_IO
+gvl: OP80/1.Global/DB8005_Communication
+unknown: PersistentVars
+dut: 0.Struct/Str_HMI
+dut: 1.Function/FB/Axis(轴控制)/Str_Axis
+dut: 1.Function/FB/Axis(轴控制)/Str_AxisCmd
+dut: 1.Function/FB/Axis(轴控制)/Str_AxisParm
+dut: 1.Function/FB/Axis(轴控制)/Str_AxisStatus
+dut: 1.Function/FB/Axis(轴控制)/Str_AxisDevStatus
+dut: 1.Function/FB/Axis(轴控制)/Str_AxisParmControl
+function_block: 1.Function/FB/Axis(轴控制)/FB_Axis_V1_3
+dut: 1.Function/FB/Sensor(感应器)/Str_Sensor
+dut: 1.Function/FB/Sensor(感应器)/Str_SensorParm
+dut: 1.Function/FB/Sensor(感应器)/Str_SensorStatus
+function_block: 1.Function/FB/Sensor(感应器)/FB_Sensor_V1_1
+function_block: 1.Function/FB/Socket(套接字)/FB_TcpClient
+dut: 1.Function/FB/Socket(套接字)/Str_TcpClient
+program: OP80/2.PRG/OP80_DI_Mirror
+program: OP80/2.PRG/OP80_DO_Mirror
+function: 1.Function/FC/FC_AryCmp
+unknown: Task Configuration/ETHERCAT1
+program: OP80/2.PRG/OP80_Graph
+unknown: OP80/2.PRG/OP80_Graph/ACT_InitST1
+unknown: OP80/2.PRG/OP80_Graph/ACT_AutoRunST1_气密1测试
+dut: OP80/0.Struct/Str_OP80_Faultstop
+dut: OP80/0.Struct/Str_OP80_FaultRun
+unknown: OP80/2.PRG/OP80_DriveControl/ACT_Cylinder
+unknown: OP80/2.PRG/OP80_DriveControl/ACT_Vacuum
+unknown: OP80/2.PRG/OP80_DriveControl/ACT_Axis
+unknown: OP80/2.PRG/OP80_DriveControl/ACT_SR1000
+program: OP80/2.PRG/OP80_Fault
+unknown: OP80/2.PRG/OP80_Fault/ACT_MAP
+dut: 0.Struct/Str_Graph
+unknown: OP80/2.PRG/OP80_Graph/ACT_AutoRunST2_气密2测试
+unknown: OP80/2.PRG/OP80_Graph/ACT_AutoRunST3_气密3测试
+dut: 0.Struct/Str_IOMonitor
+unknown: OP80/2.PRG/OP80_DI_Mirror/ACT_Comment
+unknown: OP80/2.PRG/OP80_DO_Mirror/ACT_Status
+unknown: OP80/2.PRG/OP80_DI_Mirror/ACT_Status
+function: 1.Function/FC/FC_LCONCAT
+dut: 0.Struct/Str_CycleTime
+gvl: OP80/1.Global/DB8003_Count
+dut: 1.Function/FB/Count(计数)/Str_Count
+dut: 1.Function/FB/Count(计数)/Str_CountToday
+function_block: 1.Function/FB/FB_Clock
+function_block: 1.Function/FB/Count(计数)/FB_Count
+function_block: 1.Function/FB/Cylinder_Vacuum(气缸-真空)/FB_Vacuum_V1
+unknown: Trace
+unknown: OP80/2.PRG/OP80_DO_Mirror/ACT_Comment
+dut: 0.Struct/Str_HMIFault
+dut: 1.Function/FB/Robot(机械手)/Epson/Str_EpsonCmd
+dut: 1.Function/FB/Robot(机械手)/Epson/Str_EpsonStatus
+dut: 1.Function/FB/Robot(机械手)/Epson/Str_Epson
+function_block: 1.Function/FB/Socket(套接字)/FB_TcpClient_String
+function_block: 1.Function/FB/Socket(套接字)/FB_TcpClient_Wstring
+dut: 1.Function/FB/Socket(套接字)/Str_TcpClient_Wstring
+program: 2.Main/Test
+dut: 1.Function/FB/Socket(套接字)/Str_TcpClient_String
+dut: 0.Struct/Str_CamControl
+function_block: 1.Function/FB/Robot(机械手)/Epson/FB_Epson_V1
+dut: 0.Struct/Str_DoubleStart
+function_block: 1.Function/FB/FB_DoubleStart
+unknown: 1.Function/FB/Robot(机械手)/Epson/FB_Epson_V1/ACT_Input
+unknown: 1.Function/FB/Robot(机械手)/Epson/FB_Epson_V1/ACT_Output
+unknown: 1.Function/FB/Robot(机械手)/Epson/FB_Epson_V1/ACT_Control
+unknown: 1.Function/FB/Robot(机械手)/Epson/FB_Epson_V1/ACT_Socket
+unknown: OP80/2.PRG/OP80_DriveControl/ACT_Epson
+unknown: OP80/2.PRG/OP80_Recipe/ACT_Upload
+unknown: OP80/2.PRG/OP80_Recipe/ACT_Download
+function_block: 1.Function/FB/Robot(机械手)/Kuka-四轴/FB_Kuka_V1
+unknown: 1.Function/FB/Robot(机械手)/Kuka-四轴/FB_Kuka_V1/ACT_Input
+unknown: 1.Function/FB/Robot(机械手)/Kuka-四轴/FB_Kuka_V1/ACT_Output
+unknown: 1.Function/FB/Robot(机械手)/Kuka-四轴/FB_Kuka_V1/ACT_Control
+unknown: 1.Function/FB/Robot(机械手)/Kuka-四轴/FB_Kuka_V1/ACT_Socket
+unknown: OP80/2.PRG/OP80_DriveControl/ACT_Kuka
+dut: 1.Function/FB/Robot(机械手)/Kuka-四轴/Str_Kuka
+dut: 1.Function/FB/Robot(机械手)/Kuka-四轴/Str_KukaCmd
+dut: 1.Function/FB/Robot(机械手)/Kuka-四轴/Str_KukaStatus
+unknown: 1.Function/FB/Axis(轴控制)
+unknown: 1.Function/FB/Cylinder_Vacuum(气缸-真空)
+unknown: 1.Function/FB/Sensor(感应器)
+unknown: 1.Function/FB/Robot(机械手)
+unknown: 1.Function/FB/Robot(机械手)/Epson
+unknown: 1.Function/FB/Robot(机械手)/Kuka-四轴
+unknown: 1.Function/FB/Socket(套接字)
+unknown: 1.Function/FB/Mode(模式)
+unknown: 1.Function/FB/Count(计数)
+unknown: OP80/2.PRG/OP80_DriveControl/ACT_Sensor
+dut: OP80/0.Struct/Enum_OP80_Axis
+dut: OP80/0.Struct/Enum_OP80_Cyl
+dut: OP80/0.Struct/Enum_OP80_Vac
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/InoSV605N_1
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/Device Diagnosis
+unknown: OP80/2.PRG/OP80_DI_Mirror/ACT_MAP
+unknown: OP80/2.PRG/OP80_DO_Mirror/ACT_MAP
+unknown: OP80/2.PRG/OP80_Fault/ACT_HMI_Jump
+unknown: 1.Function/FB/Rotdisk(凸轮分割器)
+dut: 1.Function/FB/Rotdisk(凸轮分割器)/Str_Rotdisk
+dut: 1.Function/FB/Rotdisk(凸轮分割器)/Str_RotdiskCmd
+dut: 1.Function/FB/Rotdisk(凸轮分割器)/Str_RotdiskDevStatus
+function_block: 1.Function/FB/Rotdisk(凸轮分割器)/FB_Rotdisk_V1
+dut: 1.Function/FB/Rotdisk(凸轮分割器)/Str_RotdiskStatus
+dut: 1.Function/FB/Cylinder_Vacuum(气缸-真空)/Str_CylinderDevStatus
+unknown: OP80/2.PRG/OP80_DriveControl/ACT_Rotdisk
+unknown: 1.Function/FB/Motor(流线)
+function_block: 1.Function/FB/Motor(流线)/FB_Motor
+dut: 1.Function/FB/Motor(流线)/Str_Motor
+dut: 1.Function/FB/Motor(流线)/Str_MotorCmd
+dut: 1.Function/FB/Motor(流线)/Str_MotorDevStatus
+unknown: 1.Function/FB/Stopper(挡停)
+function_block: 1.Function/FB/Stopper(挡停)/FB_Stopper_V1
+dut: 1.Function/FB/Stopper(挡停)/Str_Stopper
+dut: 1.Function/FB/Stopper(挡停)/Str_StopperCmd
+dut: 1.Function/FB/Stopper(挡停)/Str_StopperParm
+dut: 1.Function/FB/Stopper(挡停)/Str_StopperStatus
+dut: 1.Function/FB/Stopper(挡停)/Str_StopperDevStatus
+unknown: OP80/2.PRG/OP80_DriveControl/ACT_Stopper
+unknown: 1.Function/FB/AnalogSignal(模拟量)
+unknown: 1.Function/FB/AnalogSignal(模拟量)/AI(输入)
+unknown: 1.Function/FB/AnalogSignal(模拟量)/AO(输出)
+dut: 1.Function/FB/AnalogSignal(模拟量)/AI(输入)/Str_AI
+dut: 1.Function/FB/AnalogSignal(模拟量)/AI(输入)/Str_AICmd
+dut: 1.Function/FB/AnalogSignal(模拟量)/AI(输入)/Str_AIParm
+dut: 1.Function/FB/AnalogSignal(模拟量)/AI(输入)/Str_AIStatus
+function_block: 1.Function/FB/AnalogSignal(模拟量)/AI(输入)/FB_AI
+unknown: OP80/2.PRG/OP80_DriveControl/ACT_AI
+unknown: OP80/2.PRG/OP80_DriveControl/ACT_Motor
+dut: 1.Function/FB/Rotdisk(凸轮分割器)/Str_RotdiskParm
+unknown: 1.Function/FB/HeatingControl(温度控制)
+dut: 1.Function/FB/HeatingControl(温度控制)/Str_Heating
+dut: 1.Function/FB/HeatingControl(温度控制)/Str_HeatingCmd
+dut: 1.Function/FB/HeatingControl(温度控制)/Str_HeatingParm
+dut: 1.Function/FB/HeatingControl(温度控制)/Str_HeatingParmOut
+dut: 1.Function/FB/HeatingControl(温度控制)/Str_HeatingParmStatus
+function_block: 1.Function/FB/HeatingControl(温度控制)/FB_Heating
+unknown: OP80/2.PRG/OP80_DriveControl/ACT_Heating
+unknown: 1.Function/FB/Gear(电子齿轮控制)
+dut: 1.Function/FB/Gear(电子齿轮控制)/Str_Gear
+dut: 1.Function/FB/Gear(电子齿轮控制)/Str_GearCmd
+dut: 1.Function/FB/Gear(电子齿轮控制)/Str_GearParm
+dut: 1.Function/FB/Gear(电子齿轮控制)/Str_GearStatus
+function_block: 1.Function/FB/Gear(电子齿轮控制)/FB_Gear
+unknown: 1.Function/FB/AAS(Team视觉检测)
+dut: 1.Function/FB/AAS(Team视觉检测)/Str_AAS
+dut: 1.Function/FB/AAS(Team视觉检测)/Str_AASCmd
+dut: 1.Function/FB/AAS(Team视觉检测)/Str_AASParm
+dut: 1.Function/FB/AAS(Team视觉检测)/Str_AASStatus
+function_block: 1.Function/FB/AAS(Team视觉检测)/FB_AAS
+unknown: OP80/2.PRG/OP80_DriveControl/ACT_AAS
+unknown: OP80/2.PRG/OP80_Graph/ACT_InitST2
+dut: 0.Struct/Str_StationData
+dut: OP80/0.Struct/Str_OP80_StationData
+gvl: OP80/1.Global/DB8090_Other
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/Resources List
+unknown: Task Configuration/EIPMasterIOTask_A
+unknown: Task Configuration/EIPMasterServiceTask_A
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/Ethernet_A
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/Ethernet_A/EtherNetIPMaster_A
+unknown: OP80/2.PRG/OP80_Graph/ACT_AutoRunST4_气密4测试
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/InoSV605N_1/Axis_气密测试S1轴
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/InoSV605N_2
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/InoSV605N_2/Axis_气密测试Z1轴
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/InoSV605N_3
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/InoSV605N_3/Axis_气密测试S2轴
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/InoSV605N_4
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/InoSV605N_4/Axis_气密测试Z2轴
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/InoSV605N_5
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/InoSV605N_5/Axis_气密测试S3轴
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/InoSV605N_6
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/SoftMotion General Axis Pool/SM_Drive_Virtual
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/InoSV605N_7
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/InoSV605N_7/Axis_气密测试S4轴
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/InoSV605N_8
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/InoSV605N_8/Axis_气密测试Z4轴
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/InoSV660N
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/InoSV660N/Axis_上料机械臂X1轴
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/InoSV660N_1
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/InoSV660N_1/Axis_码垛机械臂X2轴
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/Ethernet_A/EtherNetIPMaster_A/EIPK00_V1_AgingLeft
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/Ethernet_A/EtherNetIPMaster_A/EIP_DX32_V1_PickRobot
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/Ethernet_A/EtherNetIPMaster_A/EIP_DX32_V1_PutRobot
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/Ethernet_A/EtherNetIPMaster_A/EIP_DX32_V1_Out
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/Ethernet_A/EtherNetIPMaster_A/EIPK00_V1_AgingRight
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/Ethernet_A/EtherNetIPMaster_A/EIPK00_V1_TestLeft
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/EX_1100_Left
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/EX_1100_Right
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/EX_1100_Right/EX_4418_1_1
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/EX_1100_Left/EX_4418_1
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/EX_1100_Left/EX_4418_2
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/EX_1100_Left/EX_4418_3
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/EX_1100_Left/EX_4418_4
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/EX_1100_Left/EX_4418_5
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/EX_1100_Left/EX_4418_6
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/EX_1100_Left/EX_4418_7
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/EX_1100_Left/EX_4418_8
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/EX_1100_Left/EX_4418_9
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/EX_1100_Left/EX_4418_10
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/EX_1100_Right/EX_4418_2_1
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/EX_1100_Right/EX_4418_3_1
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/EX_1100_Right/EX_4418_4_1
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/EX_1100_Right/EX_4418_5_1
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/EX_1100_Right/EX_4418_6_1
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/EX_1100_Right/EX_4418_7_1
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/EX_1100_Right/EX_4418_8_1
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/EX_1100_Right/EX_4418_9_1
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2/EX_1100_Right/EX_4418_10_1
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/Ethernet_A/EtherNetIPMaster_A/EIPK00_V1_TestRight
+unknown: 1.Function/TEST
+function_block: 1.Function/TEST/FB_Aging
+dut: 1.Function/TEST/Str_Aging
+dut: 1.Function/TEST/Str_Aging_Cmd
+dut: 1.Function/TEST/Str_Aging_Status
+dut: 1.Function/TEST/Str_Aging_Parm
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/HardWare Configuration
+function: 1.Function/FC/FC_WStringSplit
+dut: 0.Struct/Str_WstringWord
+function: 1.Function/FC/FC_StringSplit
+function: 1.Function/FC/FC_SysTime
+unknown: OP80/2.PRG/OP80_Graph/ACT_InitST3
+unknown: OP80/2.PRG/OP80_Graph/ACT_InitST4
+dut: OP80/0.Struct/Enum_OP80_Sensor
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/Ethernet_A/EtherNetIPMaster_A/KR_C5_Pick
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/Ethernet_A/EtherNetIPMaster_A/KR_C4_Put
+unknown: 1.Function/FB/Robot(机械手)/Kuka-六轴
+function_block: 1.Function/FB/Robot(机械手)/Kuka-六轴/FB_Kuka6_V1
+unknown: 1.Function/FB/Robot(机械手)/Kuka-六轴/FB_Kuka6_V1/ACT_Input
+unknown: 1.Function/FB/Robot(机械手)/Kuka-六轴/FB_Kuka6_V1/ACT_Output
+unknown: 1.Function/FB/Robot(机械手)/Kuka-六轴/FB_Kuka6_V1/ACT_Control
+dut: 1.Function/FB/Robot(机械手)/Kuka-六轴/Str_Kuka6
+dut: 1.Function/FB/Robot(机械手)/Kuka-六轴/Str_Kuka6Cmd
+dut: 1.Function/FB/Robot(机械手)/Kuka-六轴/Str_Kuka6Status
+unknown: 1.Function/FB/Code(扫码器)
+dut: 1.Function/FB/Code(扫码器)/Str_Code
+dut: 1.Function/FB/Code(扫码器)/Str_CodeCmd
+dut: 1.Function/FB/Code(扫码器)/Str_CodeParm
+dut: 1.Function/FB/Code(扫码器)/Str_CodeStatus
+function_block: 1.Function/FB/Code(扫码器)/FB_Code
+unknown: 1.Function/FB/AirLeak(气密测试)
+dut: 1.Function/FB/AirLeak(气密测试)/Str_AirLeak
+dut: 1.Function/FB/AirLeak(气密测试)/Str_AirLeakCmd
+dut: 1.Function/FB/AirLeak(气密测试)/Str_AirLeakParm
+dut: 1.Function/FB/AirLeak(气密测试)/Str_AirLeakStatus
+function_block: 1.Function/FB/AirLeak(气密测试)/FB_AirLeak
+dut: 1.Function/FB/AirLeak(气密测试)/Str_AirLeakResult
+dut: OP80/0.Struct/Str_OPXX_TO_OP80
+dut: OP80/0.Struct/Str_OP80_TO_OPXX
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/MODBUS_TCP_1
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/MODBUS_TCP_1/OP07
+program: OP80/2.PRG/OP80_Communication
+unknown: 1.Function/FB/Palletizing(码垛)
+dut: 1.Function/FB/Palletizing(码垛)/Str_Palletizing
+dut: 1.Function/FB/Palletizing(码垛)/Str_Palletizing_Cmd
+dut: 1.Function/FB/Palletizing(码垛)/Str_Palletizing_Parm
+dut: 1.Function/FB/Palletizing(码垛)/Str_Palletizing_Status
+function_block: 1.Function/FB/Palletizing(码垛)/FB_Palletizing
+unknown: OP80/2.PRG/OP80_DriveControl/ACT_Pallet
+dut: 0.Struct/Str_ToSlave
+dut: OP80/0.Struct/Str_OP80_Product
+program: OP80/2.PRG/OP80_Other
+unknown: OP10
+unknown: OP10/2.PRG
+program: OP10/2.PRG/OP10_Recipe
+unknown: OP10/2.PRG/OP10_Recipe/ACT_Upload
+unknown: OP10/2.PRG/OP10_Recipe/ACT_Download
+program: OP10/2.PRG/OP10_Control
+program: OP10/2.PRG/OP10_DriveControl
+unknown: OP10/2.PRG/OP10_DriveControl/ACT_Cylinder
+unknown: OP10/2.PRG/OP10_DriveControl/ACT_Vacuum
+unknown: OP10/2.PRG/OP10_DriveControl/ACT_Axis
+unknown: OP10/2.PRG/OP10_DriveControl/ACT_SR1000
+unknown: OP10/2.PRG/OP10_DriveControl/ACT_Epson
+unknown: OP10/2.PRG/OP10_DriveControl/ACT_Kuka
+unknown: OP10/2.PRG/OP10_DriveControl/ACT_Sensor
+unknown: OP10/2.PRG/OP10_DriveControl/ACT_Rotdisk
+unknown: OP10/2.PRG/OP10_DriveControl/ACT_Stopper
+unknown: OP10/2.PRG/OP10_DriveControl/ACT_AI
+unknown: OP10/2.PRG/OP10_DriveControl/ACT_Motor
+unknown: OP10/2.PRG/OP10_DriveControl/ACT_Heating
+unknown: OP10/2.PRG/OP10_DriveControl/ACT_AAS
+unknown: OP10/2.PRG/OP10_DriveControl/ACT_Pallet
+program: OP10/2.PRG/OP10_DI_Mirror
+unknown: OP10/2.PRG/OP10_DI_Mirror/ACT_Comment
+unknown: OP10/2.PRG/OP10_DI_Mirror/ACT_Status
+unknown: OP10/2.PRG/OP10_DI_Mirror/ACT_MAP
+program: OP10/2.PRG/OP10_DO_Mirror
+unknown: OP10/2.PRG/OP10_DO_Mirror/ACT_Status
+unknown: OP10/2.PRG/OP10_DO_Mirror/ACT_Comment
+unknown: OP10/2.PRG/OP10_DO_Mirror/ACT_MAP
+program: OP10/2.PRG/OP10_Graph
+unknown: OP10/2.PRG/OP10_Graph/ACT_InitST1
+unknown: OP10/2.PRG/OP10_Graph/ACT_AutoRunST1_气密1测试
+unknown: OP10/2.PRG/OP10_Graph/ACT_AutoRunST2_气密2测试
+unknown: OP10/2.PRG/OP10_Graph/ACT_AutoRunST3_气密3测试
+unknown: OP10/2.PRG/OP10_Graph/ACT_InitST2
+unknown: OP10/2.PRG/OP10_Graph/ACT_AutoRunST4_气密4测试
+unknown: OP10/2.PRG/OP10_Graph/ACT_InitST3
+unknown: OP10/2.PRG/OP10_Graph/ACT_InitST4
+unknown: OP10/2.PRG/OP10_Graph/ACT_AutoRunST5_上料机械手
+unknown: OP10/2.PRG/OP10_Graph/ACT_InitST5
+unknown: OP10/2.PRG/OP10_Graph/ACT_AutoRunST6_码垛机械手
+unknown: OP10/2.PRG/OP10_Graph/ACT_InitST6
+program: OP10/2.PRG/OP10_Fault
+unknown: OP10/2.PRG/OP10_Fault/ACT_MAP
+unknown: OP10/2.PRG/OP10_Fault/ACT_HMI_Jump
+program: OP10/2.PRG/OP10_Communication
+program: OP10/2.PRG/OP10_Other
+unknown: OP10/1.Global
+gvl: OP10/1.Global/DB1070_Fault
+gvl: OP10/1.Global/DB1050_DriveControl
+gvl: OP10/1.Global/DB1000_Control
+gvl: OP10/1.Global/DB1002_Recipe
+gvl: OP10/1.Global/DB1005_Communication
+gvl: OP10/1.Global/DB1003_Count
+gvl: OP10/1.Global/DB1090_Other
+unknown: OP10/0.Struct
+dut: OP10/0.Struct/Str_OP10_FaultEstop
+dut: OP10/0.Struct/Str_OP10_Recipe
+dut: OP10/0.Struct/Str_OP10_Faultstop
+dut: OP10/0.Struct/Str_OP10_FaultRun
+dut: OP10/0.Struct/Enum_OP10_Axis
+dut: OP10/0.Struct/Enum_OP10_Cyl
+dut: OP10/0.Struct/Enum_OP80_Vac_1
+dut: OP10/0.Struct/Str_OP10_StationData
+dut: OP10/0.Struct/Enum_OP10_Sensor
+dut: OP10/0.Struct/Str_OP10_TO_OPXX
+dut: OP10/0.Struct/Str_OPXX_TO_OP10
+dut: OP10/0.Struct/Str_OP10_Product
+gvl: 2.Main/Main_Clock
+gvl: 2.Main/Main_Communication
+unknown: OP70
+unknown: OP70/2.PRG
+program: OP70/2.PRG/OP70_Recipe
+unknown: OP70/2.PRG/OP70_Recipe/ACT_Upload
+unknown: OP70/2.PRG/OP70_Recipe/ACT_Download
+program: OP70/2.PRG/OP70_DriveControl
+unknown: OP70/2.PRG/OP70_DriveControl/ACT_Cylinder
+unknown: OP70/2.PRG/OP70_DriveControl/ACT_Vacuum
+unknown: OP70/2.PRG/OP70_DriveControl/ACT_Axis
+unknown: OP70/2.PRG/OP70_DriveControl/ACT_CODE
+unknown: OP70/2.PRG/OP70_DriveControl/ACT_Epson
+unknown: OP70/2.PRG/OP70_DriveControl/ACT_Kuka
+unknown: OP70/2.PRG/OP70_DriveControl/ACT_Sensor
+unknown: OP70/2.PRG/OP70_DriveControl/ACT_Rotdisk
+unknown: OP70/2.PRG/OP70_DriveControl/ACT_Stopper
+unknown: OP70/2.PRG/OP70_DriveControl/ACT_AI
+unknown: OP70/2.PRG/OP70_DriveControl/ACT_Motor
+unknown: OP70/2.PRG/OP70_DriveControl/ACT_Heating
+unknown: OP70/2.PRG/OP70_DriveControl/ACT_Cam
+unknown: OP70/2.PRG/OP70_DriveControl/ACT_AAS
+unknown: OP70/2.PRG/OP70_DriveControl/ACT_ElectricScrewdriver
+unknown: OP70/2.PRG/OP70_DriveControl/ACT_Print
+program: OP70/2.PRG/OP70_Control
+program: OP70/2.PRG/OP70_DI_Mirror
+unknown: OP70/2.PRG/OP70_DI_Mirror/ACT_Comment
+unknown: OP70/2.PRG/OP70_DI_Mirror/ACT_Status
+unknown: OP70/2.PRG/OP70_DI_Mirror/ACT_MAP
+program: OP70/2.PRG/OP70_DO_Mirror
+unknown: OP70/2.PRG/OP70_DO_Mirror/ACT_Status
+unknown: OP70/2.PRG/OP70_DO_Mirror/ACT_Comment
+unknown: OP70/2.PRG/OP70_DO_Mirror/ACT_MAP
+program: OP70/2.PRG/OP70_Graph
+unknown: OP70/2.PRG/OP70_Graph/ACT_InitST1
+unknown: OP70/2.PRG/OP70_Graph/ACT_AutoRunST1_人工上料打码
+unknown: OP70/2.PRG/OP70_Graph/ACT_AutoRunST2_同步搬运
+unknown: OP70/2.PRG/OP70_Graph/ACT_AutoRunST3_侧面1锁螺丝工位
+unknown: OP70/2.PRG/OP70_Graph/ACT_InitST2
+unknown: OP70/2.PRG/OP70_Graph/ACT_AutoRunST4_侧面2锁螺丝工位
+unknown: OP70/2.PRG/OP70_Graph/ACT_AutoRunST5_顶面锁螺丝工位
+unknown: OP70/2.PRG/OP70_Graph/ACT_AutoRunST6_下料工位
+unknown: OP70/2.PRG/OP70_Graph/ACT_AutoRunST7_预留
+unknown: OP70/2.PRG/OP70_Graph/ACT_InitST3
+unknown: OP70/2.PRG/OP70_Graph/ACT_InitST4
+unknown: OP70/2.PRG/OP70_Graph/ACT_InitST5
+unknown: OP70/2.PRG/OP70_Graph/ACT_InitST6
+program: OP70/2.PRG/OP70_Fault
+unknown: OP70/2.PRG/OP70_Fault/ACT_MAP
+unknown: OP70/2.PRG/OP70_Fault/ACT_HMI_Jump
+program: OP70/2.PRG/OP70_Communication
+unknown: OP70/0.Struct
+dut: OP70/0.Struct/Str_OP70_Screw
+dut: OP70/0.Struct/Str_OP70_FaultEstop
+dut: OP70/0.Struct/Str_OP70_Recipe
+dut: OP70/0.Struct/Str_OP70_Faultstop
+dut: OP70/0.Struct/Str_OP70_FaultRun
+dut: OP70/0.Struct/Enum_OP70_Axis
+dut: OP70/0.Struct/Enum_OP70_Cyl
+dut: OP70/0.Struct/Enum_OP70_Vac
+dut: OP70/0.Struct/Str_OP70_StationData
+dut: OP70/0.Struct/Enum_OP70_Sensor
+dut: OP70/0.Struct/Str_OP70_TO_OPXX
+dut: OP70/0.Struct/Str_OPXX_TO_OP70
+unknown: OP70/1.Global
+gvl: OP70/1.Global/DB7070_Fault
+gvl: OP70/1.Global/DB7050_DriveControl
+gvl: OP70/1.Global/DB7000_Control
+gvl: OP70/1.Global/DB7002_Recipe
+gvl: OP70/1.Global/DB7005_Communication
+gvl: OP70/1.Global/DB7003_Count
+gvl: OP70/1.Global/DB7090_Other
+unknown: 1.Function/FB/Cam(电子凸轮)
+dut: 1.Function/FB/Cam(电子凸轮)/Str_Cam
+dut: 1.Function/FB/Cam(电子凸轮)/Str_CamCmd
+dut: 1.Function/FB/Cam(电子凸轮)/Str_CamParm
+dut: 1.Function/FB/Cam(电子凸轮)/Str_CamStatus
+function_block: 1.Function/FB/Cam(电子凸轮)/FB_Cam
+unknown: 1.Function/FB/ElectricScrewdriver(电批)
+dut: 1.Function/FB/ElectricScrewdriver(电批)/Str_ESD
+dut: 1.Function/FB/ElectricScrewdriver(电批)/Str_ESDCmd
+dut: 1.Function/FB/ElectricScrewdriver(电批)/Str_ESDParm
+dut: 1.Function/FB/ElectricScrewdriver(电批)/Str_ESDStatus
+dut: 1.Function/FB/ElectricScrewdriver(电批)/Str_ESDDevStatus
+function_block: 1.Function/FB/ElectricScrewdriver(电批)/FB_ElectricScrewdriver_V1_1_0
+unknown: 1.Function/FB/ScrewFeeder(供钉机)
+dut: 1.Function/FB/ScrewFeeder(供钉机)/Str_Screw
+dut: 1.Function/FB/ScrewFeeder(供钉机)/Str_ScrewCmd
+dut: 1.Function/FB/ScrewFeeder(供钉机)/Str_ScrewParm
+dut: 1.Function/FB/ScrewFeeder(供钉机)/Str_ScrewStatus
+function_block: 1.Function/FB/ScrewFeeder(供钉机)/FB_ScrewFeeder
+unknown: 1.Function/FB/Print(打码机)
+dut: 1.Function/FB/Print(打码机)/Str_Print
+dut: 1.Function/FB/Print(打码机)/Str_PrintCmd
+dut: 1.Function/FB/Print(打码机)/Str_PrintParm
+dut: 1.Function/FB/Print(打码机)/Str_PrintStatus
+function_block: 1.Function/FB/Print(打码机)/FB_Print
+dut: 0.Struct/Str_FromMaster
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/GR10_EC_6SW_Sub_device/X4/InoSV605N_1_1
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/GR10_EC_6SW_Sub_device/X4/InoSV605N_1_1/Axis_上料X1轴
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/GR10_EC_6SW_Sub_device/X4/InoSV605N_2_1
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/GR10_EC_6SW_Sub_device/X4/InoSV605N_2_1/Axis_同步X2轴
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/GR10_EC_6SW_Sub_device/X4/InoSV605N_3_1
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/GR10_EC_6SW_Sub_device/X4/InoSV605N_3_1/Axis_同步X3轴
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/GR10_EC_6SW_Sub_device/X4/InoSV605N_4_1
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/GR10_EC_6SW_Sub_device/X4/InoSV605N_4_1/Axis_锁附1X4轴
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/GR10_EC_6SW_Sub_device/X4/InoSV605N_5_1
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/GR10_EC_6SW_Sub_device/X4/InoSV605N_5_1/Axis_锁附1Y1轴
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/GR10_EC_6SW_Sub_device/X4/InoSV605N_6_1
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/GR10_EC_6SW_Sub_device/X4/InoSV605N_6_1/Axis_锁附1Z1轴
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/GR10_EC_6SW_Sub_device/X4/InoSV605N_7_1
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/GR10_EC_6SW_Sub_device/X4/InoSV605N_7_1/Axis_锁附2X5轴
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/GR10_EC_6SW_Sub_device/X4/InoSV605N_8_1
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/GR10_EC_6SW_Sub_device/X4/InoSV605N_8_1/Axis_锁附2Y2轴
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/GR10_EC_6SW_Sub_device/X4/InoSV605N_9
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/GR10_EC_6SW_Sub_device/X4/InoSV605N_9/Axis_锁附2Z2轴
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/GR10_EC_6SW_Sub_device/X4/InoSV605N_10
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/GR10_EC_6SW_Sub_device/X4/InoSV605N_10/Axis_锁附3X6轴
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/GR10_EC_6SW_Sub_device/X4/InoSV605N_11
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/GR10_EC_6SW_Sub_device/X4/InoSV605N_11/Axis_锁附3Y3轴
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/GR10_EC_6SW_Sub_device/X4/InoSV605N_12
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/GR10_EC_6SW_Sub_device/X4/InoSV605N_12/Axis_锁附3Z3轴
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/GR10_EC_6SW_Sub_device/X4/InoSV605N_13
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/GR10_EC_6SW_Sub_device/X4/InoSV605N_13/Axis_锁附3Z4轴
+unknown: Cam_OP07_X2_X3
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X2
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/X3
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/GR10_EC_6SW_Sub_device
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/GR10_EC_6SW_Sub_device/X4
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/GR10_EC_6SW_Sub_device/X5
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/Device/ETHERCAT1/GR10_EC_6SW/GR10_EC_6SW_Sub_device/X6
+unknown: OP20
+unknown: OP20/2.PRG
+program: OP20/2.PRG/OP20_Recipe
+unknown: OP20/2.PRG/OP20_Recipe/ACT_Upload
+unknown: OP20/2.PRG/OP20_Recipe/ACT_Download
+program: OP20/2.PRG/OP20_Control
+program: OP20/2.PRG/OP20_DriveControl
+unknown: OP20/2.PRG/OP20_DriveControl/ACT_Cylinder
+unknown: OP20/2.PRG/OP20_DriveControl/ACT_Vacuum
+unknown: OP20/2.PRG/OP20_DriveControl/ACT_Axis
+unknown: OP20/2.PRG/OP20_DriveControl/ACT_SR1000
+unknown: OP20/2.PRG/OP20_DriveControl/ACT_Epson
+unknown: OP20/2.PRG/OP20_DriveControl/ACT_Kuka
+unknown: OP20/2.PRG/OP20_DriveControl/ACT_Sensor
+unknown: OP20/2.PRG/OP20_DriveControl/ACT_Rotdisk
+unknown: OP20/2.PRG/OP20_DriveControl/ACT_Stopper
+unknown: OP20/2.PRG/OP20_DriveControl/ACT_AI
+unknown: OP20/2.PRG/OP20_DriveControl/ACT_Motor
+unknown: OP20/2.PRG/OP20_DriveControl/ACT_Heating
+unknown: OP20/2.PRG/OP20_DriveControl/ACT_AAS
+unknown: OP20/2.PRG/OP20_DriveControl/ACT_Pallet
+program: OP20/2.PRG/OP20_DI_Mirror
+unknown: OP20/2.PRG/OP20_DI_Mirror/ACT_Comment
+unknown: OP20/2.PRG/OP20_DI_Mirror/ACT_Status
+unknown: OP20/2.PRG/OP20_DI_Mirror/ACT_MAP
+program: OP20/2.PRG/OP20_DO_Mirror
+unknown: OP20/2.PRG/OP20_DO_Mirror/ACT_Status
+unknown: OP20/2.PRG/OP20_DO_Mirror/ACT_Comment
+unknown: OP20/2.PRG/OP20_DO_Mirror/ACT_MAP
+program: OP20/2.PRG/OP20_Graph
+unknown: OP20/2.PRG/OP20_Graph/ACT_InitST1
+unknown: OP20/2.PRG/OP20_Graph/ACT_AutoRunST1_气密1测试
+unknown: OP20/2.PRG/OP20_Graph/ACT_AutoRunST2_气密2测试
+unknown: OP20/2.PRG/OP20_Graph/ACT_AutoRunST3_气密3测试
+unknown: OP20/2.PRG/OP20_Graph/ACT_InitST2
+unknown: OP20/2.PRG/OP20_Graph/ACT_AutoRunST4_气密4测试
+unknown: OP20/2.PRG/OP20_Graph/ACT_InitST3
+unknown: OP20/2.PRG/OP20_Graph/ACT_InitST4
+unknown: OP20/2.PRG/OP20_Graph/ACT_AutoRunST5_上料机械手
+unknown: OP20/2.PRG/OP20_Graph/ACT_InitST5
+unknown: OP20/2.PRG/OP20_Graph/ACT_AutoRunST6_码垛机械手
+unknown: OP20/2.PRG/OP20_Graph/ACT_InitST6
+program: OP20/2.PRG/OP20_Fault
+unknown: OP20/2.PRG/OP20_Fault/ACT_MAP
+unknown: OP20/2.PRG/OP20_Fault/ACT_HMI_Jump
+program: OP20/2.PRG/OP20_Communication
+program: OP20/2.PRG/OP20_Other
+unknown: OP20/1.Global
+gvl: OP20/1.Global/DB2070_Fault
+gvl: OP20/1.Global/DB2050_DriveControl
+gvl: OP20/1.Global/DB2000_Control
+gvl: OP20/1.Global/DB2002_Recipe
+gvl: OP20/1.Global/DB2005_Communication
+gvl: OP20/1.Global/DB2003_Count
+gvl: OP20/1.Global/DB2090_Other
+unknown: OP20/0.Struct
+dut: OP20/0.Struct/Str_OP20_FaultEstop
+dut: OP20/0.Struct/Str_OP20_Recipe
+dut: OP20/0.Struct/Str_OP20_Faultstop
+dut: OP20/0.Struct/Str_OP20_FaultRun
+dut: OP20/0.Struct/Enum_OP20_Axis
+dut: OP20/0.Struct/Enum_OP20_Cyl
+dut: OP20/0.Struct/Enum_OP20_Vac
+dut: OP20/0.Struct/Str_OP20_StationData
+dut: OP20/0.Struct/Enum_OP20_Sensor
+dut: OP20/0.Struct/Str_OP20_TO_OPXX
+dut: OP20/0.Struct/Str_OPXX_TO_OP20
+dut: OP20/0.Struct/Str_OP20_Product
+unknown: OP30
+unknown: OP30/2.PRG
+program: OP30/2.PRG/OP30_Recipe
+unknown: OP30/2.PRG/OP30_Recipe/ACT_Upload
+unknown: OP30/2.PRG/OP30_Recipe/ACT_Download
+program: OP30/2.PRG/OP30_Control
+program: OP30/2.PRG/OP30_DriveControl
+unknown: OP30/2.PRG/OP30_DriveControl/ACT_Cylinder
+unknown: OP30/2.PRG/OP30_DriveControl/ACT_Vacuum
+unknown: OP30/2.PRG/OP30_DriveControl/ACT_Axis
+unknown: OP30/2.PRG/OP30_DriveControl/ACT_SR1000
+unknown: OP30/2.PRG/OP30_DriveControl/ACT_Epson
+unknown: OP30/2.PRG/OP30_DriveControl/ACT_Kuka
+unknown: OP30/2.PRG/OP30_DriveControl/ACT_Sensor
+unknown: OP30/2.PRG/OP30_DriveControl/ACT_Rotdisk
+unknown: OP30/2.PRG/OP30_DriveControl/ACT_Stopper
+unknown: OP30/2.PRG/OP30_DriveControl/ACT_AI
+unknown: OP30/2.PRG/OP30_DriveControl/ACT_Motor
+unknown: OP30/2.PRG/OP30_DriveControl/ACT_Heating
+unknown: OP30/2.PRG/OP30_DriveControl/ACT_AAS
+unknown: OP30/2.PRG/OP30_DriveControl/ACT_Pallet
+program: OP30/2.PRG/OP30_DI_Mirror
+unknown: OP30/2.PRG/OP30_DI_Mirror/ACT_Comment
+unknown: OP30/2.PRG/OP30_DI_Mirror/ACT_Status
+unknown: OP30/2.PRG/OP30_DI_Mirror/ACT_MAP
+program: OP30/2.PRG/OP30_DO_Mirror
+unknown: OP30/2.PRG/OP30_DO_Mirror/ACT_Status
+unknown: OP30/2.PRG/OP30_DO_Mirror/ACT_Comment
+unknown: OP30/2.PRG/OP30_DO_Mirror/ACT_MAP
+program: OP30/2.PRG/OP30_Graph
+unknown: OP30/2.PRG/OP30_Graph/ACT_InitST1
+unknown: OP30/2.PRG/OP30_Graph/ACT_AutoRunST1_气密1测试
+unknown: OP30/2.PRG/OP30_Graph/ACT_AutoRunST2_气密2测试
+unknown: OP30/2.PRG/OP30_Graph/ACT_AutoRunST3_气密3测试
+unknown: OP30/2.PRG/OP30_Graph/ACT_InitST2
+unknown: OP30/2.PRG/OP30_Graph/ACT_AutoRunST4_气密4测试
+unknown: OP30/2.PRG/OP30_Graph/ACT_InitST3
+unknown: OP30/2.PRG/OP30_Graph/ACT_InitST4
+unknown: OP30/2.PRG/OP30_Graph/ACT_AutoRunST5_上料机械手
+unknown: OP30/2.PRG/OP30_Graph/ACT_InitST5
+unknown: OP30/2.PRG/OP30_Graph/ACT_AutoRunST6_码垛机械手
+unknown: OP30/2.PRG/OP30_Graph/ACT_InitST6
+program: OP30/2.PRG/OP30_Fault
+unknown: OP30/2.PRG/OP30_Fault/ACT_MAP
+unknown: OP30/2.PRG/OP30_Fault/ACT_HMI_Jump
+program: OP30/2.PRG/OP30_Communication
+program: OP30/2.PRG/OP30_Other
+unknown: OP30/1.Global
+gvl: OP30/1.Global/DB3070_Fault
+gvl: OP30/1.Global/DB3050_DriveControl
+gvl: OP30/1.Global/DB3000_Control
+gvl: OP30/1.Global/DB3002_Recipe
+gvl: OP30/1.Global/DB3005_Communication
+gvl: OP30/1.Global/DB3003_Count
+gvl: OP30/1.Global/DB3090_Other
+unknown: OP30/0.Struct
+dut: OP30/0.Struct/Str_OP30_FaultEstop
+dut: OP30/0.Struct/Str_OP30_Recipe
+dut: OP30/0.Struct/Str_OP30_Faultstop
+dut: OP30/0.Struct/Str_OP30_FaultRun
+dut: OP30/0.Struct/Enum_OP30_Axis
+dut: OP30/0.Struct/Enum_OP30_Cyl
+dut: OP30/0.Struct/Enum_OP30_Vac
+dut: OP30/0.Struct/Str_OP30_StationData
+dut: OP30/0.Struct/Enum_OP30_Sensor
+dut: OP30/0.Struct/Str_OP30_TO_OPXX
+dut: OP30/0.Struct/Str_OPXX_TO_OP30
+dut: OP30/0.Struct/Str_OP30_Product
+unknown: OP11
+unknown: OP11/2.PRG
+program: OP11/2.PRG/OP11_Recipe
+unknown: OP11/2.PRG/OP11_Recipe/ACT_Upload
+unknown: OP11/2.PRG/OP11_Recipe/ACT_Download
+program: OP11/2.PRG/OP11_Control
+program: OP11/2.PRG/OP11_DriveControl
+unknown: OP11/2.PRG/OP11_DriveControl/ACT_Cylinder
+unknown: OP11/2.PRG/OP11_DriveControl/ACT_Vacuum
+unknown: OP11/2.PRG/OP11_DriveControl/ACT_Axis
+unknown: OP11/2.PRG/OP11_DriveControl/ACT_SR1000
+unknown: OP11/2.PRG/OP11_DriveControl/ACT_Epson
+unknown: OP11/2.PRG/OP11_DriveControl/ACT_Kuka
+unknown: OP11/2.PRG/OP11_DriveControl/ACT_Sensor
+unknown: OP11/2.PRG/OP11_DriveControl/ACT_Rotdisk
+unknown: OP11/2.PRG/OP11_DriveControl/ACT_Stopper
+unknown: OP11/2.PRG/OP11_DriveControl/ACT_AI
+unknown: OP11/2.PRG/OP11_DriveControl/ACT_Motor
+unknown: OP11/2.PRG/OP11_DriveControl/ACT_Heating
+unknown: OP11/2.PRG/OP11_DriveControl/ACT_AAS
+unknown: OP11/2.PRG/OP11_DriveControl/ACT_Pallet
+program: OP11/2.PRG/OP11_DI_Mirror
+unknown: OP11/2.PRG/OP11_DI_Mirror/ACT_Comment
+unknown: OP11/2.PRG/OP11_DI_Mirror/ACT_Status
+unknown: OP11/2.PRG/OP11_DI_Mirror/ACT_MAP
+program: OP11/2.PRG/OP11_DO_Mirror
+unknown: OP11/2.PRG/OP11_DO_Mirror/ACT_Status
+unknown: OP11/2.PRG/OP11_DO_Mirror/ACT_Comment
+unknown: OP11/2.PRG/OP11_DO_Mirror/ACT_MAP
+program: OP11/2.PRG/OP11_Graph
+unknown: OP11/2.PRG/OP11_Graph/ACT_InitST1
+unknown: OP11/2.PRG/OP11_Graph/ACT_AutoRunST1_气密1测试
+unknown: OP11/2.PRG/OP11_Graph/ACT_AutoRunST2_气密2测试
+unknown: OP11/2.PRG/OP11_Graph/ACT_AutoRunST3_气密3测试
+unknown: OP11/2.PRG/OP11_Graph/ACT_InitST2
+unknown: OP11/2.PRG/OP11_Graph/ACT_AutoRunST4_气密4测试
+unknown: OP11/2.PRG/OP11_Graph/ACT_InitST3
+unknown: OP11/2.PRG/OP11_Graph/ACT_InitST4
+unknown: OP11/2.PRG/OP11_Graph/ACT_AutoRunST5_上料机械手
+unknown: OP11/2.PRG/OP11_Graph/ACT_InitST5
+unknown: OP11/2.PRG/OP11_Graph/ACT_AutoRunST6_码垛机械手
+unknown: OP11/2.PRG/OP11_Graph/ACT_InitST6
+program: OP11/2.PRG/OP11_Fault
+unknown: OP11/2.PRG/OP11_Fault/ACT_MAP
+unknown: OP11/2.PRG/OP11_Fault/ACT_HMI_Jump
+program: OP11/2.PRG/OP11_Communication
+program: OP11/2.PRG/OP11_Other
+unknown: OP11/1.Global
+gvl: OP11/1.Global/DB1170_Fault
+gvl: OP11/1.Global/DB1150_DriveControl
+gvl: OP11/1.Global/DB1100_Control
+gvl: OP11/1.Global/DB1102_Recipe
+gvl: OP11/1.Global/DB1105_Communication
+gvl: OP11/1.Global/DB1103_Count
+gvl: OP11/1.Global/DB1190_Other
+unknown: OP11/0.Struct
+dut: OP11/0.Struct/Str_OP11_FaultEstop
+dut: OP11/0.Struct/Str_OP11_Recipe
+dut: OP11/0.Struct/Str_OP11_Faultstop
+dut: OP11/0.Struct/Str_OP11_FaultRun
+dut: OP11/0.Struct/Enum_OP11_Axis
+dut: OP11/0.Struct/Enum_OP11_Cyl
+dut: OP11/0.Struct/Enum_OP11_Vac
+dut: OP11/0.Struct/Str_OP11_StationData
+dut: OP11/0.Struct/Enum_OP11_Sensor
+dut: OP11/0.Struct/Str_OP11_TO_OPXX
+dut: OP11/0.Struct/Str_OPXX_TO_OP11
+dut: OP11/0.Struct/Str_OP11_Product
+unknown: 1.Function/FB/VibratoryFeeder(振动盘)
+function_block: 1.Function/FB/VibratoryFeeder(振动盘)/FB_VibratoryFeeder
+dut: 1.Function/FB/VibratoryFeeder(振动盘)/Str_VibratoryFeeder
+dut: 1.Function/FB/VibratoryFeeder(振动盘)/Str_VibratoryFeederCmd
+dut: 1.Function/FB/VibratoryFeeder(振动盘)/Str_VibratoryFeederParm
+dut: 1.Function/FB/VibratoryFeeder(振动盘)/Str_VibratoryFeederStatus
+unknown: OP40
+unknown: OP40/2.PRG
+program: OP40/2.PRG/OP40_Recipe
+unknown: OP40/2.PRG/OP40_Recipe/ACT_Upload
+unknown: OP40/2.PRG/OP40_Recipe/ACT_Download
+program: OP40/2.PRG/OP40_Control
+program: OP40/2.PRG/OP40_DriveControl
+unknown: OP40/2.PRG/OP40_DriveControl/ACT_Cylinder
+unknown: OP40/2.PRG/OP40_DriveControl/ACT_Vacuum
+unknown: OP40/2.PRG/OP40_DriveControl/ACT_Axis
+unknown: OP40/2.PRG/OP40_DriveControl/ACT_SR1000
+unknown: OP40/2.PRG/OP40_DriveControl/ACT_Epson
+unknown: OP40/2.PRG/OP40_DriveControl/ACT_Kuka
+unknown: OP40/2.PRG/OP40_DriveControl/ACT_Sensor
+unknown: OP40/2.PRG/OP40_DriveControl/ACT_Rotdisk
+unknown: OP40/2.PRG/OP40_DriveControl/ACT_Stopper
+unknown: OP40/2.PRG/OP40_DriveControl/ACT_AI
+unknown: OP40/2.PRG/OP40_DriveControl/ACT_Motor
+unknown: OP40/2.PRG/OP40_DriveControl/ACT_Heating
+unknown: OP40/2.PRG/OP40_DriveControl/ACT_AAS
+unknown: OP40/2.PRG/OP40_DriveControl/ACT_Pallet
+program: OP40/2.PRG/OP40_DI_Mirror
+unknown: OP40/2.PRG/OP40_DI_Mirror/ACT_Comment
+unknown: OP40/2.PRG/OP40_DI_Mirror/ACT_Status
+unknown: OP40/2.PRG/OP40_DI_Mirror/ACT_MAP
+program: OP40/2.PRG/OP40_DO_Mirror
+unknown: OP40/2.PRG/OP40_DO_Mirror/ACT_Status
+unknown: OP40/2.PRG/OP40_DO_Mirror/ACT_Comment
+unknown: OP40/2.PRG/OP40_DO_Mirror/ACT_MAP
+program: OP40/2.PRG/OP40_Graph
+unknown: OP40/2.PRG/OP40_Graph/ACT_InitST1
+unknown: OP40/2.PRG/OP40_Graph/ACT_AutoRunST1_气密1测试
+unknown: OP40/2.PRG/OP40_Graph/ACT_AutoRunST2_气密2测试
+unknown: OP40/2.PRG/OP40_Graph/ACT_AutoRunST3_气密3测试
+unknown: OP40/2.PRG/OP40_Graph/ACT_InitST2
+unknown: OP40/2.PRG/OP40_Graph/ACT_AutoRunST4_气密4测试
+unknown: OP40/2.PRG/OP40_Graph/ACT_InitST3
+unknown: OP40/2.PRG/OP40_Graph/ACT_InitST4
+unknown: OP40/2.PRG/OP40_Graph/ACT_AutoRunST5_上料机械手
+unknown: OP40/2.PRG/OP40_Graph/ACT_InitST5
+unknown: OP40/2.PRG/OP40_Graph/ACT_AutoRunST6_码垛机械手
+unknown: OP40/2.PRG/OP40_Graph/ACT_InitST6
+program: OP40/2.PRG/OP40_Fault
+unknown: OP40/2.PRG/OP40_Fault/ACT_MAP
+unknown: OP40/2.PRG/OP40_Fault/ACT_HMI_Jump
+program: OP40/2.PRG/OP40_Communication
+program: OP40/2.PRG/OP40_Other
+unknown: OP40/1.Global
+gvl: OP40/1.Global/DB4070_Fault
+gvl: OP40/1.Global/DB4050_DriveControl
+gvl: OP40/1.Global/DB4000_Control
+gvl: OP40/1.Global/DB4002_Recipe
+gvl: OP40/1.Global/DB4005_Communication
+gvl: OP40/1.Global/DB4003_Count
+gvl: OP40/1.Global/DB4090_Other
+unknown: OP40/0.Struct
+dut: OP40/0.Struct/Str_OP40_FaultEstop
+dut: OP40/0.Struct/Str_OP40_Recipe
+dut: OP40/0.Struct/Str_OP40_Faultstop
+dut: OP40/0.Struct/Str_OP40_FaultRun
+dut: OP40/0.Struct/Enum_OP40_Axis
+dut: OP40/0.Struct/Enum_OP40_Cyl
+dut: OP40/0.Struct/Enum_OP40_Vac
+dut: OP40/0.Struct/Str_OP40_StationData
+dut: OP40/0.Struct/Enum_OP40_Sensor
+dut: OP40/0.Struct/Str_OP40_TO_OPXX
+dut: OP40/0.Struct/Str_OPXX_TO_OP40
+dut: OP40/0.Struct/Str_OP40_Product
+unknown: OP50
+unknown: OP50/2.PRG
+program: OP50/2.PRG/OP50_Recipe
+unknown: OP50/2.PRG/OP50_Recipe/ACT_Upload
+unknown: OP50/2.PRG/OP50_Recipe/ACT_Download
+program: OP50/2.PRG/OP50_Control
+program: OP50/2.PRG/OP50_DriveControl
+unknown: OP50/2.PRG/OP50_DriveControl/ACT_Cylinder
+unknown: OP50/2.PRG/OP50_DriveControl/ACT_Vacuum
+unknown: OP50/2.PRG/OP50_DriveControl/ACT_Axis
+unknown: OP50/2.PRG/OP50_DriveControl/ACT_SR1000
+unknown: OP50/2.PRG/OP50_DriveControl/ACT_Epson
+unknown: OP50/2.PRG/OP50_DriveControl/ACT_Kuka
+unknown: OP50/2.PRG/OP50_DriveControl/ACT_Sensor
+unknown: OP50/2.PRG/OP50_DriveControl/ACT_Rotdisk
+unknown: OP50/2.PRG/OP50_DriveControl/ACT_Stopper
+unknown: OP50/2.PRG/OP50_DriveControl/ACT_AI
+unknown: OP50/2.PRG/OP50_DriveControl/ACT_Motor
+unknown: OP50/2.PRG/OP50_DriveControl/ACT_Heating
+unknown: OP50/2.PRG/OP50_DriveControl/ACT_AAS
+unknown: OP50/2.PRG/OP50_DriveControl/ACT_Pallet
+program: OP50/2.PRG/OP50_DI_Mirror
+unknown: OP50/2.PRG/OP50_DI_Mirror/ACT_Comment
+unknown: OP50/2.PRG/OP50_DI_Mirror/ACT_Status
+unknown: OP50/2.PRG/OP50_DI_Mirror/ACT_MAP
+program: OP50/2.PRG/OP50_DO_Mirror
+unknown: OP50/2.PRG/OP50_DO_Mirror/ACT_Status
+unknown: OP50/2.PRG/OP50_DO_Mirror/ACT_Comment
+unknown: OP50/2.PRG/OP50_DO_Mirror/ACT_MAP
+program: OP50/2.PRG/OP50_Graph
+unknown: OP50/2.PRG/OP50_Graph/ACT_InitST1
+unknown: OP50/2.PRG/OP50_Graph/ACT_AutoRunST1_气密1测试
+unknown: OP50/2.PRG/OP50_Graph/ACT_AutoRunST2_气密2测试
+unknown: OP50/2.PRG/OP50_Graph/ACT_AutoRunST3_气密3测试
+unknown: OP50/2.PRG/OP50_Graph/ACT_InitST2
+unknown: OP50/2.PRG/OP50_Graph/ACT_AutoRunST4_气密4测试
+unknown: OP50/2.PRG/OP50_Graph/ACT_InitST3
+unknown: OP50/2.PRG/OP50_Graph/ACT_InitST4
+unknown: OP50/2.PRG/OP50_Graph/ACT_AutoRunST5_上料机械手
+unknown: OP50/2.PRG/OP50_Graph/ACT_InitST5
+unknown: OP50/2.PRG/OP50_Graph/ACT_AutoRunST6_码垛机械手
+unknown: OP50/2.PRG/OP50_Graph/ACT_InitST6
+program: OP50/2.PRG/OP50_Fault
+unknown: OP50/2.PRG/OP50_Fault/ACT_MAP
+unknown: OP50/2.PRG/OP50_Fault/ACT_HMI_Jump
+program: OP50/2.PRG/OP50_Communication
+program: OP50/2.PRG/OP50_Other
+unknown: OP50/1.Global
+gvl: OP50/1.Global/DB5070_Fault
+gvl: OP50/1.Global/DB5050_DriveControl
+gvl: OP50/1.Global/DB5000_Control
+gvl: OP50/1.Global/DB5002_Recipe
+gvl: OP50/1.Global/DB5005_Communication
+gvl: OP50/1.Global/DB5003_Count
+gvl: OP50/1.Global/DB5090_Other
+unknown: OP50/0.Struct
+dut: OP50/0.Struct/Str_OP50_FaultEstop
+dut: OP50/0.Struct/Str_OP50_Recipe
+dut: OP50/0.Struct/Str_OP50_Faultstop
+dut: OP50/0.Struct/Str_OP50_FaultRun
+dut: OP50/0.Struct/Enum_OP50_Axis
+dut: OP50/0.Struct/Enum_OP50_Cyl
+dut: OP50/0.Struct/Enum_OP50_Vac
+dut: OP50/0.Struct/Str_OP50_StationData
+dut: OP50/0.Struct/Enum_OP50_Sensor
+dut: OP50/0.Struct/Str_OP50_TO_OPXX
+dut: OP50/0.Struct/Str_OPXX_TO_OP50
+dut: OP50/0.Struct/Str_OP50_Product
+unknown: OP60
+unknown: OP60/2.PRG
+program: OP60/2.PRG/OP60_Recipe
+unknown: OP60/2.PRG/OP60_Recipe/ACT_Upload
+unknown: OP60/2.PRG/OP60_Recipe/ACT_Download
+program: OP60/2.PRG/OP60_Control
+program: OP60/2.PRG/OP60_DriveControl
+unknown: OP60/2.PRG/OP60_DriveControl/ACT_Cylinder
+unknown: OP60/2.PRG/OP60_DriveControl/ACT_Vacuum
+unknown: OP60/2.PRG/OP60_DriveControl/ACT_Axis
+unknown: OP60/2.PRG/OP60_DriveControl/ACT_SR1000
+unknown: OP60/2.PRG/OP60_DriveControl/ACT_Epson
+unknown: OP60/2.PRG/OP60_DriveControl/ACT_Kuka
+unknown: OP60/2.PRG/OP60_DriveControl/ACT_Sensor
+unknown: OP60/2.PRG/OP60_DriveControl/ACT_Rotdisk
+unknown: OP60/2.PRG/OP60_DriveControl/ACT_Stopper
+unknown: OP60/2.PRG/OP60_DriveControl/ACT_AI
+unknown: OP60/2.PRG/OP60_DriveControl/ACT_Motor
+unknown: OP60/2.PRG/OP60_DriveControl/ACT_Heating
+unknown: OP60/2.PRG/OP60_DriveControl/ACT_AAS
+unknown: OP60/2.PRG/OP60_DriveControl/ACT_Pallet
+program: OP60/2.PRG/OP60_DI_Mirror
+unknown: OP60/2.PRG/OP60_DI_Mirror/ACT_Comment
+unknown: OP60/2.PRG/OP60_DI_Mirror/ACT_Status
+unknown: OP60/2.PRG/OP60_DI_Mirror/ACT_MAP
+program: OP60/2.PRG/OP60_DO_Mirror
+unknown: OP60/2.PRG/OP60_DO_Mirror/ACT_Status
+unknown: OP60/2.PRG/OP60_DO_Mirror/ACT_Comment
+unknown: OP60/2.PRG/OP60_DO_Mirror/ACT_MAP
+program: OP60/2.PRG/OP60_Graph
+unknown: OP60/2.PRG/OP60_Graph/ACT_InitST1
+unknown: OP60/2.PRG/OP60_Graph/ACT_AutoRunST1_气密1测试
+unknown: OP60/2.PRG/OP60_Graph/ACT_AutoRunST2_气密2测试
+unknown: OP60/2.PRG/OP60_Graph/ACT_AutoRunST3_气密3测试
+unknown: OP60/2.PRG/OP60_Graph/ACT_InitST2
+unknown: OP60/2.PRG/OP60_Graph/ACT_AutoRunST4_气密4测试
+unknown: OP60/2.PRG/OP60_Graph/ACT_InitST3
+unknown: OP60/2.PRG/OP60_Graph/ACT_InitST4
+unknown: OP60/2.PRG/OP60_Graph/ACT_AutoRunST5_上料机械手
+unknown: OP60/2.PRG/OP60_Graph/ACT_InitST5
+unknown: OP60/2.PRG/OP60_Graph/ACT_AutoRunST6_码垛机械手
+unknown: OP60/2.PRG/OP60_Graph/ACT_InitST6
+program: OP60/2.PRG/OP60_Fault
+unknown: OP60/2.PRG/OP60_Fault/ACT_MAP
+unknown: OP60/2.PRG/OP60_Fault/ACT_HMI_Jump
+program: OP60/2.PRG/OP60_Communication
+program: OP60/2.PRG/OP60_Other
+unknown: OP60/1.Global
+gvl: OP60/1.Global/DB6070_Fault
+gvl: OP60/1.Global/DB6050_DriveControl
+gvl: OP60/1.Global/DB6000_Control
+gvl: OP60/1.Global/DB6002_Recipe
+gvl: OP60/1.Global/DB6005_Communication
+gvl: OP60/1.Global/DB6003_Count
+gvl: OP60/1.Global/DB6090_Other
+unknown: OP60/0.Struct
+dut: OP60/0.Struct/Str_OP60_FaultEstop
+dut: OP60/0.Struct/Str_OP60_Recipe
+dut: OP60/0.Struct/Str_OP60_Faultstop
+dut: OP60/0.Struct/Str_OP60_FaultRun
+dut: OP60/0.Struct/Enum_OP60_Axis
+dut: OP60/0.Struct/Enum_OP60_Cyl
+dut: OP60/0.Struct/Enum_OP60_Vac
+dut: OP60/0.Struct/Str_OP60_StationData
+dut: OP60/0.Struct/Enum_OP60_Sensor
+dut: OP60/0.Struct/Str_OP60_TO_OPXX
+dut: OP60/0.Struct/Str_OPXX_TO_OP60
+dut: OP60/0.Struct/Str_OP60_Product
+unknown: Project(Project=0, stPath=C__Users_Administrator_Desktop_20260427_TEAM_V1.5_TEAM_V2.0-demo.project)/__VisualizationStyle
+unknown: Task Configuration/MainTask/Clock
+unknown: Task Configuration/MainTask/Test
+unknown: Task Configuration/ETHERCAT1/ETHERCAT1.EtherCAT_Task
+unknown: Task Configuration/ETHERCAT1/PLC_PRG
+unknown: Task Configuration/EIPMasterIOTask_A/EtherNetIPMaster_A.IOCycle
+unknown: Task Configuration/EIPMasterServiceTask_A/EtherNetIPMaster_A.ServiceCycle

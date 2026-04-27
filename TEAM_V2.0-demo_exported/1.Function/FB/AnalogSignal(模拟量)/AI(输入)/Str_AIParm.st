@@ -1,0 +1,5 @@
+TYPE Str_AIParm :
+STRUCT
+	ValueTeach:REAL;//校准标准值
+END_STRUCT
+END_TYPE

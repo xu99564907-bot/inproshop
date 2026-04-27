@@ -1,0 +1,5 @@
+TYPE Str_ScrewParm :
+STRUCT
+
+END_STRUCT
+END_TYPE

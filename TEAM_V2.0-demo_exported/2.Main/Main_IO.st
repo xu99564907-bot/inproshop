@@ -1,0 +1,8 @@
+
+VAR_GLOBAL
+	
+END_VAR
+
+VAR_GLOBAL
+		
+END_VAR

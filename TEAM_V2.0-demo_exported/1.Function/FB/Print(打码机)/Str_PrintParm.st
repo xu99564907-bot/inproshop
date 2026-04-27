@@ -1,0 +1,5 @@
+TYPE Str_PrintParm :
+STRUCT
+	Data:WSTRING;
+END_STRUCT
+END_TYPE

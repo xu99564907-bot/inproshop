@@ -1,0 +1,4 @@
+TYPE Str_CodeParm :
+STRUCT
+END_STRUCT
+END_TYPE

@@ -1,0 +1,17 @@
+FUNCTION FC_AryCmp : BOOL
+VAR_INPUT
+	iAry1:ARRAY[0..50]OF BOOL;
+	iAry2:ARRAY[0..50]OF BOOL;	
+END_VAR
+VAR
+	i: INT;
+END_VAR
+
+
+FOR i:=0 TO 50 BY 1 DO
+	IF iAry1[i]<>iAry2[i] THEN
+		FC_AryCmp:=FALSE;
+		EXIT;
+	END_IF;
+	FC_AryCmp:=TRUE;
+END_FOR

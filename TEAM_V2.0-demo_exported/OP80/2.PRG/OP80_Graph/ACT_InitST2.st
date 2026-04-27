@@ -1,0 +1,142 @@
+
+//延时时间
+IntitalTimeDelay[2,0](IN:=Init[2].Step=5,PT:=T#500MS);
+IntitalTimeDelay[2,1]();
+IntitalTimeDelay[2,2]();
+IntitalTimeDelay[2,3]();
+IntitalTimeDelay[2,4]();
+IntitalTimeDelay[2,5]();
+
+//初始化完成状态清除
+IF DB8070_Fault.EstopTotal OR DB8070_Fault.StopTotal OR DB8000_Control.Mode.Status.ManualMode OR DB8000_Control.Mode.Out.Stop THEN
+	Init[2].Step:=0;
+	Init[2].Running:=FALSE;
+END_IF
+
+//启动回原
+IF DB8000_Control.Mode.Out.HomeStart_R AND NOT Init[2].Running THEN
+	Init[2].Running:=TRUE;
+	Init[2].Complete:=FALSE;
+	Init[2].Step:=5;
+	Init[2].Comment:="初始化开始";
+END_IF
+
+IF Init[2].Running THEN
+	
+	CASE Init[2].Step OF
+		5 :
+			Init[2].Comment:="初始化开始判定";
+			IF IntitalTimeDelay[2,0].Q THEN
+				IF Auto[2].Disable THEN
+					Init[2].Step:=1000;
+				ELSE
+					Init[2].Step:=10;
+				END_IF		
+			END_IF
+						
+		10:
+			Init[2].Comment:="等待码垛机械手在安全区域";
+			IF NOT DB8050_DriveControl.Kuka[2].Status.InterFace_B[57] THEN
+				Init[2].Step:=20;
+			END_IF
+			
+		20:
+			Init[2].Comment:="判定记忆状态";
+			 
+				Init[2].Step:=100;
+			 
+		100:
+			Init[2].Comment:="拔管解扣气缸上升";
+			DB8050_DriveControl.CylCtrl[Enum_OP80_Cyl.气缸1].Cmd.AutoToWork:=TRUE;
+			IF DB8050_DriveControl.CylCtrl[Enum_OP80_Cyl.气缸1].Status.InWork THEN
+				Init[2].Step:=110;
+			END_IF
+			
+		110:			
+			Init[2].Comment:="插管测试气缸下降";
+			DB8050_DriveControl.CylCtrl[Enum_OP80_Cyl.气缸1].Cmd.AutoToHome:=TRUE;
+			IF DB8050_DriveControl.CylCtrl[Enum_OP80_Cyl.气缸1].Status.InHome THEN
+				Init[2].Step:=120;
+			END_IF	
+			
+		120:
+			Init[2].Comment:="拔管解扣气缸下降";
+			DB8050_DriveControl.CylCtrl[Enum_OP80_Cyl.气缸1].Cmd.AutoToHome:=TRUE;
+			IF DB8050_DriveControl.CylCtrl[Enum_OP80_Cyl.气缸1].Status.InHome THEN
+				Init[2].Step:=130;
+			END_IF	
+
+		130:
+			Init[2].Comment:="夹爪夹料松开";
+			DB8050_DriveControl.CylCtrl[Enum_OP80_Cyl.气缸1].Cmd.AutoToHome:=TRUE;
+			IF DB8050_DriveControl.CylCtrl[Enum_OP80_Cyl.气缸1].Status.InHome THEN
+				Init[2].Step:=140;
+			END_IF			
+
+		140:
+			Init[2].Comment:="Z2轴下降";
+			DB8050_DriveControl.AxisCtrl[Enum_OP80_Axis.Z2].Cmd.AutoABS:=1;
+			IF DB8050_DriveControl.AxisCtrl[Enum_OP80_Axis.Z2].Status.InPoint[1] THEN
+				Init[2].Step:=180;
+			END_IF
+
+
+
+		180:
+			Init[2].Comment:="驱动齿轮气缸_缩回";
+			DB8050_DriveControl.CylCtrl[Enum_OP80_Cyl.气缸1].Cmd.AutoToHome:=TRUE;
+			IF DB8050_DriveControl.CylCtrl[Enum_OP80_Cyl.气缸1].Status.InHome THEN
+				Init[2].Step:=200;
+			END_IF
+			
+		200:
+			Init[2].Comment:="产品封堵B上下气缸_下降";
+			 
+			DB8050_DriveControl.CylCtrl[Enum_OP80_Cyl.气缸1].Cmd.AutoToHome:=TRUE;
+			IF DB8050_DriveControl.CylCtrl[Enum_OP80_Cyl.气缸1].Status.InHome  THEN
+				Init[2].Step:=300;
+			END_IF	
+			
+		300:
+			Init[2].Comment:="产品固定气缸旋转松开"; 
+			DB8050_DriveControl.CylCtrl[Enum_OP80_Cyl.气缸1].Cmd.AutoToHome:=TRUE;
+			IF DB8050_DriveControl.CylCtrl[Enum_OP80_Cyl.气缸1].Status.InHome THEN
+				Init[2].Step:=400;
+			END_IF
+
+		400:
+			Init[2].Comment:="定位气缸松开";
+			DB8050_DriveControl.CylCtrl[Enum_OP80_Cyl.气缸1].Cmd.AutoToHome:=TRUE;
+			IF DB8050_DriveControl.CylCtrl[Enum_OP80_Cyl.气缸1].Status.InHome THEN
+				Init[2].Step:=1000;
+			END_IF
+		
+		
+		1000:
+			Init[2].Comment:="工位初始化完成，等待下工位完成";
+			Init[2].Running:=FALSE;
+			Init[2].Complete:=TRUE;
+			Init[2].Step:=0;
+			
+	ELSE
+		;
+	END_CASE
+	
+END_IF
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

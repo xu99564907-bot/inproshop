@@ -1,0 +1,6 @@
+TYPE Str_WstringWord :
+UNION
+	Ws:WSTRING(1);
+	Wo:WORD;
+END_UNION
+END_TYPE

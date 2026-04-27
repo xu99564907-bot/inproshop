@@ -1,0 +1,4 @@
+TYPE Str_RotdiskParm :
+STRUCT
+END_STRUCT
+END_TYPE

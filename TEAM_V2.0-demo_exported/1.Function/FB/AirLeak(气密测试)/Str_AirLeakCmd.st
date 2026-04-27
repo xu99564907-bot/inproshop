@@ -1,0 +1,6 @@
+TYPE Str_AirLeakCmd :
+STRUCT
+	A_Start :BOOL;
+	B_Start :BOOL;
+END_STRUCT
+END_TYPE

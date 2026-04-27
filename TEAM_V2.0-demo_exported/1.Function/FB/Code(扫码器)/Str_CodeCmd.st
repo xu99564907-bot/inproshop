@@ -1,0 +1,5 @@
+TYPE Str_CodeCmd :
+STRUCT
+	Execute :BOOL;
+END_STRUCT
+END_TYPE

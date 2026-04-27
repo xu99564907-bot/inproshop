@@ -1,0 +1,6 @@
+TYPE Str_AASCmd :
+STRUCT
+	Intial:BOOL;//触发软件型号切换
+	Execute:ARRAY[0..20]OF BOOL;
+END_STRUCT
+END_TYPE
