@@ -1,10 +1,10 @@
 ============================================================
 InProShop Project Import Script
-Start Time: 2026-04-27T16:09:09.827000
+Start Time: 2026-04-27T16:17:03.222000
 ============================================================
 [INFO] No project open. Opening project: C:\Users\Administrator\Desktop\2026-04-07\PlcOpcUaHmi\PLC\Team-Test5\Team-Test5.project
 [INFO] Import from: C:\Users\Administrator\Desktop\2026-04-07\PlcOpcUaHmi\PLC\Team-Test5\Team-Test5_exported
-[INFO] Found 700 files to import
+[INFO] Found 703 files to import
 [INFO] Create new objects: YES
 
 [SKIP] Action PersistentVars: no writable text property
@@ -626,13 +626,16 @@ Start Time: 2026-04-27T16:09:09.827000
 [OK] Updated Action: ACT_Axis
 [OK] Updated Action: ACT_Cam
 [OK] Updated Action: ACT_CODE
+[OK] Updated Action: ACT_Cylinder
 [OK] Updated Action: ACT_ElectricScrewdriver
 [OK] Updated Action: ACT_Epson
 [OK] Updated Action: ACT_Kuka
 [OK] Updated Action: ACT_Motor
 [OK] Updated Action: ACT_Print
 [OK] Updated Action: ACT_Rotdisk
+[OK] Updated Action: ACT_Sensor
 [OK] Updated Action: ACT_Stopper
+[OK] Updated Action: ACT_Vacuum
 [OK] Updated Action: ACT_HMI_Jump
 [OK] Updated Action: ACT_MAP
 [OK] Updated Action: ACT_AutoRunST1_人工上料打码
@@ -709,12 +712,12 @@ Start Time: 2026-04-27T16:09:09.827000
 [OK] Updated Action: ACT_Upload
 
 === Summary ===
-Updated: 699
+Updated: 702
 Created: 0
 Skipped: 0
 Errors: 1
 [OK] Project saved.
 
 ============================================================
-End Time: 2026-04-27T16:10:56.166000
+End Time: 2026-04-27T16:18:43.533000
 ============================================================
