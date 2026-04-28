@@ -1,0 +1,791 @@
+FB_Sensor_instance[1](
+	ioSensor:= DB8050_DriveControl.Sensor[1],
+	iSensor:=IX8100_1_工位1_物料到位感应Sensor1,
+	iName:="工位1");
+///////
+///////
+///////
+
+FB_Sensor_instance[2](
+	ioSensor:= DB8050_DriveControl.Sensor[2],
+	iSensor:=IX8100_4_工位2_物料到位感应Sensor2,
+	iName:="工位2");
+///////
+///////
+///////
+
+FB_Sensor_instance[3](
+	ioSensor:= DB8050_DriveControl.Sensor[3],
+	iSensor:=IX8100_7_工位3_物料到位感应Sensor3,
+	iName:="工位3");
+///////
+///////
+///////
+
+FB_Sensor_instance[4](
+	ioSensor:= DB8050_DriveControl.Sensor[4],
+	iSensor:=IX8101_2_工位4_物料到位感应Sensor4,
+	iName:="工位4");
+///////
+///////
+///////
+
+FB_Sensor_instance[5](
+	ioSensor:= DB8050_DriveControl.Sensor[5],
+	iSensor:=IX8101_5_工位5_物料到位感应Sensor5,
+	iName:="工位5");
+///////
+///////
+///////
+
+FB_Sensor_instance[6](
+	ioSensor:= DB8050_DriveControl.Sensor[6],
+	iSensor:=IX8102_0_工位6_物料到位感应Sensor6,
+	iName:="工位6");
+///////
+///////
+///////
+
+FB_Sensor_instance[7](
+	ioSensor:= DB8050_DriveControl.Sensor[7],
+	iSensor:=IX8102_3_工位7_物料到位感应Sensor7,
+	iName:="工位7");
+///////
+///////
+///////
+
+FB_Sensor_instance[8](
+	ioSensor:= DB8050_DriveControl.Sensor[8],
+	iSensor:=IX8102_6_工位8_物料到位感应Sensor8,
+	iName:="工位8");
+///////
+///////
+///////
+
+FB_Sensor_instance[9](
+	ioSensor:= DB8050_DriveControl.Sensor[9],
+	iSensor:=IX8103_1_工位9_物料到位感应Sensor9,
+	iName:="工位9");
+///////
+///////
+///////
+
+FB_Sensor_instance[10](
+	ioSensor:= DB8050_DriveControl.Sensor[10],
+	iSensor:=IX8103_4_工位10_物料到位感应Sensor10,
+	iName:="工位10");
+///////
+///////
+///////
+
+FB_Sensor_instance[11](
+	ioSensor:= DB8050_DriveControl.Sensor[11],
+	iSensor:=IX8104_1_工位11_物料到位感应Sensor11,
+	iName:="工位11");
+///////
+///////
+///////
+
+FB_Sensor_instance[12](
+	ioSensor:= DB8050_DriveControl.Sensor[12],
+	iSensor:=IX8104_4_工位12_物料到位感应Sensor12,
+	iName:="工位12");
+///////
+///////
+///////
+
+FB_Sensor_instance[13](
+	ioSensor:= DB8050_DriveControl.Sensor[13],
+	iSensor:=IX8104_7_工位13_物料到位感应Sensor13,
+	iName:="工位13");
+///////
+///////
+///////
+
+FB_Sensor_instance[14](
+	ioSensor:= DB8050_DriveControl.Sensor[14],
+	iSensor:=IX8105_2_工位14_物料到位感应Sensor14,
+	iName:="工位14");
+///////
+///////
+///////
+
+FB_Sensor_instance[15](
+	ioSensor:= DB8050_DriveControl.Sensor[15],
+	iSensor:=IX8105_5_工位15_物料到位感应Sensor15,
+	iName:="工位15");
+///////
+///////
+///////
+
+FB_Sensor_instance[16](
+	ioSensor:= DB8050_DriveControl.Sensor[16],
+	iSensor:=IX8106_0_工位16_物料到位感应Sensor16,
+	iName:="工位16");
+///////
+///////
+///////
+
+FB_Sensor_instance[17](
+	ioSensor:= DB8050_DriveControl.Sensor[17],
+	iSensor:=IX8106_3_工位17_物料到位感应Sensor17,
+	iName:="工位17");
+///////
+///////
+///////
+
+FB_Sensor_instance[18](
+	ioSensor:= DB8050_DriveControl.Sensor[18],
+	iSensor:=IX8106_6_工位18_物料到位感应Sensor18,
+	iName:="工位18");
+///////
+///////
+///////
+
+FB_Sensor_instance[19](
+	ioSensor:= DB8050_DriveControl.Sensor[19],
+	iSensor:=IX8107_1_工位19_物料到位感应Sensor19,
+	iName:="工位19");
+///////
+///////
+///////
+
+FB_Sensor_instance[20](
+	ioSensor:= DB8050_DriveControl.Sensor[20],
+	iSensor:=IX8107_4_工位20_物料到位感应Sensor20,
+	iName:="工位20");
+///////
+///////
+///////
+
+FB_Sensor_instance[21](
+	ioSensor:= DB8050_DriveControl.Sensor[21],
+	iSensor:=IX8108_1_工位21_物料到位感应Sensor21,
+	iName:="工位21");
+///////
+///////
+///////
+
+FB_Sensor_instance[22](
+	ioSensor:= DB8050_DriveControl.Sensor[22],
+	iSensor:=IX8108_4_工位22_物料到位感应Sensor22,
+	iName:="工位22");
+///////
+///////
+///////
+
+FB_Sensor_instance[23](
+	ioSensor:= DB8050_DriveControl.Sensor[23],
+	iSensor:=IX8108_7_工位23_物料到位感应Sensor23,
+	iName:="工位23");
+///////
+///////
+///////
+
+FB_Sensor_instance[24](
+	ioSensor:= DB8050_DriveControl.Sensor[24],
+	iSensor:=IX8109_2_工位24_物料到位感应Sensor24,
+	iName:="工位24");
+///////
+///////
+///////
+
+FB_Sensor_instance[25](
+	ioSensor:= DB8050_DriveControl.Sensor[25],
+	iSensor:=IX8109_5_工位25_物料到位感应Sensor25,
+	iName:="工位25");
+///////
+///////
+///////
+
+FB_Sensor_instance[26](
+	ioSensor:= DB8050_DriveControl.Sensor[26],
+	iSensor:=IX8110_0_工位26_物料到位感应Sensor26,
+	iName:="工位26");
+///////
+///////
+///////
+
+FB_Sensor_instance[27](
+	ioSensor:= DB8050_DriveControl.Sensor[27],
+	iSensor:=IX8110_3_工位27_物料到位感应Sensor27,
+	iName:="工位27");
+///////
+///////
+///////
+
+FB_Sensor_instance[28](
+	ioSensor:= DB8050_DriveControl.Sensor[28],
+	iSensor:=IX8110_6_工位28_物料到位感应Sensor28,
+	iName:="工位28");
+///////
+///////
+///////
+
+FB_Sensor_instance[29](
+	ioSensor:= DB8050_DriveControl.Sensor[29],
+	iSensor:=IX8111_1_工位29_物料到位感应Sensor29,
+	iName:="工位29");
+///////
+///////
+///////
+
+FB_Sensor_instance[30](
+	ioSensor:= DB8050_DriveControl.Sensor[30],
+	iSensor:=IX8111_4_工位30_物料到位感应Sensor30,
+	iName:="工位30");
+///////
+///////
+///////
+
+FB_Sensor_instance[31](
+	ioSensor:= DB8050_DriveControl.Sensor[31],
+	iSensor:=IX8112_1_工位31_物料到位感应Sensor31,
+	iName:="工位31");
+///////
+///////
+///////
+
+FB_Sensor_instance[32](
+	ioSensor:= DB8050_DriveControl.Sensor[32],
+	iSensor:=IX8112_4_工位32_物料到位感应Sensor32,
+	iName:="工位32");
+///////
+///////
+///////
+
+FB_Sensor_instance[33](
+	ioSensor:= DB8050_DriveControl.Sensor[33],
+	iSensor:=IX8112_7_工位33_物料到位感应Sensor33,
+	iName:="工位33");
+///////
+///////
+///////
+
+FB_Sensor_instance[34](
+	ioSensor:= DB8050_DriveControl.Sensor[34],
+	iSensor:=IX8113_2_工位34_物料到位感应Sensor34,
+	iName:="工位34");
+///////
+///////
+///////
+
+FB_Sensor_instance[35](
+	ioSensor:= DB8050_DriveControl.Sensor[35],
+	iSensor:=IX8113_5_工位35_物料到位感应Sensor35,
+	iName:="工位35");
+///////
+///////
+///////
+
+FB_Sensor_instance[36](
+	ioSensor:= DB8050_DriveControl.Sensor[36],
+	iSensor:=IX8114_0_工位36_物料到位感应Sensor36,
+	iName:="工位36");
+///////
+///////
+///////
+
+FB_Sensor_instance[37](
+	ioSensor:= DB8050_DriveControl.Sensor[37],
+	iSensor:=IX8114_3_工位37_物料到位感应Sensor37,
+	iName:="工位37");
+///////
+///////
+///////
+
+FB_Sensor_instance[38](
+	ioSensor:= DB8050_DriveControl.Sensor[38],
+	iSensor:=IX8114_6_工位38_物料到位感应Sensor38,
+	iName:="工位38");
+///////
+///////
+///////
+
+FB_Sensor_instance[39](
+	ioSensor:= DB8050_DriveControl.Sensor[39],
+	iSensor:=IX8115_1_工位39_物料到位感应Sensor39,
+	iName:="工位39");
+///////
+///////
+///////
+
+FB_Sensor_instance[40](
+	ioSensor:= DB8050_DriveControl.Sensor[40],
+	iSensor:=IX8115_4_工位40_物料到位感应Sensor40,
+	iName:="工位40");
+///////
+///////
+///////
+
+FB_Sensor_instance[41](
+	ioSensor:= DB8050_DriveControl.Sensor[41],
+	iSensor:=IX8200_1_工位41_物料到位感应Sensor41,
+	iName:="工位41");
+///////
+///////
+///////
+
+FB_Sensor_instance[42](
+	ioSensor:= DB8050_DriveControl.Sensor[42],
+	iSensor:=IX8200_4_工位42_物料到位感应Sensor42,
+	iName:="工位42");
+///////
+///////
+///////
+
+FB_Sensor_instance[43](
+	ioSensor:= DB8050_DriveControl.Sensor[43],
+	iSensor:=IX8200_7_工位43_物料到位感应Sensor43,
+	iName:="工位43");
+///////
+///////
+///////
+
+FB_Sensor_instance[44](
+	ioSensor:= DB8050_DriveControl.Sensor[44],
+	iSensor:=IX8201_2_工位44_物料到位感应Sensor44,
+	iName:="工位44");
+///////
+///////
+///////
+
+FB_Sensor_instance[45](
+	ioSensor:= DB8050_DriveControl.Sensor[45],
+	iSensor:=IX8201_5_工位45_物料到位感应Sensor45,
+	iName:="工位45");
+///////
+///////
+///////
+
+FB_Sensor_instance[46](
+	ioSensor:= DB8050_DriveControl.Sensor[46],
+	iSensor:=IX8202_0_工位46_物料到位感应Sensor46,
+	iName:="工位46");
+///////
+///////
+///////
+
+FB_Sensor_instance[47](
+	ioSensor:= DB8050_DriveControl.Sensor[47],
+	iSensor:=IX8202_3_工位47_物料到位感应Sensor47,
+	iName:="工位47");
+///////
+///////
+///////
+
+FB_Sensor_instance[48](
+	ioSensor:= DB8050_DriveControl.Sensor[48],
+	iSensor:=IX8202_6_工位48_物料到位感应Sensor48,
+	iName:="工位48");
+///////
+///////
+///////
+
+FB_Sensor_instance[49](
+	ioSensor:= DB8050_DriveControl.Sensor[49],
+	iSensor:=IX8203_1_工位49_物料到位感应Sensor49,
+	iName:="工位49");
+///////
+///////
+///////
+
+FB_Sensor_instance[50](
+	ioSensor:= DB8050_DriveControl.Sensor[50],
+	iSensor:=IX8203_4_工位50_物料到位感应Sensor50,
+	iName:="工位50");
+///////
+///////
+///////
+
+FB_Sensor_instance[51](
+	ioSensor:= DB8050_DriveControl.Sensor[51],
+	iSensor:=IX8204_1_工位51_物料到位感应Sensor51,
+	iName:="工位51");
+///////
+///////
+///////
+
+FB_Sensor_instance[52](
+	ioSensor:= DB8050_DriveControl.Sensor[52],
+	iSensor:=IX8204_4_工位52_物料到位感应Sensor52,
+	iName:="工位52");
+///////
+///////
+///////
+
+FB_Sensor_instance[53](
+	ioSensor:= DB8050_DriveControl.Sensor[53],
+	iSensor:=IX8204_7_工位53_物料到位感应Sensor53,
+	iName:="工位53");
+///////
+///////
+///////
+
+FB_Sensor_instance[54](
+	ioSensor:= DB8050_DriveControl.Sensor[54],
+	iSensor:=IX8205_2_工位54_物料到位感应Sensor54,
+	iName:="工位54");
+///////
+///////
+///////
+
+FB_Sensor_instance[55](
+	ioSensor:= DB8050_DriveControl.Sensor[55],
+	iSensor:=IX8205_5_工位55_物料到位感应Sensor55,
+	iName:="工位55");
+///////
+///////
+///////
+
+FB_Sensor_instance[56](
+	ioSensor:= DB8050_DriveControl.Sensor[56],
+	iSensor:=IX8206_0_工位56_物料到位感应Sensor56,
+	iName:="工位56");
+///////
+///////
+///////
+
+FB_Sensor_instance[57](
+	ioSensor:= DB8050_DriveControl.Sensor[57],
+	iSensor:=IX8206_3_工位57_物料到位感应Sensor57,
+	iName:="工位57");
+///////
+///////
+///////
+
+FB_Sensor_instance[58](
+	ioSensor:= DB8050_DriveControl.Sensor[58],
+	iSensor:=IX8206_6_工位58_物料到位感应Sensor58,
+	iName:="工位58");
+///////
+///////
+///////
+
+FB_Sensor_instance[59](
+	ioSensor:= DB8050_DriveControl.Sensor[59],
+	iSensor:=IX8207_1_工位59_物料到位感应Sensor59,
+	iName:="工位59");
+///////
+///////
+///////
+
+FB_Sensor_instance[60](
+	ioSensor:= DB8050_DriveControl.Sensor[60],
+	iSensor:=IX8207_4_工位60_物料到位感应Sensor60,
+	iName:="工位60");
+///////
+///////
+///////
+
+FB_Sensor_instance[61](
+	ioSensor:= DB8050_DriveControl.Sensor[61],
+	iSensor:=IX8208_1_工位61_物料到位感应Sensor61,
+	iName:="工位61");
+///////
+///////
+///////
+
+FB_Sensor_instance[62](
+	ioSensor:= DB8050_DriveControl.Sensor[62],
+	iSensor:=IX8208_4_工位62_物料到位感应Sensor62,
+	iName:="工位62");
+///////
+///////
+///////
+
+FB_Sensor_instance[63](
+	ioSensor:= DB8050_DriveControl.Sensor[63],
+	iSensor:=IX8208_7_工位63_物料到位感应Sensor63,
+	iName:="工位63");
+///////
+///////
+///////
+
+FB_Sensor_instance[64](
+	ioSensor:= DB8050_DriveControl.Sensor[64],
+	iSensor:=IX8209_2_工位64_物料到位感应Sensor64,
+	iName:="工位64");
+///////
+///////
+///////
+
+FB_Sensor_instance[65](
+	ioSensor:= DB8050_DriveControl.Sensor[65],
+	iSensor:=IX8209_5_工位65_物料到位感应Sensor65,
+	iName:="工位65");
+///////
+///////
+///////
+
+FB_Sensor_instance[66](
+	ioSensor:= DB8050_DriveControl.Sensor[66],
+	iSensor:=IX8210_0_工位66_物料到位感应Sensor66,
+	iName:="工位66");
+///////
+///////
+///////
+
+FB_Sensor_instance[67](
+	ioSensor:= DB8050_DriveControl.Sensor[67],
+	iSensor:=IX8210_3_工位67_物料到位感应Sensor67,
+	iName:="工位67");
+///////
+///////
+///////
+
+FB_Sensor_instance[68](
+	ioSensor:= DB8050_DriveControl.Sensor[68],
+	iSensor:=IX8210_6_工位68_物料到位感应Sensor68,
+	iName:="工位68");
+///////
+///////
+///////
+
+FB_Sensor_instance[69](
+	ioSensor:= DB8050_DriveControl.Sensor[69],
+	iSensor:=IX8211_1_工位69_物料到位感应Sensor69,
+	iName:="工位69");
+///////
+///////
+///////
+
+FB_Sensor_instance[70](
+	ioSensor:= DB8050_DriveControl.Sensor[70],
+	iSensor:=IX8211_4_工位70_物料到位感应Sensor70,
+	iName:="工位70");
+///////
+///////
+///////
+
+FB_Sensor_instance[71](
+	ioSensor:= DB8050_DriveControl.Sensor[71],
+	iSensor:=IX8212_1_工位71_物料到位感应Sensor71,
+	iName:="工位71");
+///////
+///////
+///////
+
+FB_Sensor_instance[72](
+	ioSensor:= DB8050_DriveControl.Sensor[72],
+	iSensor:=IX8212_4_工位72_物料到位感应Sensor72,
+	iName:="工位72");
+///////
+///////
+///////
+
+FB_Sensor_instance[73](
+	ioSensor:= DB8050_DriveControl.Sensor[73],
+	iSensor:=IX8212_7_工位73_物料到位感应Sensor73,
+	iName:="工位73");
+///////
+///////
+///////
+
+FB_Sensor_instance[74](
+	ioSensor:= DB8050_DriveControl.Sensor[74],
+	iSensor:=IX8213_2_工位74_物料到位感应Sensor74,
+	iName:="工位74");
+///////
+///////
+///////
+
+FB_Sensor_instance[75](
+	ioSensor:= DB8050_DriveControl.Sensor[75],
+	iSensor:=IX8213_5_工位75_物料到位感应Sensor75,
+	iName:="工位75");
+///////
+///////
+///////
+
+FB_Sensor_instance[76](
+	ioSensor:= DB8050_DriveControl.Sensor[76],
+	iSensor:=IX8214_0_工位76_物料到位感应Sensor76,
+	iName:="工位76");
+///////
+///////
+///////
+
+FB_Sensor_instance[77](
+	ioSensor:= DB8050_DriveControl.Sensor[77],
+	iSensor:=IX8214_3_工位77_物料到位感应Sensor77,
+	iName:="工位77");
+///////
+///////
+///////
+
+FB_Sensor_instance[78](
+	ioSensor:= DB8050_DriveControl.Sensor[78],
+	iSensor:=IX8214_6_工位78_物料到位感应Sensor78,
+	iName:="工位78");
+///////
+///////
+///////
+
+FB_Sensor_instance[79](
+	ioSensor:= DB8050_DriveControl.Sensor[79],
+	iSensor:=IX8215_1_工位79_物料到位感应Sensor79,
+	iName:="工位79");
+///////
+///////
+///////
+
+FB_Sensor_instance[80](
+	ioSensor:= DB8050_DriveControl.Sensor[80],
+	iSensor:=IX8215_4_工位80_物料到位感应Sensor80,
+	iName:="工位80");
+///////
+///////
+///////
+
+FB_Sensor_instance[101](
+	ioSensor:= DB8050_DriveControl.Sensor[101],
+	iSensor:=IX8303_0_测试1_产品有无检测Sensor101,
+	iName:="测试1");
+///////
+///////
+///////
+
+FB_Sensor_instance[102](
+	ioSensor:= DB8050_DriveControl.Sensor[102],
+	iSensor:=IX8303_1_测试1_螺杆位置检测Sensor102,
+	iName:="测试1");
+///////
+///////
+///////
+
+FB_Sensor_instance[103](
+	ioSensor:= DB8050_DriveControl.Sensor[103],
+	iSensor:=IX8303_2_缓存NG1_产品有无检测Sensor103,
+	iName:="缓存NG1");
+///////
+///////
+///////
+
+FB_Sensor_instance[111](
+	ioSensor:= DB8050_DriveControl.Sensor[111],
+	iSensor:=IX8307_0_测试2_产品有无检测Sensor111,
+	iName:="测试2");
+///////
+///////
+///////
+
+FB_Sensor_instance[112](
+	ioSensor:= DB8050_DriveControl.Sensor[112],
+	iSensor:=IX8307_1_测试2_螺杆位置检测Sensor112,
+	iName:="测试2");
+///////
+///////
+///////
+
+FB_Sensor_instance[113](
+	ioSensor:= DB8050_DriveControl.Sensor[113],
+	iSensor:=IX8307_2_缓存NG2_产品有无检测Sensor113,
+	iName:="缓存NG2");
+///////
+///////
+///////
+
+FB_Sensor_instance[121](
+	ioSensor:= DB8050_DriveControl.Sensor[121],
+	iSensor:=IX8403_0_测试3_产品有无检测Sensor121,
+	iName:="测试3");
+///////
+///////
+///////
+
+FB_Sensor_instance[122](
+	ioSensor:= DB8050_DriveControl.Sensor[122],
+	iSensor:=IX8403_1_测试3_螺杆位置检测Sensor122,
+	iName:="测试3");
+///////
+///////
+///////
+
+FB_Sensor_instance[123](
+	ioSensor:= DB8050_DriveControl.Sensor[123],
+	iSensor:=IX8403_2_缓存NG3_产品有无检测Sensor123,
+	iName:="缓存NG3");
+///////
+///////
+///////
+
+FB_Sensor_instance[131](
+	ioSensor:= DB8050_DriveControl.Sensor[131],
+	iSensor:=IX8407_0_测试4_产品有无检测Sensor131,
+	iName:="测试4");
+///////
+///////
+///////
+
+FB_Sensor_instance[132](
+	ioSensor:= DB8050_DriveControl.Sensor[132],
+	iSensor:=IX8407_1_测试4_螺杆位置检测Sensor132,
+	iName:="测试4");
+///////
+///////
+///////
+
+FB_Sensor_instance[133](
+	ioSensor:= DB8050_DriveControl.Sensor[133],
+	iSensor:=IX8407_2_缓存NG4_产品有无检测Sensor133,
+	iName:="缓存NG4");
+///////
+///////
+///////
+
+FB_Sensor_instance[141](
+	ioSensor:= DB8050_DriveControl.Sensor[141],
+	iSensor:=IX8500_2_上料机械手夹爪物料有无检测Sensor141,
+	iName:="上料机械手夹爪物料有无检测Sensor141");
+///////
+///////
+///////
+
+FB_Sensor_instance[145](
+	ioSensor:= DB8050_DriveControl.Sensor[145],
+	iSensor:=IX8601_0_码垛机械手夹爪物料有无检测Sensor145,
+	iName:="码垛机械手夹爪物料有无检测Sensor145");
+///////
+///////
+///////
+
+FB_Sensor_instance[146](
+	ioSensor:= DB8050_DriveControl.Sensor[146],
+	iSensor:=IX8601_1_码垛机械手夹爪隔板取料检测Sensor146,
+	iName:="码垛机械手夹爪隔板取料检测Sensor146");
+///////
+///////
+///////
+
+FB_Sensor_instance[147](
+	ioSensor:= DB8050_DriveControl.Sensor[147],
+	iSensor:=IX8601_2_码垛机械手夹爪隔板取料检测Sensor147,
+	iName:="码垛机械手夹爪隔板取料检测Sensor147");
+///////
+///////
+///////
+
+FB_Sensor_instance[151](
+	ioSensor:= DB8050_DriveControl.Sensor[151],
+	iSensor:=IX8700_0_NG流线放料位有无检测Sensor151,
+	iName:="NG流线放料位有无检测Sensor151");
+///////
+///////
+///////
+
+FB_Sensor_instance[152](
+	ioSensor:= DB8050_DriveControl.Sensor[152],
+	iSensor:=IX8700_1_NG流线位移到位检测Sensor152,
+	iName:="NG流线位移到位检测Sensor152");
+///////
+///////
+///////
+
+FB_Sensor_instance[153](
+	ioSensor:= DB8050_DriveControl.Sensor[153],
+	iSensor:=IX8700_2_NG流线满料检测Sensor153,
+	iName:="NG流线满料检测Sensor153");
+///////
+///////
+///////
