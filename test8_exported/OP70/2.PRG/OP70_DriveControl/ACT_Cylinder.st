@@ -80,20 +80,20 @@ FB_Cylinder_instance[4](
 
 FB_Cylinder_instance[5](
 	iEnable:=TRUE,
-	iName:="搬运1_1避让气缸CY05A",
+	iName:="搬运1_1避让气缸CY05B",
 	iMode:= DB7000_Control.Mode,
 	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
 	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
 	iLightCurtain:= DB7000_Control.Machine.LightCurtainRelay,
 	iClock_100ms:= CPU_Clock.Clock_100ms_R,
-	iSensor_Work:= IX7102_4_搬运1_1避让气缸CY05A_伸出位,
-	iSensor_Home:= IX7102_5_搬运1_1避让气缸CY05A_缩回位,
+	iSensor_Work:= IX7102_6_搬运1_1避让气缸CY05B_伸出位,
+	iSensor_Home:= IX7102_7_搬运1_1避让气缸CY05B_缩回位,
 	iIC_Home:= TRUE,
 	iIC_Work:= TRUE,
 	iValveModel:= 0,
 	ioCylinder:= DB7050_DriveControl.CylCtrl[5],
-	oValve_Work=> QX7102_4_搬运1_1避让气缸CY05_伸出,
-	oValve_Home=> QX7102_5_搬运1_1避让气缸CY05_缩回);
+	oValve_Work=> FALSE,
+	oValve_Home=> FALSE);
 ///////
 ///////
 ///////
