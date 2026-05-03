@@ -20,7 +20,7 @@ FB_Cylinder_instance[1](
 
 FB_Cylinder_instance[2](
 	iEnable:=TRUE,
-	iName:="上料避位升降气缸CY02-上升",
+	iName:="上料避位升降气缸CY02",
 	iMode:= DB7000_Control.Mode,
 	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
 	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
