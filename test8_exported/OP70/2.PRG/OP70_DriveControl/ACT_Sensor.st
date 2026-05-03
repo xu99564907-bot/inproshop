@@ -30,7 +30,6 @@ FB_Sensor_instance[4](
 ///////
 ///////
 
-
 FB_Sensor_instance[5](
 	ioSensor:= DB7050_DriveControl.Sensor[5],
 	iSensor:=IX7109_0_平台3物料有无检测Sensor5,
@@ -38,7 +37,6 @@ FB_Sensor_instance[5](
 ///////
 ///////
 ///////
-
 
 FB_Sensor_instance[6](
 	ioSensor:= DB7050_DriveControl.Sensor[6],
