@@ -414,37 +414,76 @@ def find_or_create_folder(parent, folder_name, log_lines):
     return None
 
 
+def find_child_by_name(parent, name):
+    """在 parent 的直接子节点中查找指定名称的节点（含递归=False 的所有节点类型）"""
+    if not hasattr(parent, 'get_children'):
+        return None
+    try:
+        for child in parent.get_children(recursive=False):
+            try:
+                child_name = child.get_name() if hasattr(child, 'get_name') else str(child)
+                if child_name == name:
+                    return child
+            except:
+                pass
+    except:
+        pass
+    return None
+
+
 def navigate_to_parent(proj, tree_parts, log_lines):
     """
-    沿 tree_parts 路径逐级向下，定位父节点
-    对已有节点直接进入，对不存在的中间目录尝试创建文件夹
+    沿 tree_parts 路径逐级向下，定位父节点。
+    - 已有节点（含 POU）直接进入。
+    - Device / Plc Logic / Application 必须存在。
+    - 其他不存在的中间节点：先尝试创建文件夹，再尝试全局按名称查找（处理 POU 作为容器的情况）。
     """
     current = proj
     for part in tree_parts:
-        found = None
-        if hasattr(current, 'get_children'):
-            for child in current.get_children(recursive=False):
-                try:
-                    if hasattr(child, 'get_name'):
-                        name = child.get_name()
-                    else:
-                        name = str(child)
-                    if name == part:
-                        found = child
-                        break
-                except:
-                    pass
+        found = find_child_by_name(current, part)
         if found is None:
             # Device / Plc Logic / Application 必须已经存在
             if part in ('Device', 'Plc Logic', 'Application'):
                 log_lines.append("[ERR] Required node not found: %s" % part)
                 return None
-            # 其他中间节点尝试创建文件夹
-            found = find_or_create_folder(current, part, log_lines)
-            if found is None:
-                return None
+            # 尝试在整个工程树中按名称查找（可能是 POU/FB 对象，而非文件夹）
+            found = find_object_by_name(proj, part, recursive=True)
+            if found:
+                log_lines.append("[INFO] Found '%s' by global name search (may be a POU)" % part)
+            else:
+                # 尝试创建文件夹
+                found = find_or_create_folder(current, part, log_lines)
+                if found is None:
+                    return None
         current = found
     return current
+
+
+def log_available_methods(obj, log_lines, label=""):
+    """记录对象可用的 create 方法，用于诊断"""
+    methods = [m for m in dir(obj) if 'create' in m.lower() and callable(getattr(obj, m, None))]
+    if methods:
+        log_lines.append("[DBG] %s available create methods: %s" % (label, ', '.join(methods)))
+    else:
+        log_lines.append("[DBG] %s has no create* methods" % label)
+
+
+def _write_content_to_obj(new_obj, file_type, content, log_lines, obj_name):
+    """将内容写入新创建的对象"""
+    if file_type == 'pou':
+        decl, impl = split_pou_decl_impl(content)
+        if decl.strip() and hasattr(new_obj, 'textual_declaration'):
+            set_text_content(new_obj.textual_declaration, decl)
+        if impl.strip() and hasattr(new_obj, 'textual_implementation'):
+            set_text_content(new_obj.textual_implementation, impl)
+    elif file_type in ('gvl', 'dut'):
+        if hasattr(new_obj, 'textual_declaration'):
+            set_text_content(new_obj.textual_declaration, content)
+    elif file_type == 'action':
+        if hasattr(new_obj, 'textual_implementation'):
+            set_text_content(new_obj.textual_implementation, content)
+        elif hasattr(new_obj, 'textual_declaration'):
+            set_text_content(new_obj.textual_declaration, content)
 
 
 def create_new_object(parent, obj_name, file_type, content, log_lines):
@@ -454,71 +493,108 @@ def create_new_object(parent, obj_name, file_type, content, log_lines):
 
         if file_type == 'pou':
             pou_subtype = get_pou_subtype(content)
-            # CODESYS API: create_pou(name, pou_type, language)
             # pou_type: 0=PROGRAM, 1=FUNCTION_BLOCK, 2=FUNCTION
-            # language: 0=IL, 1=ST, 2=FBD, 3=LD, 4=CFC, 5=SFC
+            # InProShop V1.9 的 create_pou(name, pou_type) 不接受 int 语言参数；
+            # 先不带语言参数尝试，失败再带 int，以兼容不同版本
             type_map = {'program': 0, 'function_block': 1, 'function': 2}
             pou_type_id = type_map.get(pou_subtype, 1)
 
-            if hasattr(parent, 'create_pou'):
-                new_obj = parent.create_pou(obj_name, pou_type_id, 1)
-            elif hasattr(parent, 'create'):
-                new_obj = parent.create(obj_name, pou_type_id)
+            for _fn_name, _args in [
+                ('create_pou', (obj_name, pou_type_id)),
+                ('create_pou', (obj_name, pou_type_id, 1)),
+                ('create',     (obj_name, pou_type_id)),
+                ('create',     (obj_name, 'pou')),
+            ]:
+                try:
+                    _fn = getattr(parent, _fn_name, None)
+                    if _fn is None:
+                        continue
+                    new_obj = _fn(*_args)
+                    if new_obj:
+                        break
+                except:
+                    pass
 
             if new_obj:
-                decl, impl = split_pou_decl_impl(content)
-                if decl.strip():
-                    if hasattr(new_obj, 'textual_declaration'):
-                        set_text_content(new_obj.textual_declaration, decl)
-                if impl.strip():
-                    if hasattr(new_obj, 'textual_implementation'):
-                        set_text_content(new_obj.textual_implementation, impl)
+                _write_content_to_obj(new_obj, file_type, content, log_lines, obj_name)
                 log_lines.append("[NEW] Created POU (%s): %s" % (pou_subtype, obj_name))
                 return True
 
         elif file_type == 'gvl':
-            if hasattr(parent, 'create_gvl'):
-                new_obj = parent.create_gvl(obj_name)
-            elif hasattr(parent, 'create'):
-                new_obj = parent.create(obj_name, 'gvl')
+            for _fn_name, _args in [
+                ('create_gvl', (obj_name,)),
+                ('create',     (obj_name, 'gvl')),
+                ('create_pou', (obj_name, 0)),   # fallback: PROGRAM
+            ]:
+                try:
+                    _fn = getattr(parent, _fn_name, None)
+                    if _fn is None:
+                        continue
+                    new_obj = _fn(*_args)
+                    if new_obj:
+                        break
+                except:
+                    pass
 
             if new_obj:
-                if hasattr(new_obj, 'textual_declaration'):
-                    set_text_content(new_obj.textual_declaration, content)
+                _write_content_to_obj(new_obj, file_type, content, log_lines, obj_name)
                 log_lines.append("[NEW] Created GVL: %s" % obj_name)
                 return True
 
         elif file_type == 'dut':
-            if hasattr(parent, 'create_dut'):
-                new_obj = parent.create_dut(obj_name)
-            elif hasattr(parent, 'create'):
-                new_obj = parent.create(obj_name, 'dut')
+            for _fn_name, _args in [
+                ('create_dut',  (obj_name,)),
+                ('create',      (obj_name, 'dut')),
+                ('create',      (obj_name, 'struct')),
+            ]:
+                try:
+                    _fn = getattr(parent, _fn_name, None)
+                    if _fn is None:
+                        continue
+                    new_obj = _fn(*_args)
+                    if new_obj:
+                        break
+                except:
+                    pass
 
             if new_obj:
-                if hasattr(new_obj, 'textual_declaration'):
-                    set_text_content(new_obj.textual_declaration, content)
+                _write_content_to_obj(new_obj, file_type, content, log_lines, obj_name)
                 log_lines.append("[NEW] Created DUT: %s" % obj_name)
                 return True
 
         elif file_type == 'action':
-            # Action 需要挂在 POU 下面，parent 应该是 POU
-            if hasattr(parent, 'create_action'):
-                new_obj = parent.create_action(obj_name, 1)  # 1=ST
-            elif hasattr(parent, 'create'):
-                new_obj = parent.create(obj_name, 'action')
+            # Action 必须挂在 POU 下；parent 应是 PROGRAM/FB POU 对象。
+            # InProShop V1.9 的 create_action 不接受 int 语言参数（期望 Nullable[Guid]），
+            # 先用无参版本，再逐步降级。bare except 可捕获 CLR 异常。
+            for _fn_name, _args in [
+                ('create_action', (obj_name,)),          # 不传语言参数（最兼容）
+                ('create_action', (obj_name, None)),     # 显式 None
+                ('create',        (obj_name, 'action')),
+                ('create',        (obj_name,)),
+            ]:
+                try:
+                    _fn = getattr(parent, _fn_name, None)
+                    if _fn is None:
+                        continue
+                    new_obj = _fn(*_args)
+                    if new_obj:
+                        break
+                except:
+                    pass
 
             if new_obj:
-                if hasattr(new_obj, 'textual_implementation'):
-                    set_text_content(new_obj.textual_implementation, content)
+                _write_content_to_obj(new_obj, file_type, content, log_lines, obj_name)
                 log_lines.append("[NEW] Created Action: %s" % obj_name)
                 return True
 
         if new_obj is None:
-            log_lines.append("[ERR] Cannot create %s: parent has no create method" % obj_name)
+            log_available_methods(parent, log_lines, "parent of %s" % obj_name)
+            log_lines.append("[ERR] Cannot create %s (type=%s): all creation attempts failed" % (obj_name, file_type))
             return False
 
-    except Exception as e:
-        log_lines.append("[ERR] Failed to create %s: %s" % (obj_name, str(e)))
+    except:
+        import traceback
+        log_lines.append("[ERR] Failed to create %s: %s" % (obj_name, traceback.format_exc().splitlines()[-1]))
         return False
 
     return False

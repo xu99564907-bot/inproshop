@@ -1,11 +1,10 @@
 ============================================================
 InProShop Project Import Script
-Start Time: 2026-05-03T21:48:44.855000
+Start Time: 2026-05-04T08:59:19.231000
 ============================================================
 [INFO] No project open. Opening project: C:\Users\Administrator\Desktop\2026-04-07\ApexHMI\PLC\test8\test8.project
-[WARN] projects.open attempt failed: 所选工程正在被'Administrator'在'PC-20260428JDXK'上使用。
 [INFO] Import from: C:\Users\Administrator\Desktop\2026-04-07\ApexHMI\PLC\test8\test8_exported
-[INFO] Found 699 files to import
+[INFO] Found 700 files to import
 [INFO] Create new objects: YES
 
 [SKIP] Action PersistentVars: no writable text property
@@ -638,6 +637,7 @@ Start Time: 2026-05-03T21:48:44.855000
 [OK] Updated Action: ACT_Vacuum
 [OK] Updated Action: ACT_HMI_Jump
 [OK] Updated Action: ACT_MAP
+[ERR] Failed to create ACT_AutoRunST1: expected Nullable[Guid], got int
 [OK] Updated Action: ACT_AutoRunST1_人工上料打码
 [OK] Updated Action: ACT_AutoRunST2_同步搬运
 [OK] Updated Action: ACT_AutoRunST3_侧面1锁螺丝工位
@@ -712,9 +712,9 @@ Start Time: 2026-05-03T21:48:44.855000
 Updated: 699
 Created: 0
 Skipped: 0
-Errors: 0
+Errors: 1
 [OK] Project saved.
 
 ============================================================
-End Time: 2026-05-03T22:21:08.005000
+End Time: 2026-05-04T09:00:58.662000
 ============================================================
