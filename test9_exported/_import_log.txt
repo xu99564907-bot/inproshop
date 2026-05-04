@@ -1,0 +1,823 @@
+============================================================
+InProShop Project Import Script
+Start Time: 2026-05-04T10:06:18.841000
+============================================================
+[INFO] No project open. Opening project: C:\Users\Administrator\Desktop\2026-04-07\ApexHMI\PLC\test9\test9.project
+[INFO] Import from: C:\Users\Administrator\Desktop\2026-04-07\ApexHMI\PLC\test9\test9_exported
+[INFO] Found 697 files to import
+[INFO] Create new objects: YES
+
+[SKIP] Action PersistentVars: no writable text property
+[OK] Updated DUT: Str_CamControl
+[OK] Updated DUT: Str_Clock
+[OK] Updated DUT: Str_CycleTime
+[OK] Updated DUT: Str_DoubleStart
+[OK] Updated DUT: Str_FromMaster
+[OK] Updated DUT: Str_Graph
+[OK] Updated DUT: Str_HMI
+[OK] Updated DUT: Str_HMIFault
+[OK] Updated DUT: Str_IOMonitor
+[OK] Updated DUT: Str_SafeDoor
+[OK] Updated DUT: Str_StationData
+[OK] Updated DUT: Str_ToSlave
+[OK] Updated DUT: Str_WstringWord
+[OK] Updated POU: FB_Clock
+[OK] Updated POU: FB_DoubleStart
+[OK] Updated POU: FB_AAS
+[OK] Updated DUT: Str_AAS
+[OK] Updated DUT: Str_AASCmd
+[OK] Updated DUT: Str_AASParm
+[OK] Updated DUT: Str_AASStatus
+[OK] Updated POU: FB_AirLeak
+[OK] Updated DUT: Str_AirLeak
+[OK] Updated DUT: Str_AirLeakCmd
+[OK] Updated DUT: Str_AirLeakParm
+[OK] Updated DUT: Str_AirLeakResult
+[OK] Updated DUT: Str_AirLeakStatus
+[OK] Updated POU: FB_AI
+[OK] Updated DUT: Str_AI
+[OK] Updated DUT: Str_AICmd
+[OK] Updated DUT: Str_AIParm
+[OK] Updated DUT: Str_AIStatus
+[OK] Updated POU: FB_Axis_V1_3
+[OK] Updated DUT: Str_Axis
+[OK] Updated DUT: Str_AxisCmd
+[OK] Updated DUT: Str_AxisDevStatus
+[OK] Updated DUT: Str_AxisParm
+[OK] Updated DUT: Str_AxisParmControl
+[OK] Updated DUT: Str_AxisStatus
+[OK] Updated POU: FB_Cam
+[OK] Updated DUT: Str_Cam
+[OK] Updated DUT: Str_CamCmd
+[OK] Updated DUT: Str_CamParm
+[OK] Updated DUT: Str_CamStatus
+[OK] Updated POU: FB_Code
+[OK] Updated DUT: Str_Code
+[OK] Updated DUT: Str_CodeCmd
+[OK] Updated DUT: Str_CodeParm
+[OK] Updated DUT: Str_CodeStatus
+[OK] Updated POU: FB_Count
+[OK] Updated DUT: Str_Count
+[OK] Updated DUT: Str_CountToday
+[OK] Updated POU: FB_Cylinder_V1
+[OK] Updated POU: FB_Vacuum_V1
+[OK] Updated DUT: Str_Cylinder
+[OK] Updated DUT: Str_CylinderCmd
+[OK] Updated DUT: Str_CylinderDevStatus
+[OK] Updated DUT: Str_CylinderParm
+[OK] Updated DUT: Str_CylinderStatus
+[OK] Updated POU: FB_ElectricScrewdriver_V1_1_0
+[OK] Updated DUT: Str_ESD
+[OK] Updated DUT: Str_ESDCmd
+[OK] Updated DUT: Str_ESDDevStatus
+[OK] Updated DUT: Str_ESDParm
+[OK] Updated DUT: Str_ESDStatus
+[OK] Updated POU: FB_Gear
+[OK] Updated DUT: Str_Gear
+[OK] Updated DUT: Str_GearCmd
+[OK] Updated DUT: Str_GearParm
+[OK] Updated DUT: Str_GearStatus
+[OK] Updated POU: FB_Heating
+[OK] Updated DUT: Str_Heating
+[OK] Updated DUT: Str_HeatingCmd
+[OK] Updated DUT: Str_HeatingParm
+[OK] Updated DUT: Str_HeatingParmOut
+[OK] Updated DUT: Str_HeatingParmStatus
+[OK] Updated POU: FB_ModeControl_V1
+[OK] Updated DUT: Str_Machine
+[OK] Updated DUT: Str_Mode
+[OK] Updated DUT: Str_ModeCmd
+[OK] Updated DUT: Str_ModeOut
+[OK] Updated DUT: Str_ModeStatus
+[OK] Updated POU: FB_Motor
+[OK] Updated DUT: Str_Motor
+[OK] Updated DUT: Str_MotorCmd
+[OK] Updated DUT: Str_MotorDevStatus
+[OK] Updated POU: FB_Palletizing
+[OK] Updated DUT: Str_Palletizing
+[OK] Updated DUT: Str_Palletizing_Cmd
+[OK] Updated DUT: Str_Palletizing_Parm
+[OK] Updated DUT: Str_Palletizing_Status
+[OK] Updated POU: FB_Print
+[OK] Updated DUT: Str_Print
+[OK] Updated DUT: Str_PrintCmd
+[OK] Updated DUT: Str_PrintParm
+[OK] Updated DUT: Str_PrintStatus
+[OK] Updated POU: FB_Epson_V1
+[OK] Updated DUT: Str_Epson
+[OK] Updated DUT: Str_EpsonCmd
+[OK] Updated DUT: Str_EpsonStatus
+[OK] Updated Action: ACT_Control
+[OK] Updated Action: ACT_Input
+[OK] Updated Action: ACT_Output
+[OK] Updated Action: ACT_Socket
+[OK] Updated POU: FB_Kuka6_V1
+[OK] Updated DUT: Str_Kuka6
+[OK] Updated DUT: Str_Kuka6Cmd
+[OK] Updated DUT: Str_Kuka6Status
+[OK] Updated Action: ACT_Control
+[OK] Updated Action: ACT_Input
+[OK] Updated Action: ACT_Output
+[OK] Updated POU: FB_Kuka_V1
+[OK] Updated DUT: Str_Kuka
+[OK] Updated DUT: Str_KukaCmd
+[OK] Updated DUT: Str_KukaStatus
+[OK] Updated Action: ACT_Control
+[OK] Updated Action: ACT_Input
+[OK] Updated Action: ACT_Output
+[OK] Updated Action: ACT_Socket
+[OK] Updated POU: FB_Rotdisk_V1
+[OK] Updated DUT: Str_Rotdisk
+[OK] Updated DUT: Str_RotdiskCmd
+[OK] Updated DUT: Str_RotdiskDevStatus
+[OK] Updated DUT: Str_RotdiskParm
+[OK] Updated DUT: Str_RotdiskStatus
+[OK] Updated POU: FB_ScrewFeeder
+[OK] Updated DUT: Str_Screw
+[OK] Updated DUT: Str_ScrewCmd
+[OK] Updated DUT: Str_ScrewParm
+[OK] Updated DUT: Str_ScrewStatus
+[OK] Updated POU: FB_Sensor_V1_1
+[OK] Updated DUT: Str_Sensor
+[OK] Updated DUT: Str_SensorParm
+[OK] Updated DUT: Str_SensorStatus
+[OK] Updated POU: FB_TcpClient
+[OK] Updated POU: FB_TcpClient_String
+[OK] Updated POU: FB_TcpClient_Wstring
+[OK] Updated DUT: Str_TcpClient
+[OK] Updated DUT: Str_TcpClient_String
+[OK] Updated DUT: Str_TcpClient_Wstring
+[OK] Updated POU: FB_Stopper_V1
+[OK] Updated DUT: Str_Stopper
+[OK] Updated DUT: Str_StopperCmd
+[OK] Updated DUT: Str_StopperDevStatus
+[OK] Updated DUT: Str_StopperParm
+[OK] Updated DUT: Str_StopperStatus
+[OK] Updated POU: FB_VibratoryFeeder
+[OK] Updated DUT: Str_VibratoryFeeder
+[OK] Updated DUT: Str_VibratoryFeederCmd
+[OK] Updated DUT: Str_VibratoryFeederParm
+[OK] Updated DUT: Str_VibratoryFeederStatus
+[OK] Updated POU: FC_AryCmp
+[OK] Updated POU: FC_LCONCAT
+[OK] Updated POU: FC_StringSplit
+[OK] Updated POU: FC_SysTime
+[OK] Updated POU: FC_WStringSplit
+[OK] Updated POU: FB_Aging
+[OK] Updated DUT: Str_Aging
+[OK] Updated DUT: Str_Aging_Cmd
+[OK] Updated DUT: Str_Aging_Parm
+[OK] Updated DUT: Str_Aging_Status
+[OK] Updated POU: Clock
+[OK] Updated GVL: Main_Clock
+[OK] Updated GVL: Main_Communication
+[OK] Updated GVL: Main_IO
+[OK] Updated POU: PLC_PRG
+[OK] Updated POU: Test
+[OK] Updated DUT: Enum_OP10_Axis
+[OK] Updated DUT: Enum_OP10_Cyl
+[OK] Updated DUT: Enum_OP10_Sensor
+[OK] Updated DUT: Enum_OP80_Vac_1
+[OK] Updated DUT: Str_OP10_FaultEstop
+[OK] Updated DUT: Str_OP10_FaultRun
+[OK] Updated DUT: Str_OP10_Faultstop
+[OK] Updated DUT: Str_OP10_Product
+[OK] Updated DUT: Str_OP10_Recipe
+[OK] Updated DUT: Str_OP10_StationData
+[OK] Updated DUT: Str_OP10_TO_OPXX
+[OK] Updated DUT: Str_OPXX_TO_OP10
+[OK] Updated GVL: DB1000_Control
+[OK] Updated GVL: DB1002_Recipe
+[OK] Updated GVL: DB1003_Count
+[OK] Updated GVL: DB1005_Communication
+[OK] Updated GVL: DB1050_DriveControl
+[OK] Updated GVL: DB1070_Fault
+[OK] Updated GVL: DB1090_Other
+[OK] Updated POU: OP10_Communication
+[OK] Updated POU: OP10_Control
+[OK] Updated POU: OP10_DI_Mirror
+[OK] Updated POU: OP10_DO_Mirror
+[OK] Updated POU: OP10_DriveControl
+[OK] Updated POU: OP10_Fault
+[OK] Updated POU: OP10_Graph
+[OK] Updated POU: OP10_Other
+[OK] Updated POU: OP10_Recipe
+[OK] Updated Action: ACT_Comment
+[OK] Updated Action: ACT_MAP
+[OK] Updated Action: ACT_Status
+[OK] Updated Action: ACT_Comment
+[OK] Updated Action: ACT_MAP
+[OK] Updated Action: ACT_Status
+[OK] Updated Action: ACT_AAS
+[OK] Updated Action: ACT_Axis
+[OK] Updated Action: ACT_Epson
+[OK] Updated Action: ACT_Heating
+[OK] Updated Action: ACT_Kuka
+[OK] Updated Action: ACT_Motor
+[OK] Updated Action: ACT_Pallet
+[OK] Updated Action: ACT_Rotdisk
+[OK] Updated Action: ACT_Stopper
+[OK] Updated Action: ACT_HMI_Jump
+[OK] Updated Action: ACT_MAP
+[OK] Updated Action: ACT_AutoRunST1_气密1测试
+[INFO] Action call already exists in OP10_Graph: ACT_AutoRunST1_气密1测试();
+[OK] Updated Action: ACT_AutoRunST2_气密2测试
+[INFO] Action call already exists in OP10_Graph: ACT_AutoRunST2_气密2测试();
+[OK] Updated Action: ACT_AutoRunST3_气密3测试
+[INFO] Action call already exists in OP10_Graph: ACT_AutoRunST3_气密3测试();
+[OK] Updated Action: ACT_AutoRunST4_气密4测试
+[INFO] Action call already exists in OP10_Graph: ACT_AutoRunST4_气密4测试();
+[OK] Updated Action: ACT_AutoRunST5_上料机械手
+[INFO] Action call already exists in OP10_Graph: ACT_AutoRunST5_上料机械手();
+[OK] Updated Action: ACT_AutoRunST6_码垛机械手
+[INFO] Action call already exists in OP10_Graph: ACT_AutoRunST6_码垛机械手();
+[OK] Updated Action: ACT_InitST1
+[INFO] Action call already exists in OP10_Graph: ACT_InitST1();
+[OK] Updated Action: ACT_InitST2
+[INFO] Action call already exists in OP10_Graph: ACT_InitST2();
+[OK] Updated Action: ACT_InitST3
+[INFO] Action call already exists in OP10_Graph: ACT_InitST3();
+[OK] Updated Action: ACT_InitST4
+[INFO] Action call already exists in OP10_Graph: ACT_InitST4();
+[OK] Updated Action: ACT_InitST5
+[INFO] Action call already exists in OP10_Graph: ACT_InitST5();
+[OK] Updated Action: ACT_InitST6
+[INFO] Action call already exists in OP10_Graph: ACT_InitST6();
+[OK] Updated Action: ACT_Download
+[OK] Updated Action: ACT_Upload
+[OK] Updated DUT: Enum_OP11_Axis
+[OK] Updated DUT: Enum_OP11_Cyl
+[OK] Updated DUT: Enum_OP11_Sensor
+[OK] Updated DUT: Enum_OP11_Vac
+[OK] Updated DUT: Str_OP11_FaultEstop
+[OK] Updated DUT: Str_OP11_FaultRun
+[OK] Updated DUT: Str_OP11_Faultstop
+[OK] Updated DUT: Str_OP11_Product
+[OK] Updated DUT: Str_OP11_Recipe
+[OK] Updated DUT: Str_OP11_StationData
+[OK] Updated DUT: Str_OP11_TO_OPXX
+[OK] Updated DUT: Str_OPXX_TO_OP11
+[OK] Updated GVL: DB1100_Control
+[OK] Updated GVL: DB1102_Recipe
+[OK] Updated GVL: DB1103_Count
+[OK] Updated GVL: DB1105_Communication
+[OK] Updated GVL: DB1150_DriveControl
+[OK] Updated GVL: DB1170_Fault
+[OK] Updated GVL: DB1190_Other
+[OK] Updated POU: OP11_Communication
+[OK] Updated POU: OP11_Control
+[OK] Updated POU: OP11_DI_Mirror
+[OK] Updated POU: OP11_DO_Mirror
+[OK] Updated POU: OP11_DriveControl
+[OK] Updated POU: OP11_Fault
+[OK] Updated POU: OP11_Graph
+[OK] Updated POU: OP11_Other
+[OK] Updated POU: OP11_Recipe
+[OK] Updated Action: ACT_Comment
+[OK] Updated Action: ACT_MAP
+[OK] Updated Action: ACT_Status
+[OK] Updated Action: ACT_Comment
+[OK] Updated Action: ACT_MAP
+[OK] Updated Action: ACT_Status
+[OK] Updated Action: ACT_AAS
+[OK] Updated Action: ACT_Axis
+[OK] Updated Action: ACT_Epson
+[OK] Updated Action: ACT_Heating
+[OK] Updated Action: ACT_Kuka
+[OK] Updated Action: ACT_Motor
+[OK] Updated Action: ACT_Pallet
+[OK] Updated Action: ACT_Rotdisk
+[OK] Updated Action: ACT_Stopper
+[OK] Updated Action: ACT_HMI_Jump
+[OK] Updated Action: ACT_MAP
+[OK] Updated Action: ACT_AutoRunST1_气密1测试
+[INFO] Action call already exists in OP11_Graph: ACT_AutoRunST1_气密1测试();
+[OK] Updated Action: ACT_AutoRunST2_气密2测试
+[INFO] Action call already exists in OP11_Graph: ACT_AutoRunST2_气密2测试();
+[OK] Updated Action: ACT_AutoRunST3_气密3测试
+[INFO] Action call already exists in OP11_Graph: ACT_AutoRunST3_气密3测试();
+[OK] Updated Action: ACT_AutoRunST4_气密4测试
+[INFO] Action call already exists in OP11_Graph: ACT_AutoRunST4_气密4测试();
+[OK] Updated Action: ACT_AutoRunST5_上料机械手
+[INFO] Action call already exists in OP11_Graph: ACT_AutoRunST5_上料机械手();
+[OK] Updated Action: ACT_AutoRunST6_码垛机械手
+[INFO] Action call already exists in OP11_Graph: ACT_AutoRunST6_码垛机械手();
+[OK] Updated Action: ACT_InitST1
+[INFO] Action call already exists in OP11_Graph: ACT_InitST1();
+[OK] Updated Action: ACT_InitST2
+[INFO] Action call already exists in OP11_Graph: ACT_InitST2();
+[OK] Updated Action: ACT_InitST3
+[INFO] Action call already exists in OP11_Graph: ACT_InitST3();
+[OK] Updated Action: ACT_InitST4
+[INFO] Action call already exists in OP11_Graph: ACT_InitST4();
+[OK] Updated Action: ACT_InitST5
+[INFO] Action call already exists in OP11_Graph: ACT_InitST5();
+[OK] Updated Action: ACT_InitST6
+[INFO] Action call already exists in OP11_Graph: ACT_InitST6();
+[OK] Updated Action: ACT_Download
+[OK] Updated Action: ACT_Upload
+[OK] Updated DUT: Enum_OP20_Axis
+[OK] Updated DUT: Enum_OP20_Cyl
+[OK] Updated DUT: Enum_OP20_Sensor
+[OK] Updated DUT: Enum_OP20_Vac
+[OK] Updated DUT: Str_OP20_FaultEstop
+[OK] Updated DUT: Str_OP20_FaultRun
+[OK] Updated DUT: Str_OP20_Faultstop
+[OK] Updated DUT: Str_OP20_Product
+[OK] Updated DUT: Str_OP20_Recipe
+[OK] Updated DUT: Str_OP20_StationData
+[OK] Updated DUT: Str_OP20_TO_OPXX
+[OK] Updated DUT: Str_OPXX_TO_OP20
+[OK] Updated GVL: DB2000_Control
+[OK] Updated GVL: DB2002_Recipe
+[OK] Updated GVL: DB2003_Count
+[OK] Updated GVL: DB2005_Communication
+[OK] Updated GVL: DB2050_DriveControl
+[OK] Updated GVL: DB2070_Fault
+[OK] Updated GVL: DB2090_Other
+[OK] Updated POU: OP20_Communication
+[OK] Updated POU: OP20_Control
+[OK] Updated POU: OP20_DI_Mirror
+[OK] Updated POU: OP20_DO_Mirror
+[OK] Updated POU: OP20_DriveControl
+[OK] Updated POU: OP20_Fault
+[OK] Updated POU: OP20_Graph
+[OK] Updated POU: OP20_Other
+[OK] Updated POU: OP20_Recipe
+[OK] Updated Action: ACT_Comment
+[OK] Updated Action: ACT_MAP
+[OK] Updated Action: ACT_Status
+[OK] Updated Action: ACT_Comment
+[OK] Updated Action: ACT_MAP
+[OK] Updated Action: ACT_Status
+[OK] Updated Action: ACT_AAS
+[OK] Updated Action: ACT_Axis
+[OK] Updated Action: ACT_Epson
+[OK] Updated Action: ACT_Heating
+[OK] Updated Action: ACT_Kuka
+[OK] Updated Action: ACT_Motor
+[OK] Updated Action: ACT_Pallet
+[OK] Updated Action: ACT_Rotdisk
+[OK] Updated Action: ACT_Stopper
+[OK] Updated Action: ACT_HMI_Jump
+[OK] Updated Action: ACT_MAP
+[OK] Updated Action: ACT_AutoRunST1_气密1测试
+[INFO] Action call already exists in OP20_Graph: ACT_AutoRunST1_气密1测试();
+[OK] Updated Action: ACT_AutoRunST2_气密2测试
+[INFO] Action call already exists in OP20_Graph: ACT_AutoRunST2_气密2测试();
+[OK] Updated Action: ACT_AutoRunST3_气密3测试
+[INFO] Action call already exists in OP20_Graph: ACT_AutoRunST3_气密3测试();
+[OK] Updated Action: ACT_AutoRunST4_气密4测试
+[INFO] Action call already exists in OP20_Graph: ACT_AutoRunST4_气密4测试();
+[OK] Updated Action: ACT_AutoRunST5_上料机械手
+[INFO] Action call already exists in OP20_Graph: ACT_AutoRunST5_上料机械手();
+[OK] Updated Action: ACT_AutoRunST6_码垛机械手
+[INFO] Action call already exists in OP20_Graph: ACT_AutoRunST6_码垛机械手();
+[OK] Updated Action: ACT_InitST1
+[INFO] Action call already exists in OP20_Graph: ACT_InitST1();
+[OK] Updated Action: ACT_InitST2
+[INFO] Action call already exists in OP20_Graph: ACT_InitST2();
+[OK] Updated Action: ACT_InitST3
+[INFO] Action call already exists in OP20_Graph: ACT_InitST3();
+[OK] Updated Action: ACT_InitST4
+[INFO] Action call already exists in OP20_Graph: ACT_InitST4();
+[OK] Updated Action: ACT_InitST5
+[INFO] Action call already exists in OP20_Graph: ACT_InitST5();
+[OK] Updated Action: ACT_InitST6
+[INFO] Action call already exists in OP20_Graph: ACT_InitST6();
+[OK] Updated Action: ACT_Download
+[OK] Updated Action: ACT_Upload
+[OK] Updated DUT: Enum_OP30_Axis
+[OK] Updated DUT: Enum_OP30_Cyl
+[OK] Updated DUT: Enum_OP30_Sensor
+[OK] Updated DUT: Enum_OP30_Vac
+[OK] Updated DUT: Str_OP30_FaultEstop
+[OK] Updated DUT: Str_OP30_FaultRun
+[OK] Updated DUT: Str_OP30_Faultstop
+[OK] Updated DUT: Str_OP30_Product
+[OK] Updated DUT: Str_OP30_Recipe
+[OK] Updated DUT: Str_OP30_StationData
+[OK] Updated DUT: Str_OP30_TO_OPXX
+[OK] Updated DUT: Str_OPXX_TO_OP30
+[OK] Updated GVL: DB3000_Control
+[OK] Updated GVL: DB3002_Recipe
+[OK] Updated GVL: DB3003_Count
+[OK] Updated GVL: DB3005_Communication
+[OK] Updated GVL: DB3050_DriveControl
+[OK] Updated GVL: DB3070_Fault
+[OK] Updated GVL: DB3090_Other
+[OK] Updated POU: OP30_Communication
+[OK] Updated POU: OP30_Control
+[OK] Updated POU: OP30_DI_Mirror
+[OK] Updated POU: OP30_DO_Mirror
+[OK] Updated POU: OP30_DriveControl
+[OK] Updated POU: OP30_Fault
+[OK] Updated POU: OP30_Graph
+[OK] Updated POU: OP30_Other
+[OK] Updated POU: OP30_Recipe
+[OK] Updated Action: ACT_Comment
+[OK] Updated Action: ACT_MAP
+[OK] Updated Action: ACT_Status
+[OK] Updated Action: ACT_Comment
+[OK] Updated Action: ACT_MAP
+[OK] Updated Action: ACT_Status
+[OK] Updated Action: ACT_AAS
+[OK] Updated Action: ACT_Axis
+[OK] Updated Action: ACT_Epson
+[OK] Updated Action: ACT_Heating
+[OK] Updated Action: ACT_Kuka
+[OK] Updated Action: ACT_Motor
+[OK] Updated Action: ACT_Pallet
+[OK] Updated Action: ACT_Rotdisk
+[OK] Updated Action: ACT_Stopper
+[OK] Updated Action: ACT_HMI_Jump
+[OK] Updated Action: ACT_MAP
+[OK] Updated Action: ACT_AutoRunST1_气密1测试
+[INFO] Action call already exists in OP30_Graph: ACT_AutoRunST1_气密1测试();
+[OK] Updated Action: ACT_AutoRunST2_气密2测试
+[INFO] Action call already exists in OP30_Graph: ACT_AutoRunST2_气密2测试();
+[OK] Updated Action: ACT_AutoRunST3_气密3测试
+[INFO] Action call already exists in OP30_Graph: ACT_AutoRunST3_气密3测试();
+[OK] Updated Action: ACT_AutoRunST4_气密4测试
+[INFO] Action call already exists in OP30_Graph: ACT_AutoRunST4_气密4测试();
+[OK] Updated Action: ACT_AutoRunST5_上料机械手
+[INFO] Action call already exists in OP30_Graph: ACT_AutoRunST5_上料机械手();
+[OK] Updated Action: ACT_AutoRunST6_码垛机械手
+[INFO] Action call already exists in OP30_Graph: ACT_AutoRunST6_码垛机械手();
+[OK] Updated Action: ACT_InitST1
+[INFO] Action call already exists in OP30_Graph: ACT_InitST1();
+[OK] Updated Action: ACT_InitST2
+[INFO] Action call already exists in OP30_Graph: ACT_InitST2();
+[OK] Updated Action: ACT_InitST3
+[INFO] Action call already exists in OP30_Graph: ACT_InitST3();
+[OK] Updated Action: ACT_InitST4
+[INFO] Action call already exists in OP30_Graph: ACT_InitST4();
+[OK] Updated Action: ACT_InitST5
+[INFO] Action call already exists in OP30_Graph: ACT_InitST5();
+[OK] Updated Action: ACT_InitST6
+[INFO] Action call already exists in OP30_Graph: ACT_InitST6();
+[OK] Updated Action: ACT_Download
+[OK] Updated Action: ACT_Upload
+[OK] Updated DUT: Enum_OP40_Axis
+[OK] Updated DUT: Enum_OP40_Cyl
+[OK] Updated DUT: Enum_OP40_Sensor
+[OK] Updated DUT: Enum_OP40_Vac
+[OK] Updated DUT: Str_OP40_FaultEstop
+[OK] Updated DUT: Str_OP40_FaultRun
+[OK] Updated DUT: Str_OP40_Faultstop
+[OK] Updated DUT: Str_OP40_Product
+[OK] Updated DUT: Str_OP40_Recipe
+[OK] Updated DUT: Str_OP40_StationData
+[OK] Updated DUT: Str_OP40_TO_OPXX
+[OK] Updated DUT: Str_OPXX_TO_OP40
+[OK] Updated GVL: DB4000_Control
+[OK] Updated GVL: DB4002_Recipe
+[OK] Updated GVL: DB4003_Count
+[OK] Updated GVL: DB4005_Communication
+[OK] Updated GVL: DB4050_DriveControl
+[OK] Updated GVL: DB4070_Fault
+[OK] Updated GVL: DB4090_Other
+[OK] Updated POU: OP40_Communication
+[OK] Updated POU: OP40_Control
+[OK] Updated POU: OP40_DI_Mirror
+[OK] Updated POU: OP40_DO_Mirror
+[OK] Updated POU: OP40_DriveControl
+[OK] Updated POU: OP40_Fault
+[OK] Updated POU: OP40_Graph
+[OK] Updated POU: OP40_Other
+[OK] Updated POU: OP40_Recipe
+[OK] Updated Action: ACT_Comment
+[OK] Updated Action: ACT_MAP
+[OK] Updated Action: ACT_Status
+[OK] Updated Action: ACT_Comment
+[OK] Updated Action: ACT_MAP
+[OK] Updated Action: ACT_Status
+[OK] Updated Action: ACT_AAS
+[OK] Updated Action: ACT_Axis
+[OK] Updated Action: ACT_Epson
+[OK] Updated Action: ACT_Heating
+[OK] Updated Action: ACT_Kuka
+[OK] Updated Action: ACT_Motor
+[OK] Updated Action: ACT_Pallet
+[OK] Updated Action: ACT_Rotdisk
+[OK] Updated Action: ACT_Stopper
+[OK] Updated Action: ACT_HMI_Jump
+[OK] Updated Action: ACT_MAP
+[OK] Updated Action: ACT_AutoRunST1_气密1测试
+[INFO] Action call already exists in OP40_Graph: ACT_AutoRunST1_气密1测试();
+[OK] Updated Action: ACT_AutoRunST2_气密2测试
+[INFO] Action call already exists in OP40_Graph: ACT_AutoRunST2_气密2测试();
+[OK] Updated Action: ACT_AutoRunST3_气密3测试
+[INFO] Action call already exists in OP40_Graph: ACT_AutoRunST3_气密3测试();
+[OK] Updated Action: ACT_AutoRunST4_气密4测试
+[INFO] Action call already exists in OP40_Graph: ACT_AutoRunST4_气密4测试();
+[OK] Updated Action: ACT_AutoRunST5_上料机械手
+[INFO] Action call already exists in OP40_Graph: ACT_AutoRunST5_上料机械手();
+[OK] Updated Action: ACT_AutoRunST6_码垛机械手
+[INFO] Action call already exists in OP40_Graph: ACT_AutoRunST6_码垛机械手();
+[OK] Updated Action: ACT_InitST1
+[INFO] Action call already exists in OP40_Graph: ACT_InitST1();
+[OK] Updated Action: ACT_InitST2
+[INFO] Action call already exists in OP40_Graph: ACT_InitST2();
+[OK] Updated Action: ACT_InitST3
+[INFO] Action call already exists in OP40_Graph: ACT_InitST3();
+[OK] Updated Action: ACT_InitST4
+[INFO] Action call already exists in OP40_Graph: ACT_InitST4();
+[OK] Updated Action: ACT_InitST5
+[INFO] Action call already exists in OP40_Graph: ACT_InitST5();
+[OK] Updated Action: ACT_InitST6
+[INFO] Action call already exists in OP40_Graph: ACT_InitST6();
+[OK] Updated Action: ACT_Download
+[OK] Updated Action: ACT_Upload
+[OK] Updated DUT: Enum_OP50_Axis
+[OK] Updated DUT: Enum_OP50_Cyl
+[OK] Updated DUT: Enum_OP50_Sensor
+[OK] Updated DUT: Enum_OP50_Vac
+[OK] Updated DUT: Str_OP50_FaultEstop
+[OK] Updated DUT: Str_OP50_FaultRun
+[OK] Updated DUT: Str_OP50_Faultstop
+[OK] Updated DUT: Str_OP50_Product
+[OK] Updated DUT: Str_OP50_Recipe
+[OK] Updated DUT: Str_OP50_StationData
+[OK] Updated DUT: Str_OP50_TO_OPXX
+[OK] Updated DUT: Str_OPXX_TO_OP50
+[OK] Updated GVL: DB5000_Control
+[OK] Updated GVL: DB5002_Recipe
+[OK] Updated GVL: DB5003_Count
+[OK] Updated GVL: DB5005_Communication
+[OK] Updated GVL: DB5050_DriveControl
+[OK] Updated GVL: DB5070_Fault
+[OK] Updated GVL: DB5090_Other
+[OK] Updated POU: OP50_Communication
+[OK] Updated POU: OP50_Control
+[OK] Updated POU: OP50_DI_Mirror
+[OK] Updated POU: OP50_DO_Mirror
+[OK] Updated POU: OP50_DriveControl
+[OK] Updated POU: OP50_Fault
+[OK] Updated POU: OP50_Graph
+[OK] Updated POU: OP50_Other
+[OK] Updated POU: OP50_Recipe
+[OK] Updated Action: ACT_Comment
+[OK] Updated Action: ACT_MAP
+[OK] Updated Action: ACT_Status
+[OK] Updated Action: ACT_Comment
+[OK] Updated Action: ACT_MAP
+[OK] Updated Action: ACT_Status
+[OK] Updated Action: ACT_AAS
+[OK] Updated Action: ACT_Axis
+[OK] Updated Action: ACT_Epson
+[OK] Updated Action: ACT_Heating
+[OK] Updated Action: ACT_Kuka
+[OK] Updated Action: ACT_Motor
+[OK] Updated Action: ACT_Pallet
+[OK] Updated Action: ACT_Rotdisk
+[OK] Updated Action: ACT_Stopper
+[OK] Updated Action: ACT_HMI_Jump
+[OK] Updated Action: ACT_MAP
+[OK] Updated Action: ACT_AutoRunST1_气密1测试
+[INFO] Action call already exists in OP50_Graph: ACT_AutoRunST1_气密1测试();
+[OK] Updated Action: ACT_AutoRunST2_气密2测试
+[INFO] Action call already exists in OP50_Graph: ACT_AutoRunST2_气密2测试();
+[OK] Updated Action: ACT_AutoRunST3_气密3测试
+[INFO] Action call already exists in OP50_Graph: ACT_AutoRunST3_气密3测试();
+[OK] Updated Action: ACT_AutoRunST4_气密4测试
+[INFO] Action call already exists in OP50_Graph: ACT_AutoRunST4_气密4测试();
+[OK] Updated Action: ACT_AutoRunST5_上料机械手
+[INFO] Action call already exists in OP50_Graph: ACT_AutoRunST5_上料机械手();
+[OK] Updated Action: ACT_AutoRunST6_码垛机械手
+[INFO] Action call already exists in OP50_Graph: ACT_AutoRunST6_码垛机械手();
+[OK] Updated Action: ACT_InitST1
+[INFO] Action call already exists in OP50_Graph: ACT_InitST1();
+[OK] Updated Action: ACT_InitST2
+[INFO] Action call already exists in OP50_Graph: ACT_InitST2();
+[OK] Updated Action: ACT_InitST3
+[INFO] Action call already exists in OP50_Graph: ACT_InitST3();
+[OK] Updated Action: ACT_InitST4
+[INFO] Action call already exists in OP50_Graph: ACT_InitST4();
+[OK] Updated Action: ACT_InitST5
+[INFO] Action call already exists in OP50_Graph: ACT_InitST5();
+[OK] Updated Action: ACT_InitST6
+[INFO] Action call already exists in OP50_Graph: ACT_InitST6();
+[OK] Updated Action: ACT_Download
+[OK] Updated Action: ACT_Upload
+[OK] Updated DUT: Enum_OP60_Axis
+[OK] Updated DUT: Enum_OP60_Cyl
+[OK] Updated DUT: Enum_OP60_Sensor
+[OK] Updated DUT: Enum_OP60_Vac
+[OK] Updated DUT: Str_OP60_FaultEstop
+[OK] Updated DUT: Str_OP60_FaultRun
+[OK] Updated DUT: Str_OP60_Faultstop
+[OK] Updated DUT: Str_OP60_Product
+[OK] Updated DUT: Str_OP60_Recipe
+[OK] Updated DUT: Str_OP60_StationData
+[OK] Updated DUT: Str_OP60_TO_OPXX
+[OK] Updated DUT: Str_OPXX_TO_OP60
+[OK] Updated GVL: DB6000_Control
+[OK] Updated GVL: DB6002_Recipe
+[OK] Updated GVL: DB6003_Count
+[OK] Updated GVL: DB6005_Communication
+[OK] Updated GVL: DB6050_DriveControl
+[OK] Updated GVL: DB6070_Fault
+[OK] Updated GVL: DB6090_Other
+[OK] Updated POU: OP60_Communication
+[OK] Updated POU: OP60_Control
+[OK] Updated POU: OP60_DI_Mirror
+[OK] Updated POU: OP60_DO_Mirror
+[OK] Updated POU: OP60_DriveControl
+[OK] Updated POU: OP60_Fault
+[OK] Updated POU: OP60_Graph
+[OK] Updated POU: OP60_Other
+[OK] Updated POU: OP60_Recipe
+[OK] Updated Action: ACT_Comment
+[OK] Updated Action: ACT_MAP
+[OK] Updated Action: ACT_Status
+[OK] Updated Action: ACT_Comment
+[OK] Updated Action: ACT_MAP
+[OK] Updated Action: ACT_Status
+[OK] Updated Action: ACT_AAS
+[OK] Updated Action: ACT_Axis
+[OK] Updated Action: ACT_Epson
+[OK] Updated Action: ACT_Heating
+[OK] Updated Action: ACT_Kuka
+[OK] Updated Action: ACT_Motor
+[OK] Updated Action: ACT_Pallet
+[OK] Updated Action: ACT_Rotdisk
+[OK] Updated Action: ACT_Stopper
+[OK] Updated Action: ACT_HMI_Jump
+[OK] Updated Action: ACT_MAP
+[OK] Updated Action: ACT_AutoRunST1_气密1测试
+[INFO] Action call already exists in OP60_Graph: ACT_AutoRunST1_气密1测试();
+[OK] Updated Action: ACT_AutoRunST2_气密2测试
+[INFO] Action call already exists in OP60_Graph: ACT_AutoRunST2_气密2测试();
+[OK] Updated Action: ACT_AutoRunST3_气密3测试
+[INFO] Action call already exists in OP60_Graph: ACT_AutoRunST3_气密3测试();
+[OK] Updated Action: ACT_AutoRunST4_气密4测试
+[INFO] Action call already exists in OP60_Graph: ACT_AutoRunST4_气密4测试();
+[OK] Updated Action: ACT_AutoRunST5_上料机械手
+[INFO] Action call already exists in OP60_Graph: ACT_AutoRunST5_上料机械手();
+[OK] Updated Action: ACT_AutoRunST6_码垛机械手
+[INFO] Action call already exists in OP60_Graph: ACT_AutoRunST6_码垛机械手();
+[OK] Updated Action: ACT_InitST1
+[INFO] Action call already exists in OP60_Graph: ACT_InitST1();
+[OK] Updated Action: ACT_InitST2
+[INFO] Action call already exists in OP60_Graph: ACT_InitST2();
+[OK] Updated Action: ACT_InitST3
+[INFO] Action call already exists in OP60_Graph: ACT_InitST3();
+[OK] Updated Action: ACT_InitST4
+[INFO] Action call already exists in OP60_Graph: ACT_InitST4();
+[OK] Updated Action: ACT_InitST5
+[INFO] Action call already exists in OP60_Graph: ACT_InitST5();
+[OK] Updated Action: ACT_InitST6
+[INFO] Action call already exists in OP60_Graph: ACT_InitST6();
+[OK] Updated Action: ACT_Download
+[OK] Updated Action: ACT_Upload
+[OK] Updated DUT: Enum_OP70_Axis
+[OK] Updated DUT: Enum_OP70_Cyl
+[OK] Updated DUT: Enum_OP70_Sensor
+[OK] Updated DUT: Enum_OP70_Vac
+[OK] Updated DUT: Str_OP70_FaultEstop
+[OK] Updated DUT: Str_OP70_FaultRun
+[OK] Updated DUT: Str_OP70_Faultstop
+[OK] Updated DUT: Str_OP70_Recipe
+[OK] Updated DUT: Str_OP70_Screw
+[OK] Updated DUT: Str_OP70_StationData
+[OK] Updated DUT: Str_OP70_TO_OPXX
+[OK] Updated DUT: Str_OPXX_TO_OP70
+[OK] Updated GVL: DB7000_Control
+[OK] Updated GVL: DB7002_Recipe
+[OK] Updated GVL: DB7003_Count
+[OK] Updated GVL: DB7005_Communication
+[OK] Updated GVL: DB7050_DriveControl
+[OK] Updated GVL: DB7070_Fault
+[OK] Updated GVL: DB7090_Other
+[OK] Updated POU: OP70_Communication
+[OK] Updated POU: OP70_Control
+[OK] Updated POU: OP70_DI_Mirror
+[OK] Updated POU: OP70_DO_Mirror
+[OK] Updated POU: OP70_DriveControl
+[OK] Updated POU: OP70_Fault
+[OK] Updated POU: OP70_Graph
+[OK] Updated POU: OP70_Recipe
+[OK] Updated Action: ACT_Comment
+[OK] Updated Action: ACT_MAP
+[OK] Updated Action: ACT_Status
+[OK] Updated Action: ACT_Comment
+[OK] Updated Action: ACT_MAP
+[OK] Updated Action: ACT_Status
+[OK] Updated Action: ACT_AAS
+[OK] Updated Action: ACT_AI
+[OK] Updated Action: ACT_Axis
+[OK] Updated Action: ACT_Cam
+[OK] Updated Action: ACT_CODE
+[OK] Updated Action: ACT_ElectricScrewdriver
+[OK] Updated Action: ACT_Epson
+[OK] Updated Action: ACT_Kuka
+[OK] Updated Action: ACT_Motor
+[OK] Updated Action: ACT_Print
+[OK] Updated Action: ACT_Rotdisk
+[OK] Updated Action: ACT_Stopper
+[OK] Updated Action: ACT_HMI_Jump
+[OK] Updated Action: ACT_MAP
+[NEW] Created Action: ACT_AutoRunST1_主装配流程
+[OK] Added action call in OP70_Graph: ACT_AutoRunST1_主装配流程();
+[OK] Updated Action: ACT_AutoRunST1_人工上料打码
+[INFO] Action call already exists in OP70_Graph: ACT_AutoRunST1_人工上料打码();
+[OK] Updated Action: ACT_AutoRunST2_同步搬运
+[INFO] Action call already exists in OP70_Graph: ACT_AutoRunST2_同步搬运();
+[OK] Updated Action: ACT_AutoRunST3_侧面1锁螺丝工位
+[INFO] Action call already exists in OP70_Graph: ACT_AutoRunST3_侧面1锁螺丝工位();
+[OK] Updated Action: ACT_AutoRunST4_侧面2锁螺丝工位
+[INFO] Action call already exists in OP70_Graph: ACT_AutoRunST4_侧面2锁螺丝工位();
+[OK] Updated Action: ACT_AutoRunST5_顶面锁螺丝工位
+[INFO] Action call already exists in OP70_Graph: ACT_AutoRunST5_顶面锁螺丝工位();
+[OK] Updated Action: ACT_AutoRunST6_下料工位
+[INFO] Action call already exists in OP70_Graph: ACT_AutoRunST6_下料工位();
+[OK] Updated Action: ACT_AutoRunST7_预留
+[OK] Added action call in OP70_Graph: ACT_AutoRunST7_预留();
+[OK] Updated Action: ACT_InitST1
+[INFO] Action call already exists in OP70_Graph: ACT_InitST1();
+[OK] Updated Action: ACT_InitST2
+[INFO] Action call already exists in OP70_Graph: ACT_InitST2();
+[OK] Updated Action: ACT_InitST3
+[INFO] Action call already exists in OP70_Graph: ACT_InitST3();
+[OK] Updated Action: ACT_InitST4
+[INFO] Action call already exists in OP70_Graph: ACT_InitST4();
+[OK] Updated Action: ACT_InitST5
+[INFO] Action call already exists in OP70_Graph: ACT_InitST5();
+[OK] Updated Action: ACT_InitST6
+[INFO] Action call already exists in OP70_Graph: ACT_InitST6();
+[OK] Updated Action: ACT_Download
+[OK] Updated Action: ACT_Upload
+[OK] Updated DUT: Enum_OP80_Axis
+[OK] Updated DUT: Enum_OP80_Cyl
+[OK] Updated DUT: Enum_OP80_Sensor
+[OK] Updated DUT: Enum_OP80_Vac
+[OK] Updated DUT: Str_OP80_FaultEstop
+[OK] Updated DUT: Str_OP80_FaultRun
+[OK] Updated DUT: Str_OP80_Faultstop
+[OK] Updated DUT: Str_OP80_Product
+[OK] Updated DUT: Str_OP80_Recipe
+[OK] Updated DUT: Str_OP80_StationData
+[OK] Updated DUT: Str_OP80_TO_OPXX
+[OK] Updated DUT: Str_OPXX_TO_OP80
+[OK] Updated GVL: DB8000_Control
+[OK] Updated GVL: DB8002_Recipe
+[OK] Updated GVL: DB8003_Count
+[OK] Updated GVL: DB8005_Communication
+[OK] Updated GVL: DB8050_DriveControl
+[OK] Updated GVL: DB8070_Fault
+[OK] Updated GVL: DB8090_Other
+[OK] Updated POU: OP80_Communication
+[OK] Updated POU: OP80_Control
+[OK] Updated POU: OP80_DI_Mirror
+[OK] Updated POU: OP80_DO_Mirror
+[OK] Updated POU: OP80_DriveControl
+[OK] Updated POU: OP80_Fault
+[OK] Updated POU: OP80_Graph
+[OK] Updated POU: OP80_Other
+[OK] Updated POU: OP80_Recipe
+[OK] Updated Action: ACT_Comment
+[OK] Updated Action: ACT_MAP
+[OK] Updated Action: ACT_Status
+[OK] Updated Action: ACT_Comment
+[OK] Updated Action: ACT_MAP
+[OK] Updated Action: ACT_Status
+[OK] Updated Action: ACT_AAS
+[OK] Updated Action: ACT_Axis
+[OK] Updated Action: ACT_Epson
+[OK] Updated Action: ACT_Heating
+[OK] Updated Action: ACT_Kuka
+[OK] Updated Action: ACT_Motor
+[OK] Updated Action: ACT_Rotdisk
+[OK] Updated Action: ACT_Stopper
+[OK] Updated Action: ACT_HMI_Jump
+[OK] Updated Action: ACT_MAP
+[OK] Updated Action: ACT_AutoRunST1_气密1测试
+[INFO] Action call already exists in OP80_Graph: ACT_AutoRunST1_气密1测试();
+[OK] Updated Action: ACT_AutoRunST2_气密2测试
+[INFO] Action call already exists in OP80_Graph: ACT_AutoRunST2_气密2测试();
+[OK] Updated Action: ACT_AutoRunST3_气密3测试
+[INFO] Action call already exists in OP80_Graph: ACT_AutoRunST3_气密3测试();
+[OK] Updated Action: ACT_AutoRunST4_气密4测试
+[INFO] Action call already exists in OP80_Graph: ACT_AutoRunST4_气密4测试();
+[OK] Updated Action: ACT_InitST1
+[INFO] Action call already exists in OP80_Graph: ACT_InitST1();
+[OK] Updated Action: ACT_InitST2
+[INFO] Action call already exists in OP80_Graph: ACT_InitST2();
+[OK] Updated Action: ACT_InitST3
+[INFO] Action call already exists in OP80_Graph: ACT_InitST3();
+[OK] Updated Action: ACT_InitST4
+[INFO] Action call already exists in OP80_Graph: ACT_InitST4();
+[OK] Updated Action: ACT_Download
+[OK] Updated Action: ACT_Upload
+
+=== Summary ===
+Updated: 696
+Created: 1
+Skipped: 0
+Errors: 0
+[OK] Project saved.
+
+============================================================
+End Time: 2026-05-04T10:07:30.868000
+============================================================

@@ -1,4 +1,4 @@
-TYPE Str_OP70_Faultstop :
+﻿TYPE Str_OP70_Faultstop :
 STRUCT
 	MAP:BOOL;//映射地址勿删	
 	Cyl:ARRAY[0..127]OF BOOL;//8个字
@@ -11,7 +11,8 @@ STRUCT
 	BeforStation_Communication_Rrror:BOOL;//前站通讯断开
 	MasterTimeOut:BOOL;//主站通讯断开
 	MaterReipeDiscrepancy:BOOL;//配方不一致
-	Space:ARRAY[5..127] OF BOOL;//单元报警用
+	Pick_失败:BOOL;//取料失败
+	Space:ARRAY[10..127] OF BOOL;//单元报警用
 (***************添加报警后减少对应的预留报警数组数量******************)
 	
 END_STRUCT
