@@ -1,19 +1,19 @@
 FB_Cylinder_instance[1](
 	iEnable:=TRUE,
-	iName:="上料侧边定位气缸CY01",
+	iName:="上料1侧边定位气缸CY01",
 	iMode:= DB7000_Control.Mode,
 	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
 	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
 	iLightCurtain:= DB7000_Control.Machine.LightCurtainRelay,
 	iClock_100ms:= CPU_Clock.Clock_100ms_R,
-	iSensor_Work:= IX7100_4_上料侧边定位气缸CY01_伸出,
-	iSensor_Home:= IX7100_5_上料侧边定位气缸CY01_缩回,
+	iSensor_Work:= IX7100_4_上料1侧边定位气缸CY01_伸出,
+	iSensor_Home:= IX7100_5_上料1侧边定位气缸CY01_缩回,
 	iIC_Home:= TRUE,
 	iIC_Work:= TRUE,
 	iValveModel:= 0,
 	ioCylinder:= DB7050_DriveControl.CylCtrl[1],
-	oValve_Work=> QX7100_4_上料侧边定位气缸CY01_伸出,
-	oValve_Home=> QX7100_5_上料侧边定位气缸CY01_缩回);
+	oValve_Work=> QX7100_4_上料1侧边定位气缸CY01_伸出,
+	oValve_Home=> QX7100_5_上料1侧边定位气缸CY01_缩回);
 ///////
 ///////
 ///////
