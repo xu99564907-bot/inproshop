@@ -1,10 +1,11 @@
 ============================================================
 InProShop Project Import Script
-Start Time: 2026-05-04T10:06:18.841000
+Start Time: 2026-05-04T14:00:21.565000
 ============================================================
 [INFO] No project open. Opening project: C:\Users\Administrator\Desktop\2026-04-07\ApexHMI\PLC\test9\test9.project
+[WARN] projects.open attempt failed: 所选工程正在被'Administrator'在'PC-20260428JDXK'上使用。
 [INFO] Import from: C:\Users\Administrator\Desktop\2026-04-07\ApexHMI\PLC\test9\test9_exported
-[INFO] Found 697 files to import
+[INFO] Found 700 files to import
 [INFO] Create new objects: YES
 
 [SKIP] Action PersistentVars: no writable text property
@@ -709,16 +710,19 @@ Start Time: 2026-05-04T10:06:18.841000
 [OK] Updated Action: ACT_Axis
 [OK] Updated Action: ACT_Cam
 [OK] Updated Action: ACT_CODE
+[OK] Updated Action: ACT_Cylinder
 [OK] Updated Action: ACT_ElectricScrewdriver
 [OK] Updated Action: ACT_Epson
 [OK] Updated Action: ACT_Kuka
 [OK] Updated Action: ACT_Motor
 [OK] Updated Action: ACT_Print
 [OK] Updated Action: ACT_Rotdisk
+[OK] Updated Action: ACT_Sensor
 [OK] Updated Action: ACT_Stopper
+[OK] Updated Action: ACT_Vacuum
 [OK] Updated Action: ACT_HMI_Jump
 [OK] Updated Action: ACT_MAP
-[NEW] Created Action: ACT_AutoRunST1_主装配流程
+[OK] Updated Action: ACT_AutoRunST1_主装配流程
 [OK] Added action call in OP70_Graph: ACT_AutoRunST1_主装配流程();
 [OK] Updated Action: ACT_AutoRunST1_人工上料打码
 [INFO] Action call already exists in OP70_Graph: ACT_AutoRunST1_人工上料打码();
@@ -812,12 +816,12 @@ Start Time: 2026-05-04T10:06:18.841000
 [OK] Updated Action: ACT_Upload
 
 === Summary ===
-Updated: 696
-Created: 1
+Updated: 700
+Created: 0
 Skipped: 0
 Errors: 0
 [OK] Project saved.
 
 ============================================================
-End Time: 2026-05-04T10:07:30.868000
+End Time: 2026-05-04T14:01:42.296000
 ============================================================

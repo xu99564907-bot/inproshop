@@ -1,5 +1,5 @@
 ﻿// 主装配流程
-// 生成时间：2026-05-04 10:06:13
+// 生成时间：2026-05-04 14:00:15
 // DriveDB：DB7050_DriveControl
 
 //清除流程步
@@ -38,13 +38,16 @@ Auto[1].NoPausedRunning:=TRUE;
 IF (DB7000_Control.Mode.Status.AutoRunning AND DB7000_Control.Mode.Status.StepRunning)  OR Auto[1].NoPausedRunning THEN
     CASE Auto[1].Step OF
         10:
-            Auto[1].Comment:="上料侧边定位气缸 伸出+上料侧边定位气缸 伸出";
+            Auto[1].Comment:="上料侧边定位气缸 伸出+搬运1_1旋转气缸 取料+上料X1轴 移动到放料位";
             DB7050_DriveControl.CylCtrl[Enum_OP70_Cyl.上料侧边定位气缸CY01].Cmd.AutoToWork := TRUE;
-            DB7050_DriveControl.CylCtrl[Enum_OP70_Cyl.上料侧边定位气缸CY01].Cmd.AutoToWork := TRUE;
-            DB7070_FaultStop.Pick_失败 := true;
-            IF TRUE THEN
-                Auto[1].Step:=1000;
-            ELSIF DB7050_DriveControl.CylCtrl[Enum_OP70_Cyl.上料侧边定位气缸CY01].Status.InWork THEN
+            DB7050_DriveControl.CylCtrl[Enum_OP70_Cyl.搬运1_1旋转气缸CY03].Cmd.AutoToHome := TRUE;
+            DB7050_DriveControl.AxisCtrl[Enum_OP70_Axis.上料X1轴AXIS01].Cmd.AutoABS := 2;
+            IF true THEN
+                DB7070_Fault.Stop.感应器_NotDetect:=TRUE;
+            END_IF
+            IF DB7050_DriveControl.CylCtrl[Enum_OP70_Cyl.上料侧边定位气缸CY01].Status.InWork
+                AND DB7050_DriveControl.CylCtrl[Enum_OP70_Cyl.搬运1_1旋转气缸CY03].Status.InHome
+                AND DB7050_DriveControl.AxisCtrl[Enum_OP70_Axis.上料X1轴AXIS01].Status.InPoint[2] THEN
                 Auto[1].Step:=20;
             END_IF
         20:
@@ -64,58 +67,6 @@ IF (DB7000_Control.Mode.Status.AutoRunning AND DB7000_Control.Mode.Status.StepRu
             DB7050_DriveControl.CylCtrl[Enum_OP70_Cyl.上料侧边定位气缸CY01].Cmd.AutoToWork := TRUE;
             IF DB7050_DriveControl.CylCtrl[Enum_OP70_Cyl.上料侧边定位气缸CY01].Status.InWork THEN
                 Auto[1].Step:=50;
-            END_IF
-        50:
-            Auto[1].Comment:="上料侧边定位气缸 伸出";
-            DB7050_DriveControl.CylCtrl[Enum_OP70_Cyl.上料侧边定位气缸CY01].Cmd.AutoToWork := TRUE;
-            IF DB7050_DriveControl.CylCtrl[Enum_OP70_Cyl.上料侧边定位气缸CY01].Status.InWork THEN
-                Auto[1].Step:=1000;
-            END_IF
-        60:
-            Auto[1].Comment:="上料侧边定位气缸 伸出";
-            DB7050_DriveControl.CylCtrl[Enum_OP70_Cyl.上料侧边定位气缸CY01].Cmd.AutoToWork := TRUE;
-            IF DB7050_DriveControl.CylCtrl[Enum_OP70_Cyl.上料侧边定位气缸CY01].Status.InWork THEN
-                Auto[1].Step:=70;
-            END_IF
-        70:
-            Auto[1].Comment:="上料侧边定位气缸 伸出";
-            DB7050_DriveControl.CylCtrl[Enum_OP70_Cyl.上料侧边定位气缸CY01].Cmd.AutoToWork := TRUE;
-            IF DB7050_DriveControl.CylCtrl[Enum_OP70_Cyl.上料侧边定位气缸CY01].Status.InWork THEN
-                Auto[1].Step:=80;
-            END_IF
-        80:
-            Auto[1].Comment:="上料侧边定位气缸 伸出";
-            DB7050_DriveControl.CylCtrl[Enum_OP70_Cyl.上料侧边定位气缸CY01].Cmd.AutoToWork := TRUE;
-            IF DB7050_DriveControl.CylCtrl[Enum_OP70_Cyl.上料侧边定位气缸CY01].Status.InWork THEN
-                Auto[1].Step:=90;
-            END_IF
-        90:
-            Auto[1].Comment:="上料侧边定位气缸 伸出";
-            DB7050_DriveControl.CylCtrl[Enum_OP70_Cyl.上料侧边定位气缸CY01].Cmd.AutoToWork := TRUE;
-            IF DB7050_DriveControl.CylCtrl[Enum_OP70_Cyl.上料侧边定位气缸CY01].Status.InWork THEN
-                Auto[1].Step:=100;
-            END_IF
-        100:
-            Auto[1].Comment:="上料侧边定位气缸 伸出";
-            DB7050_DriveControl.CylCtrl[Enum_OP70_Cyl.上料侧边定位气缸CY01].Cmd.AutoToWork := TRUE;
-            IF DB7050_DriveControl.CylCtrl[Enum_OP70_Cyl.上料侧边定位气缸CY01].Status.InWork THEN
-                Auto[1].Step:=110;
-            END_IF
-        110:
-            Auto[1].Comment:="上料侧边定位气缸 伸出";
-            DB7050_DriveControl.CylCtrl[Enum_OP70_Cyl.上料侧边定位气缸CY01].Cmd.AutoToWork := TRUE;
-            IF DB7050_DriveControl.CylCtrl[Enum_OP70_Cyl.上料侧边定位气缸CY01].Status.InWork THEN
-                Auto[1].Step:=120;
-            END_IF
-        120:
-            Auto[1].Comment:="上料侧边定位气缸 伸出";
-            DB7050_DriveControl.CylCtrl[Enum_OP70_Cyl.上料侧边定位气缸CY01].Cmd.AutoToWork := TRUE;
-            IF TRUE THEN
-                Auto[1].Step:=1000;
-            ELSIF TRUE THEN
-                Auto[1].Step:=1000;
-            ELSIF DB7050_DriveControl.CylCtrl[Enum_OP70_Cyl.上料侧边定位气缸CY01].Status.InWork THEN
-                Auto[1].Step:=130;
             END_IF
         1000:
             Auto[1].Comment:="自动运行结束";

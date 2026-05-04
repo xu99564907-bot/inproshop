@@ -12,7 +12,9 @@ STRUCT
 	MasterTimeOut:BOOL;//主站通讯断开
 	MaterReipeDiscrepancy:BOOL;//配方不一致
 	Pick_失败:BOOL;//取料失败
-	Space:ARRAY[10..127] OF BOOL;//单元报警用
+	Pick_失败_2:BOOL;//取料失败
+	感应器_NotDetect:BOOL;//感应器未检测到
+	Space:ARRAY[12..127] OF BOOL;//单元报警用
 (***************添加报警后减少对应的预留报警数组数量******************)
 	
 END_STRUCT
