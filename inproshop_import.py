@@ -85,12 +85,32 @@ def get_script_directory():
 
 
 def find_project_next_to_script(log_lines):
-    """从脚本所在目录查找唯一 .project 文件。"""
+    """
+    定位要打开的 .project：
+    1) 优先读取脚本同目录的 sidecar 文件 _import_target.txt（C# 端写入），
+       内容是目标 .project 的绝对路径——这样可以避免同目录有多个 .project
+       时无法判定打开哪个的问题。
+    2) 没有 sidecar 时，回退到"同目录唯一 .project"的旧逻辑。
+    """
     script_dir = get_script_directory()
     if not script_dir:
         log_lines.append("[ERR] Cannot resolve script directory.")
         return None
 
+    # 1) sidecar 文件优先
+    sidecar = os.path.join(script_dir, '_import_target.txt')
+    if os.path.isfile(sidecar):
+        try:
+            with codecs.open(sidecar, 'r', encoding=ENCODING) as f:
+                target = f.read().strip().strip('"').strip("'")
+            if target and os.path.isfile(target) and target.lower().endswith('.project'):
+                log_lines.append("[INFO] Target project from sidecar: %s" % target)
+                return target
+            log_lines.append("[WARN] _import_target.txt content is invalid: %s" % target)
+        except Exception as e:
+            log_lines.append("[WARN] Failed to read _import_target.txt: %s" % str(e))
+
+    # 2) 回退：同目录唯一 .project
     project_files = []
     try:
         for name in os.listdir(script_dir):
@@ -884,11 +904,17 @@ def main():
     log_lines.append("End Time: %s" % datetime.datetime.now().isoformat())
     log_lines.append("=" * 60)
 
-    # 写入日志
+    # 写入日志：优先写到 _exported；若早期失败（export_dir 还没确定），
+    # 退回到脚本所在目录，确保失败原因始终有迹可循。
     try:
         if export_dir:
             log_file = os.path.join(export_dir, '_import_log.txt')
             write_log(log_file, log_lines)
+        else:
+            fallback_dir = get_script_directory()
+            if fallback_dir:
+                log_file = os.path.join(fallback_dir, '_import_log.txt')
+                write_log(log_file, log_lines)
     except:
         pass
 

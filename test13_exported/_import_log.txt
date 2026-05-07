@@ -1,6 +1,6 @@
 ============================================================
 InProShop Project Import Script
-Start Time: 2026-05-07T15:27:10.845000
+Start Time: 2026-05-07T15:31:32.225000
 ============================================================
 [INFO] No project open. Opening project: C:\Users\Administrator\Desktop\2026-04-07\ApexHMI\PLC\test13\test13.project
 [INFO] Import from: C:\Users\Administrator\Desktop\2026-04-07\ApexHMI\PLC\test13\test13_exported
@@ -822,5 +822,5 @@ Errors: 0
 [OK] Project saved.
 
 ============================================================
-End Time: 2026-05-07T15:28:30.969000
+End Time: 2026-05-07T15:32:51.399000
 ============================================================
