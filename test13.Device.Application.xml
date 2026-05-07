@@ -84,6 +84,9 @@
     <TypeArray name="T_ARRAY__1__9__OF_BOOL" size="9" nativesize="9" typeclass="Array" iecname="ARRAY [1..9] OF BOOL" basetype="T_BOOL">
       <ArrayDim minrange="1" maxrange="9" />
     </TypeArray>
+    <TypeArray name="T_ARRAY__10__127__OF_BOOL" size="118" nativesize="118" typeclass="Array" iecname="ARRAY [10..127] OF BOOL" basetype="T_BOOL">
+      <ArrayDim minrange="10" maxrange="127" />
+    </TypeArray>
     <TypeArray name="T_ARRAY__3__63__OF_BOOL" size="61" nativesize="61" typeclass="Array" iecname="ARRAY [3..63] OF BOOL" basetype="T_BOOL">
       <ArrayDim minrange="3" maxrange="63" />
     </TypeArray>
@@ -1269,7 +1272,7 @@
       <UserDefElement iecname="MAP" type="T_BOOL" byteoffset="0" vartype="VAR" />
       <UserDefElement iecname="Space" type="T_ARRAY__1__63__OF_BOOL" byteoffset="1" vartype="VAR" />
     </TypeUserDef>
-    <TypeUserDef name="T_Str_OP70_Faultstop" size="513" nativesize="513" typeclass="Userdef" pouclass="STRUCTURE" iecname="Str_OP70_Faultstop">
+    <TypeUserDef name="T_Str_OP70_FaultStop" size="509" nativesize="509" typeclass="Userdef" pouclass="STRUCTURE" iecname="Str_OP70_FaultStop">
       <UserDefElement iecname="MAP" type="T_BOOL" byteoffset="0" vartype="VAR" />
       <UserDefElement iecname="Cyl" type="T_ARRAY__0__127__OF_BOOL" byteoffset="1" vartype="VAR" />
       <UserDefElement iecname="Vac" type="T_ARRAY__0__63__OF_BOOL" byteoffset="129" vartype="VAR" />
@@ -1280,7 +1283,8 @@
       <UserDefElement iecname="BeforStation_Communication_Rrror" type="T_BOOL" byteoffset="387" vartype="VAR" />
       <UserDefElement iecname="MasterTimeOut" type="T_BOOL" byteoffset="388" vartype="VAR" />
       <UserDefElement iecname="MaterReipeDiscrepancy" type="T_BOOL" byteoffset="389" vartype="VAR" />
-      <UserDefElement iecname="Space" type="T_ARRAY__5__127__OF_BOOL" byteoffset="390" vartype="VAR" />
+      <UserDefElement iecname="感应器_NotDetect" type="T_BOOL" byteoffset="390" vartype="VAR" />
+      <UserDefElement iecname="Space" type="T_ARRAY__10__127__OF_BOOL" byteoffset="391" vartype="VAR" />
     </TypeUserDef>
     <TypeUserDef name="T_Str_OP70_Recipe" size="430" nativesize="432" typeclass="Userdef" pouclass="STRUCTURE" iecname="Str_OP70_Recipe">
       <UserDefElement iecname="Name" type="T_STRING_20_" byteoffset="0" vartype="VAR" />
@@ -1961,38 +1965,38 @@
       </Node>
       <Node name="DB4000_Control">
         <Node name="HMI" type="T_Str_HMI" access="ReadWrite" />
-        <Node name="Machine" type="T_Str_Machine" access="ReadWrite" directaddress="%MB132624" />
+        <Node name="Machine" type="T_Str_Machine" access="ReadWrite" />
         <Node name="Mode" type="T_Str_Mode" access="ReadWrite" />
       </Node>
       <Node name="DB4002_Recipe">
-        <Node name="DownLoad" type="T_BOOL" access="ReadWrite" directaddress="%MB131266">
+        <Node name="DownLoad" type="T_BOOL" access="ReadWrite">
           <Comment>配方下载</Comment>
         </Node>
-        <Node name="ParameterChangePmt" type="T_BOOL" access="ReadWrite" directaddress="%MB131239">
+        <Node name="ParameterChangePmt" type="T_BOOL" access="ReadWrite">
           <Comment>参数允许更改</Comment>
         </Node>
-        <Node name="RecipeChangePmt" type="T_BOOL" access="ReadWrite" directaddress="%MB131238">
+        <Node name="RecipeChangePmt" type="T_BOOL" access="ReadWrite">
           <Comment>配方允许切换</Comment>
         </Node>
-        <Node name="RecipeName" type="T_STRING_20_" access="ReadWrite" directaddress="%MB131244">
+        <Node name="RecipeName" type="T_STRING_20_" access="ReadWrite">
           <Comment>配方元素名称.</Comment>
         </Node>
-        <Node name="RecipeNameTemp" type="T_STRING_20_" access="ReadWrite" directaddress="%MB132704">
+        <Node name="RecipeNameTemp" type="T_STRING_20_" access="ReadWrite">
           <Comment>HMI头部显示当前配方名称</Comment>
         </Node>
-        <Node name="RecipeNum" type="T_INT" access="ReadWrite" directaddress="%MB131242">
+        <Node name="RecipeNum" type="T_INT" access="ReadWrite">
           <Comment>配方元素编号.</Comment>
         </Node>
-        <Node name="RecipeNumTemp" type="T_INT" access="ReadWrite" directaddress="%MB131240">
+        <Node name="RecipeNumTemp" type="T_INT" access="ReadWrite">
           <Comment>HMI选中还未保存到PLC的编号.</Comment>
         </Node>
-        <Node name="RecipeOk" type="T_BOOL" access="ReadWrite" directaddress="%MB131265">
+        <Node name="RecipeOk" type="T_BOOL" access="ReadWrite">
           <Comment>配方可用</Comment>
         </Node>
-        <Node name="TypeData" type="T_ARRAY__0__20__OF_Str_OP30_Recipe" access="ReadWrite" directaddress="%MB306272">
+        <Node name="TypeData" type="T_ARRAY__0__20__OF_Str_OP30_Recipe" access="ReadWrite">
           <Comment>配方数据</Comment>
         </Node>
-        <Node name="TypeDataCur" type="T_Str_OP30_Recipe" access="ReadWrite" directaddress="%MB132728">
+        <Node name="TypeDataCur" type="T_Str_OP30_Recipe" access="ReadWrite">
           <Comment>当前配方</Comment>
         </Node>
       </Node>
@@ -2000,13 +2004,13 @@
         <Node name="Clear" type="T_BOOL" access="ReadWrite">
           <Comment>清除计数</Comment>
         </Node>
-        <Node name="NG" type="T_Str_Count" access="ReadWrite" directaddress="%MB305600">
+        <Node name="NG" type="T_Str_Count" access="ReadWrite">
           <Comment>NG计数	</Comment>
         </Node>
-        <Node name="OK" type="T_Str_Count" access="ReadWrite" directaddress="%MB287524">
+        <Node name="OK" type="T_Str_Count" access="ReadWrite">
           <Comment>OK计数</Comment>
         </Node>
-        <Node name="Total" type="T_Str_Count" access="ReadWrite" directaddress="%MB286852">
+        <Node name="Total" type="T_Str_Count" access="ReadWrite">
           <Comment>总计数</Comment>
         </Node>
         <Node name="Yield" type="T_REAL" access="ReadWrite">
@@ -2023,9 +2027,9 @@
       <Node name="DB4050_DriveControl">
         <Node name="AAS" type="T_ARRAY__1__1__OF_Str_AAS" access="ReadWrite" />
         <Node name="AI" type="T_ARRAY__0__20__OF_Str_AI" access="ReadWrite" />
-        <Node name="AxisCtrl" type="T_ARRAY__0__16__OF_Str_Axis" access="ReadWrite" directaddress="%MB524068" />
-        <Node name="CamCtrl" type="T_ARRAY__1__3__OF_Str_CamControl" access="ReadWrite" directaddress="%MB132756" />
-        <Node name="CylCtrl" type="T_ARRAY__0__63__OF_Str_Cylinder" access="ReadWrite" directaddress="%MB496352" />
+        <Node name="AxisCtrl" type="T_ARRAY__0__16__OF_Str_Axis" access="ReadWrite" />
+        <Node name="CamCtrl" type="T_ARRAY__1__3__OF_Str_CamControl" access="ReadWrite" />
+        <Node name="CylCtrl" type="T_ARRAY__0__63__OF_Str_Cylinder" access="ReadWrite" />
         <Node name="DoubleStart" type="T_ARRAY__1__4__OF_Str_DoubleStart" access="ReadWrite" />
         <Node name="Epson" type="T_ARRAY__1__10__OF_Str_Epson" access="ReadWrite" />
         <Node name="HeatCtrl" type="T_ARRAY__1__1__OF_Str_Heating" access="ReadWrite" />
@@ -2033,9 +2037,9 @@
         <Node name="Motor" type="T_ARRAY__1__10__OF_Str_Motor" access="ReadWrite" />
         <Node name="PalletCtrl" type="T_ARRAY__0__3__OF_Str_Palletizing" access="ReadWrite" />
         <Node name="Rotdisk" type="T_ARRAY__1__1__OF_Str_Rotdisk" access="ReadWrite" />
-        <Node name="Sensor" type="T_ARRAY__0__32__OF_Str_Sensor" access="ReadWrite" directaddress="%MB510456" />
+        <Node name="Sensor" type="T_ARRAY__0__32__OF_Str_Sensor" access="ReadWrite" />
         <Node name="Stopper" type="T_ARRAY__1__20__OF_Str_Stopper" access="ReadWrite" />
-        <Node name="VacCtrl" type="T_ARRAY__0__32__OF_Str_Cylinder" access="ReadWrite" directaddress="%MB506032" />
+        <Node name="VacCtrl" type="T_ARRAY__0__32__OF_Str_Cylinder" access="ReadWrite" />
       </Node>
       <Node name="DB4070_Fault">
         <Node name="Estop" type="T_Str_OP40_FaultEstop" access="ReadWrite">
@@ -2156,7 +2160,7 @@
         <Node name="RunTotal" type="T_BOOL" access="ReadWrite">
           <Comment>警告汇总</Comment>
         </Node>
-        <Node name="Stop" type="T_Str_OP70_Faultstop" access="ReadWrite">
+        <Node name="Stop" type="T_Str_OP70_FaultStop" access="ReadWrite">
           <Comment>暂停类报警</Comment>
         </Node>
         <Node name="StopTotal" type="T_BOOL" access="ReadWrite">
