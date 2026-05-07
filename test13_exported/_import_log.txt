@@ -1,8 +1,8 @@
 ============================================================
 InProShop Project Import Script
-Start Time: 2026-05-07T14:54:29.852000
+Start Time: 2026-05-07T15:27:10.845000
 ============================================================
-[INFO] Using opened project: C:\Users\Administrator\Desktop\2026-04-07\ApexHMI\PLC\test13\test13.project
+[INFO] No project open. Opening project: C:\Users\Administrator\Desktop\2026-04-07\ApexHMI\PLC\test13\test13.project
 [INFO] Import from: C:\Users\Administrator\Desktop\2026-04-07\ApexHMI\PLC\test13\test13_exported
 [INFO] Found 700 files to import
 [INFO] Create new objects: YES
@@ -721,7 +721,7 @@ Start Time: 2026-05-07T14:54:29.852000
 [OK] Updated Action: ACT_Vacuum
 [OK] Updated Action: ACT_HMI_Jump
 [OK] Updated Action: ACT_MAP
-[NEW] Created Action: ACT_AutoRunST1_主装配流程
+[OK] Updated Action: ACT_AutoRunST1_主装配流程
 [OK] Added action call in OP70_Graph: ACT_AutoRunST1_主装配流程();
 [OK] Updated Action: ACT_AutoRunST1_人工上料打码
 [INFO] Action call already exists in OP70_Graph: ACT_AutoRunST1_人工上料打码();
@@ -815,12 +815,12 @@ Start Time: 2026-05-07T14:54:29.852000
 [OK] Updated Action: ACT_Upload
 
 === Summary ===
-Updated: 699
-Created: 1
+Updated: 700
+Created: 0
 Skipped: 0
 Errors: 0
 [OK] Project saved.
 
 ============================================================
-End Time: 2026-05-07T14:55:35.496000
+End Time: 2026-05-07T15:28:30.969000
 ============================================================
