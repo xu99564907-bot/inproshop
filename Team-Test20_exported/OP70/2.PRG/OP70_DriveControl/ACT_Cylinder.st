@@ -1,0 +1,659 @@
+FB_Cylinder_instance[1](
+	iEnable:=TRUE,
+	iName:="上料侧边定位气缸CY01",
+	iMode:= DB7000_Control.Mode,
+	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
+	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
+	iLightCurtain:= DB7000_Control.Machine.LightCurtainRelay,
+	iClock_100ms:= CPU_Clock.Clock_100ms_R,
+	iSensor_Work:= IX7100_4_上料侧边定位气缸CY01_伸出,
+	iSensor_Home:= IX7100_5_上料侧边定位气缸CY01_缩回,
+	iIC_Home:= TRUE,
+	iIC_Work:= TRUE,
+	iValveModel:= 0,
+	ioCylinder:= DB7050_DriveControl.CylCtrl[1],
+	oValve_Work=> QX7100_4_上料侧边定位气缸CY01_伸出,
+	oValve_Home=> QX7100_5_上料侧边定位气缸CY01_缩回);
+///////
+///////
+///////
+
+FB_Cylinder_instance[2](
+	iEnable:=TRUE,
+	iName:="上料避位升降气缸CY02",
+	iMode:= DB7000_Control.Mode,
+	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
+	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
+	iLightCurtain:= DB7000_Control.Machine.LightCurtainRelay,
+	iClock_100ms:= CPU_Clock.Clock_100ms_R,
+	iSensor_Work:= IX7100_6_上料避位升降气缸CY02_上升,
+	iSensor_Home:= IX7100_6_上料避位升降气缸CY02_上升,
+	iIC_Home:= TRUE,
+	iIC_Work:= TRUE,
+	iValveModel:= 0,
+	ioCylinder:= DB7050_DriveControl.CylCtrl[2],
+	oValve_Work=> QX7100_6_上料避位升降气缸CY02_上升,
+	oValve_Home=> QX7100_6_上料避位升降气缸CY02_上升);
+///////
+///////
+///////
+
+FB_Cylinder_instance[3](
+	iEnable:=TRUE,
+	iName:="搬运1_1旋转气缸CY03",
+	iMode:= DB7000_Control.Mode,
+	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
+	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
+	iLightCurtain:= DB7000_Control.Machine.LightCurtainRelay,
+	iClock_100ms:= CPU_Clock.Clock_100ms_R,
+	iSensor_Work:= IX7102_0_搬运1_1旋转气缸CY03_放料位,
+	iSensor_Home:= IX7102_0_搬运1_1旋转气缸CY03_放料位,
+	iIC_Home:= TRUE,
+	iIC_Work:= TRUE,
+	iValveModel:= 0,
+	ioCylinder:= DB7050_DriveControl.CylCtrl[3],
+	oValve_Work=> QX7102_0_搬运1_1旋转气缸CY03_放料,
+	oValve_Home=> QX7102_0_搬运1_1旋转气缸CY03_放料);
+///////
+///////
+///////
+
+FB_Cylinder_instance[4](
+	iEnable:=TRUE,
+	iName:="搬运1_1夹爪气缸CY04",
+	iMode:= DB7000_Control.Mode,
+	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
+	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
+	iLightCurtain:= DB7000_Control.Machine.LightCurtainRelay,
+	iClock_100ms:= CPU_Clock.Clock_100ms_R,
+	iSensor_Work:= IX7102_2_搬运1_1夹爪气缸CY04_夹紧位,
+	iSensor_Home:= IX7102_2_搬运1_1夹爪气缸CY04_夹紧位,
+	iIC_Home:= TRUE,
+	iIC_Work:= TRUE,
+	iValveModel:= 0,
+	ioCylinder:= DB7050_DriveControl.CylCtrl[4],
+	oValve_Work=> QX7102_2_搬运1_1夹爪气缸CY04_夹紧,
+	oValve_Home=> QX7102_2_搬运1_1夹爪气缸CY04_夹紧);
+///////
+///////
+///////
+
+FB_Cylinder_instance[5](
+	iEnable:=TRUE,
+	iName:="搬运1_1避让气缸CY05",
+	iMode:= DB7000_Control.Mode,
+	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
+	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
+	iLightCurtain:= DB7000_Control.Machine.LightCurtainRelay,
+	iClock_100ms:= CPU_Clock.Clock_100ms_R,
+	iSensor_Work:= IX7102_4_搬运1_1避让气缸CY05A_伸出位,
+	iSensor_Home:= IX7102_5_搬运1_1避让气缸CY05A_缩回位,
+	iIC_Home:= TRUE,
+	iIC_Work:= TRUE,
+	iValveModel:= 0,
+	ioCylinder:= DB7050_DriveControl.CylCtrl[5],
+	oValve_Work=> QX7102_4_搬运1_1避让气缸CY05_伸出,
+	oValve_Home=> QX7102_5_搬运1_1避让气缸CY05_缩回);
+///////
+///////
+///////
+
+FB_Cylinder_instance[6](
+	iEnable:=TRUE,
+	iName:="搬运1_2旋转气缸CY06",
+	iMode:= DB7000_Control.Mode,
+	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
+	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
+	iLightCurtain:= DB7000_Control.Machine.LightCurtainRelay,
+	iClock_100ms:= CPU_Clock.Clock_100ms_R,
+	iSensor_Work:= IX7103_0_搬运1_2旋转气缸CY06_放料位,
+	iSensor_Home:= IX7103_0_搬运1_2旋转气缸CY06_放料位,
+	iIC_Home:= TRUE,
+	iIC_Work:= TRUE,
+	iValveModel:= 0,
+	ioCylinder:= DB7050_DriveControl.CylCtrl[6],
+	oValve_Work=> QX7103_0_搬运1_2旋转气缸CY06_放料,
+	oValve_Home=> QX7103_0_搬运1_2旋转气缸CY06_放料);
+///////
+///////
+///////
+
+FB_Cylinder_instance[7](
+	iEnable:=TRUE,
+	iName:="搬运1_2夹爪气缸CY07",
+	iMode:= DB7000_Control.Mode,
+	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
+	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
+	iLightCurtain:= DB7000_Control.Machine.LightCurtainRelay,
+	iClock_100ms:= CPU_Clock.Clock_100ms_R,
+	iSensor_Work:= IX7103_2_搬运1_2夹爪气缸CY07_夹紧位,
+	iSensor_Home:= IX7103_2_搬运1_2夹爪气缸CY07_夹紧位,
+	iIC_Home:= TRUE,
+	iIC_Work:= TRUE,
+	iValveModel:= 0,
+	ioCylinder:= DB7050_DriveControl.CylCtrl[7],
+	oValve_Work=> QX7103_2_搬运1_2夹爪气缸CY07_夹紧,
+	oValve_Home=> QX7103_2_搬运1_2夹爪气缸CY07_夹紧);
+///////
+///////
+///////
+
+FB_Cylinder_instance[8](
+	iEnable:=TRUE,
+	iName:="搬运1_2避让气缸CY08",
+	iMode:= DB7000_Control.Mode,
+	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
+	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
+	iLightCurtain:= DB7000_Control.Machine.LightCurtainRelay,
+	iClock_100ms:= CPU_Clock.Clock_100ms_R,
+	iSensor_Work:= IX7103_4_搬运1_2避让气缸CY08_伸出位,
+	iSensor_Home:= IX7103_5_搬运1_2避让气缸CY08_缩回位,
+	iIC_Home:= TRUE,
+	iIC_Work:= TRUE,
+	iValveModel:= 0,
+	ioCylinder:= DB7050_DriveControl.CylCtrl[8],
+	oValve_Work=> QX7103_4_搬运1_2避让气缸CY08_伸出,
+	oValve_Home=> QX7103_5_搬运1_2避让气缸CY08_缩回);
+///////
+///////
+///////
+
+FB_Cylinder_instance[9](
+	iEnable:=TRUE,
+	iName:="搬运2_1旋转气缸CY09",
+	iMode:= DB7000_Control.Mode,
+	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
+	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
+	iLightCurtain:= DB7000_Control.Machine.LightCurtainRelay,
+	iClock_100ms:= CPU_Clock.Clock_100ms_R,
+	iSensor_Work:= IX7104_0_搬运2_1旋转气缸CY09_放料位,
+	iSensor_Home:= IX7104_0_搬运2_1旋转气缸CY09_放料位,
+	iIC_Home:= TRUE,
+	iIC_Work:= TRUE,
+	iValveModel:= 0,
+	ioCylinder:= DB7050_DriveControl.CylCtrl[9],
+	oValve_Work=> QX7104_0_搬运2_1旋转气缸CY09_放料,
+	oValve_Home=> QX7104_0_搬运2_1旋转气缸CY09_放料);
+///////
+///////
+///////
+
+FB_Cylinder_instance[10](
+	iEnable:=TRUE,
+	iName:="搬运2_1夹爪气缸CY10",
+	iMode:= DB7000_Control.Mode,
+	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
+	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
+	iLightCurtain:= DB7000_Control.Machine.LightCurtainRelay,
+	iClock_100ms:= CPU_Clock.Clock_100ms_R,
+	iSensor_Work:= IX7104_2_搬运2_1夹爪气缸CY10_夹紧位,
+	iSensor_Home:= IX7104_2_搬运2_1夹爪气缸CY10_夹紧位,
+	iIC_Home:= TRUE,
+	iIC_Work:= TRUE,
+	iValveModel:= 0,
+	ioCylinder:= DB7050_DriveControl.CylCtrl[10],
+	oValve_Work=> QX7104_2_搬运2_1夹爪气缸CY10_夹紧,
+	oValve_Home=> QX7104_2_搬运2_1夹爪气缸CY10_夹紧);
+///////
+///////
+///////
+
+FB_Cylinder_instance[11](
+	iEnable:=TRUE,
+	iName:="搬运2_1避让气缸CY11",
+	iMode:= DB7000_Control.Mode,
+	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
+	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
+	iLightCurtain:= DB7000_Control.Machine.LightCurtainRelay,
+	iClock_100ms:= CPU_Clock.Clock_100ms_R,
+	iSensor_Work:= IX7104_4_搬运2_1避让气缸CY11_伸出位,
+	iSensor_Home:= IX7104_5_搬运2_1避让气缸CY11_缩回位,
+	iIC_Home:= TRUE,
+	iIC_Work:= TRUE,
+	iValveModel:= 0,
+	ioCylinder:= DB7050_DriveControl.CylCtrl[11],
+	oValve_Work=> QX7104_4_搬运2_1避让气缸CY11_伸出,
+	oValve_Home=> QX7104_5_搬运2_1避让气缸CY11_缩回);
+///////
+///////
+///////
+
+FB_Cylinder_instance[12](
+	iEnable:=TRUE,
+	iName:="搬运2_2旋转气缸CY12",
+	iMode:= DB7000_Control.Mode,
+	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
+	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
+	iLightCurtain:= DB7000_Control.Machine.LightCurtainRelay,
+	iClock_100ms:= CPU_Clock.Clock_100ms_R,
+	iSensor_Work:= IX7105_0_搬运2_2旋转气缸CY12_放料位,
+	iSensor_Home:= IX7105_0_搬运2_2旋转气缸CY12_放料位,
+	iIC_Home:= TRUE,
+	iIC_Work:= TRUE,
+	iValveModel:= 0,
+	ioCylinder:= DB7050_DriveControl.CylCtrl[12],
+	oValve_Work=> QX7105_0_搬运2_2旋转气缸CY12_放料,
+	oValve_Home=> QX7105_0_搬运2_2旋转气缸CY12_放料);
+///////
+///////
+///////
+
+FB_Cylinder_instance[13](
+	iEnable:=TRUE,
+	iName:="搬运2_2夹爪气缸CY13",
+	iMode:= DB7000_Control.Mode,
+	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
+	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
+	iLightCurtain:= DB7000_Control.Machine.LightCurtainRelay,
+	iClock_100ms:= CPU_Clock.Clock_100ms_R,
+	iSensor_Work:= IX7105_2_搬运2_2夹爪气缸CY13_夹紧位,
+	iSensor_Home:= IX7105_2_搬运2_2夹爪气缸CY13_夹紧位,
+	iIC_Home:= TRUE,
+	iIC_Work:= TRUE,
+	iValveModel:= 0,
+	ioCylinder:= DB7050_DriveControl.CylCtrl[13],
+	oValve_Work=> QX7105_2_搬运2_2夹爪气缸CY13_夹紧,
+	oValve_Home=> QX7105_2_搬运2_2夹爪气缸CY13_夹紧);
+///////
+///////
+///////
+
+FB_Cylinder_instance[14](
+	iEnable:=TRUE,
+	iName:="搬运2_2避让气缸CY14",
+	iMode:= DB7000_Control.Mode,
+	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
+	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
+	iLightCurtain:= DB7000_Control.Machine.LightCurtainRelay,
+	iClock_100ms:= CPU_Clock.Clock_100ms_R,
+	iSensor_Work:= IX7105_4_搬运2_2避让气缸CY14_伸出位,
+	iSensor_Home:= IX7105_5_搬运2_2避让气缸CY14_缩回位,
+	iIC_Home:= TRUE,
+	iIC_Work:= TRUE,
+	iValveModel:= 0,
+	ioCylinder:= DB7050_DriveControl.CylCtrl[14],
+	oValve_Work=> QX7105_4_搬运2_2避让气缸CY14_伸出,
+	oValve_Home=> QX7105_5_搬运2_2避让气缸CY14_缩回);
+///////
+///////
+///////
+
+FB_Cylinder_instance[15](
+	iEnable:=TRUE,
+	iName:="平台1避位升降气缸CY15",
+	iMode:= DB7000_Control.Mode,
+	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
+	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
+	iLightCurtain:= DB7000_Control.Machine.LightCurtainRelay,
+	iClock_100ms:= CPU_Clock.Clock_100ms_R,
+	iSensor_Work:= IX7106_0_平台1避位升降气缸CY15_上升位,
+	iSensor_Home:= IX7106_0_平台1避位升降气缸CY15_上升位,
+	iIC_Home:= TRUE,
+	iIC_Work:= TRUE,
+	iValveModel:= 0,
+	ioCylinder:= DB7050_DriveControl.CylCtrl[15],
+	oValve_Work=> QX7106_0_平台1避升降气缸CY15_上升,
+	oValve_Home=> QX7106_0_平台1避升降气缸CY15_上升);
+///////
+///////
+///////
+
+FB_Cylinder_instance[16](
+	iEnable:=TRUE,
+	iName:="平台1侧推定位X气缸CY16",
+	iMode:= DB7000_Control.Mode,
+	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
+	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
+	iLightCurtain:= DB7000_Control.Machine.LightCurtainRelay,
+	iClock_100ms:= CPU_Clock.Clock_100ms_R,
+	iSensor_Work:= IX7106_3_平台1侧推定位X气缸CY16_伸出位,
+	iSensor_Home:= IX7106_2_平台1侧推定位X气缸CY16_缩回位,
+	iIC_Home:= TRUE,
+	iIC_Work:= TRUE,
+	iValveModel:= 0,
+	ioCylinder:= DB7050_DriveControl.CylCtrl[16],
+	oValve_Work=> QX7106_3_平台1侧推定X气缸CY16_伸出,
+	oValve_Home=> QX7106_2_平台1侧推定X气缸CY16_缩回);
+///////
+///////
+///////
+
+FB_Cylinder_instance[17](
+	iEnable:=TRUE,
+	iName:="平台1侧推定位Y气缸CY17",
+	iMode:= DB7000_Control.Mode,
+	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
+	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
+	iLightCurtain:= DB7000_Control.Machine.LightCurtainRelay,
+	iClock_100ms:= CPU_Clock.Clock_100ms_R,
+	iSensor_Work:= IX7106_4_平台1侧推定位Y气缸CY17_伸出位,
+	iSensor_Home:= IX7106_5_平台1侧推定位Y气缸CY17_缩回位,
+	iIC_Home:= TRUE,
+	iIC_Work:= TRUE,
+	iValveModel:= 0,
+	ioCylinder:= DB7050_DriveControl.CylCtrl[17],
+	oValve_Work=> QX7106_4_平台1侧推定Y气缸CY17_伸出,
+	oValve_Home=> QX7106_5_平台1侧推定Y气缸CY17_缩回);
+///////
+///////
+///////
+
+FB_Cylinder_instance[18](
+	iEnable:=TRUE,
+	iName:="平台1物料压紧气缸CY18",
+	iMode:= DB7000_Control.Mode,
+	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
+	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
+	iLightCurtain:= DB7000_Control.Machine.LightCurtainRelay,
+	iClock_100ms:= CPU_Clock.Clock_100ms_R,
+	iSensor_Work:= IX7106_6_平台1物料压紧气缸CY18_下降位,
+	iSensor_Home:= IX7106_6_平台1物料压紧气缸CY18_下降位,
+	iIC_Home:= TRUE,
+	iIC_Work:= TRUE,
+	iValveModel:= 0,
+	ioCylinder:= DB7050_DriveControl.CylCtrl[18],
+	oValve_Work=> QX7106_6_平台1物料压紧气缸CY18_下降,
+	oValve_Home=> QX7106_6_平台1物料压紧气缸CY18_下降);
+///////
+///////
+///////
+
+FB_Cylinder_instance[19](
+	iEnable:=TRUE,
+	iName:="平台2避位升降气缸CY19",
+	iMode:= DB7000_Control.Mode,
+	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
+	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
+	iLightCurtain:= DB7000_Control.Machine.LightCurtainRelay,
+	iClock_100ms:= CPU_Clock.Clock_100ms_R,
+	iSensor_Work:= IX7107_2_平台2避位升降气缸CY19_上升位,
+	iSensor_Home:= IX7107_2_平台2避位升降气缸CY19_上升位,
+	iIC_Home:= TRUE,
+	iIC_Work:= TRUE,
+	iValveModel:= 0,
+	ioCylinder:= DB7050_DriveControl.CylCtrl[19],
+	oValve_Work=> QX7107_2_平台2避升降气缸CY19_上升,
+	oValve_Home=> QX7107_2_平台2避升降气缸CY19_上升);
+///////
+///////
+///////
+
+FB_Cylinder_instance[20](
+	iEnable:=TRUE,
+	iName:="平台2侧推定位Y气缸CY20",
+	iMode:= DB7000_Control.Mode,
+	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
+	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
+	iLightCurtain:= DB7000_Control.Machine.LightCurtainRelay,
+	iClock_100ms:= CPU_Clock.Clock_100ms_R,
+	iSensor_Work:= IX7107_4_平台2侧推定位Y气缸CY20_伸出位,
+	iSensor_Home:= IX7107_5_平台2侧推定位Y气缸CY20_缩回位,
+	iIC_Home:= TRUE,
+	iIC_Work:= TRUE,
+	iValveModel:= 0,
+	ioCylinder:= DB7050_DriveControl.CylCtrl[20],
+	oValve_Work=> QX7107_4_平台2侧推定Y气缸CY20_伸出,
+	oValve_Home=> QX7107_5_平台2侧推定Y气缸CY20_缩回);
+///////
+///////
+///////
+
+FB_Cylinder_instance[21](
+	iEnable:=TRUE,
+	iName:="平台2物料压紧气缸CY21",
+	iMode:= DB7000_Control.Mode,
+	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
+	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
+	iLightCurtain:= DB7000_Control.Machine.LightCurtainRelay,
+	iClock_100ms:= CPU_Clock.Clock_100ms_R,
+	iSensor_Work:= IX7107_6_平台2物料压紧气缸CY21_下降位,
+	iSensor_Home:= IX7107_6_平台2物料压紧气缸CY21_下降位,
+	iIC_Home:= TRUE,
+	iIC_Work:= TRUE,
+	iValveModel:= 0,
+	ioCylinder:= DB7050_DriveControl.CylCtrl[21],
+	oValve_Work=> QX7107_6_平台2物料压紧气缸CY21_下降,
+	oValve_Home=> QX7107_6_平台2物料压紧气缸CY21_下降);
+///////
+///////
+///////
+
+FB_Cylinder_instance[22](
+	iEnable:=TRUE,
+	iName:="平台3避位升降气缸CY22",
+	iMode:= DB7000_Control.Mode,
+	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
+	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
+	iLightCurtain:= DB7000_Control.Machine.LightCurtainRelay,
+	iClock_100ms:= CPU_Clock.Clock_100ms_R,
+	iSensor_Work:= IX7108_0_平台3避位升降气缸CY22_上升位,
+	iSensor_Home:= IX7108_0_平台3避位升降气缸CY22_上升位,
+	iIC_Home:= TRUE,
+	iIC_Work:= TRUE,
+	iValveModel:= 0,
+	ioCylinder:= DB7050_DriveControl.CylCtrl[22],
+	oValve_Work=> QX7108_0_平台3避升降气缸CY22_上升,
+	oValve_Home=> QX7108_0_平台3避升降气缸CY22_上升);
+///////
+///////
+///////
+
+FB_Cylinder_instance[23](
+	iEnable:=TRUE,
+	iName:="平台4侧推定位X气缸CY23",
+	iMode:= DB7000_Control.Mode,
+	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
+	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
+	iLightCurtain:= DB7000_Control.Machine.LightCurtainRelay,
+	iClock_100ms:= CPU_Clock.Clock_100ms_R,
+	iSensor_Work:= IX7108_3_平台4侧推定位X气缸CY23_伸出位,
+	iSensor_Home:= IX7108_2_平台4侧推定位X气缸CY23_缩回位,
+	iIC_Home:= TRUE,
+	iIC_Work:= TRUE,
+	iValveModel:= 0,
+	ioCylinder:= DB7050_DriveControl.CylCtrl[23],
+	oValve_Work=> QX7108_3_平台4侧推定X气缸CY23_伸出,
+	oValve_Home=> QX7108_2_平台4侧推定X气缸CY23_缩回);
+///////
+///////
+///////
+
+FB_Cylinder_instance[24](
+	iEnable:=TRUE,
+	iName:="平台3侧推定位Y气缸CY24",
+	iMode:= DB7000_Control.Mode,
+	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
+	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
+	iLightCurtain:= DB7000_Control.Machine.LightCurtainRelay,
+	iClock_100ms:= CPU_Clock.Clock_100ms_R,
+	iSensor_Work:= IX7108_4_平台3侧推定位Y气缸CY24_伸出位,
+	iSensor_Home:= IX7108_5_平台3侧推定位Y气缸CY24_缩回位,
+	iIC_Home:= TRUE,
+	iIC_Work:= TRUE,
+	iValveModel:= 0,
+	ioCylinder:= DB7050_DriveControl.CylCtrl[24],
+	oValve_Work=> QX7108_4_平台3侧推定Y气缸CY24_伸出,
+	oValve_Home=> QX7108_5_平台3侧推定Y气缸CY24_缩回);
+///////
+///////
+///////
+
+FB_Cylinder_instance[25](
+	iEnable:=TRUE,
+	iName:="平台3物料压紧气缸CY25",
+	iMode:= DB7000_Control.Mode,
+	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
+	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
+	iLightCurtain:= DB7000_Control.Machine.LightCurtainRelay,
+	iClock_100ms:= CPU_Clock.Clock_100ms_R,
+	iSensor_Work:= IX7108_6_平台3物料压紧气缸CY25_下降位,
+	iSensor_Home:= IX7108_6_平台3物料压紧气缸CY25_下降位,
+	iIC_Home:= TRUE,
+	iIC_Work:= TRUE,
+	iValveModel:= 0,
+	ioCylinder:= DB7050_DriveControl.CylCtrl[25],
+	oValve_Work=> QX7108_6_平台3物料压紧气缸CY25_下降,
+	oValve_Home=> QX7108_6_平台3物料压紧气缸CY25_下降);
+///////
+///////
+///////
+
+FB_Cylinder_instance[26](
+	iEnable:=TRUE,
+	iName:="平台4避位升降气缸CY26",
+	iMode:= DB7000_Control.Mode,
+	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
+	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
+	iLightCurtain:= DB7000_Control.Machine.LightCurtainRelay,
+	iClock_100ms:= CPU_Clock.Clock_100ms_R,
+	iSensor_Work:= IX7109_2_平台4避位升降气缸CY26_上升位,
+	iSensor_Home:= IX7109_2_平台4避位升降气缸CY26_上升位,
+	iIC_Home:= TRUE,
+	iIC_Work:= TRUE,
+	iValveModel:= 0,
+	ioCylinder:= DB7050_DriveControl.CylCtrl[26],
+	oValve_Work=> QX7109_2_平台4避升降气缸CY26_上升,
+	oValve_Home=> QX7109_2_平台4避升降气缸CY26_上升);
+///////
+///////
+///////
+
+FB_Cylinder_instance[27](
+	iEnable:=TRUE,
+	iName:="平台4侧推定位Y气缸CY27",
+	iMode:= DB7000_Control.Mode,
+	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
+	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
+	iLightCurtain:= DB7000_Control.Machine.LightCurtainRelay,
+	iClock_100ms:= CPU_Clock.Clock_100ms_R,
+	iSensor_Work:= IX7109_5_平台4侧推定位Y气缸CY27_伸出位,
+	iSensor_Home:= IX7109_4_平台4侧推定位Y气缸CY27_缩回位,
+	iIC_Home:= TRUE,
+	iIC_Work:= TRUE,
+	iValveModel:= 0,
+	ioCylinder:= DB7050_DriveControl.CylCtrl[27],
+	oValve_Work=> QX7109_5_平台4侧推定Y气缸CY27_伸出,
+	oValve_Home=> QX7109_4_平台4侧推定Y气缸CY27_缩回);
+///////
+///////
+///////
+
+FB_Cylinder_instance[28](
+	iEnable:=TRUE,
+	iName:="平台4物料旋转气缸CY28",
+	iMode:= DB7000_Control.Mode,
+	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
+	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
+	iLightCurtain:= DB7000_Control.Machine.LightCurtainRelay,
+	iClock_100ms:= CPU_Clock.Clock_100ms_R,
+	iSensor_Work:= IX7109_7_平台4物料旋转气缸CY28_接料位,
+	iSensor_Home:= IX7109_6_平台4物料旋转气缸CY28_下料位,
+	iIC_Home:= TRUE,
+	iIC_Work:= TRUE,
+	iValveModel:= 0,
+	ioCylinder:= DB7050_DriveControl.CylCtrl[28],
+	oValve_Work=> QX7109_6_平台4物料压紧气缸CY28_下料,
+	oValve_Home=> QX7109_6_平台4物料压紧气缸CY28_下料);
+///////
+///////
+///////
+
+FB_Cylinder_instance[30](
+	iEnable:=TRUE,
+	iName:="电批1上下气缸CY30",
+	iMode:= DB7000_Control.Mode,
+	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
+	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
+	iLightCurtain:= DB7000_Control.Machine.LightCurtainRelay,
+	iClock_100ms:= CPU_Clock.Clock_100ms_R,
+	iSensor_Work:= IX7110_0_电批1上下气缸CY30_下降位,
+	iSensor_Home:= IX7110_0_电批1上下气缸CY30_下降位,
+	iIC_Home:= TRUE,
+	iIC_Work:= TRUE,
+	iValveModel:= 0,
+	ioCylinder:= DB7050_DriveControl.CylCtrl[30],
+	oValve_Work=> QX7110_0_电批1上下气缸CY30_下降,
+	oValve_Home=> QX7110_0_电批1上下气缸CY30_下降);
+///////
+///////
+///////
+
+FB_Cylinder_instance[31](
+	iEnable:=TRUE,
+	iName:="电批2上下气缸CY31",
+	iMode:= DB7000_Control.Mode,
+	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
+	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
+	iLightCurtain:= DB7000_Control.Machine.LightCurtainRelay,
+	iClock_100ms:= CPU_Clock.Clock_100ms_R,
+	iSensor_Work:= IX7110_2_电批2上下气缸CY31_下降位,
+	iSensor_Home:= IX7110_2_电批2上下气缸CY31_下降位,
+	iIC_Home:= TRUE,
+	iIC_Work:= TRUE,
+	iValveModel:= 0,
+	ioCylinder:= DB7050_DriveControl.CylCtrl[31],
+	oValve_Work=> QX7110_2_电批2上下气缸CY31_下降,
+	oValve_Home=> QX7110_2_电批2上下气缸CY31_下降);
+///////
+///////
+///////
+
+FB_Cylinder_instance[32](
+	iEnable:=TRUE,
+	iName:="电批3整体上下气缸CY32",
+	iMode:= DB7000_Control.Mode,
+	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
+	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
+	iLightCurtain:= DB7000_Control.Machine.LightCurtainRelay,
+	iClock_100ms:= CPU_Clock.Clock_100ms_R,
+	iSensor_Work:= IX7110_6_电批3整体上下气缸CY32_下降位,
+	iSensor_Home:= IX7110_6_电批3整体上下气缸CY32_下降位,
+	iIC_Home:= TRUE,
+	iIC_Work:= TRUE,
+	iValveModel:= 0,
+	ioCylinder:= DB7050_DriveControl.CylCtrl[32],
+	oValve_Work=> QX7110_6_电批3整体上下气缸CY32_下降,
+	oValve_Home=> QX7110_6_电批3整体上下气缸CY32_下降);
+///////
+///////
+///////
+
+FB_Cylinder_instance[33](
+	iEnable:=TRUE,
+	iName:="电批3鸟嘴上下气缸CY33",
+	iMode:= DB7000_Control.Mode,
+	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
+	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
+	iLightCurtain:= DB7000_Control.Machine.LightCurtainRelay,
+	iClock_100ms:= CPU_Clock.Clock_100ms_R,
+	iSensor_Work:= IX7111_0_电批3鸟嘴上下气缸CY33_下降位,
+	iSensor_Home:= IX7111_0_电批3鸟嘴上下气缸CY33_下降位,
+	iIC_Home:= TRUE,
+	iIC_Work:= TRUE,
+	iValveModel:= 0,
+	ioCylinder:= DB7050_DriveControl.CylCtrl[33],
+	oValve_Work=> QX7111_0_电批3鸟嘴上下气缸CY33_下降,
+	oValve_Home=> QX7111_0_电批3鸟嘴上下气缸CY33_下降);
+///////
+///////
+///////
+
+FB_Cylinder_instance[34](
+	iEnable:=TRUE,
+	iName:="电批4上下气缸CY34",
+	iMode:= DB7000_Control.Mode,
+	iEstop:= DB7000_Control.Machine.EmgSafetyRelay,
+	iSafeDoor:= DB7000_Control.Machine.EmgSafetyRelay,
+	iLightCurtain:= DB7000_Control.Machine.LightCurtainRelay,
+	iClock_100ms:= CPU_Clock.Clock_100ms_R,
+	iSensor_Work:= IX7111_4_电批4上下气缸CY34_下降位,
+	iSensor_Home:= IX7111_4_电批4上下气缸CY34_下降位,
+	iIC_Home:= TRUE,
+	iIC_Work:= TRUE,
+	iValveModel:= 0,
+	ioCylinder:= DB7050_DriveControl.CylCtrl[34],
+	oValve_Work=> QX7111_4_电批4上下气缸CY34_下降,
+	oValve_Home=> QX7111_4_电批4上下气缸CY34_下降);
+///////
+///////
+///////
